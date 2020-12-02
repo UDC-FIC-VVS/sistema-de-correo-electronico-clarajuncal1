@@ -15,11 +15,14 @@ public class LogTest {
 	Texto texto = new Texto(nombreTexto, contenido);
 	
 	public void almacenarCorreo() {
+		//Se crea un Log a partir de un Archivador
 		ArchivadorSimple archivador = new ArchivadorSimple(nombreArchivador, espacioArchivador);
 		Log log = new Log(archivador);
 		
+		//Se crea un mensaje de correo nuevo
 		Correo correo = new Mensaje(texto);
 		
+		//Se comprueba que el log es capaz de almacenar dicho mensaje de correo
 		assertEquals(true, log.almacenarCorreo(correo));
 	}
 }

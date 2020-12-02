@@ -33,10 +33,15 @@ public class ArchivadorSimpleTest {
 	 */
 	@Test
 	public void almacenarCorreoCorrectamente() {
+		
+		//Creo un nuevo archivador, introduciendo un nombre y un espacio
 		ArchivadorSimple archivadorSimple = new ArchivadorSimple(nombrePrueba, espacioPrueba);
+		
+		//Creo un mensaje , introduciendo un texto(nombre del texto, y contenido del texto)
 		Texto texto = new Texto("textoPrueba", "Es un texto de prueba");
 		Mensaje mensajePrueba = new Mensaje(texto);
 	
+		//Compruebo que es posible almacenar el mensaje en el archivador
 		assertTrue(archivadorSimple.almacenarCorreo(mensajePrueba));
 	}
 	
@@ -45,9 +50,12 @@ public class ArchivadorSimpleTest {
 	 */
 	@Test
 	public void almacenarCorreoIncorrectamente() {
+		//Creo un nuevo archivador, introduciendo un nombre y un espacio
 		ArchivadorSimple archivadorSimple = new ArchivadorSimple(nombrePrueba, 10);
+		//Creo un mensaje , introduciendo un texto(nombre del texto, y contenido del texto)
 		Mensaje mensajePrueba = new Mensaje( new Texto("textoPrueba", "Es un texto de prueba"));
 	
+		//Compruebo que no es posible almacenar el mensaje pues el archivador no tiene espacio suficiente
 		assertFalse(archivadorSimple.almacenarCorreo(mensajePrueba));
 	}
 	
@@ -70,9 +78,12 @@ public class ArchivadorSimpleTest {
 	@Test
 	public void ObtenerEspacioDisponibleTest() {
 		
+		//Se crea un nuevo archivador, introduciendo un nombre y un espacio
 		ArchivadorSimple archivadorSimple = new ArchivadorSimple(nombrePrueba,espacioPrueba);
+		//Creo un mensaje , introduciendo un texto(nombre del texto, y contenido del texto)
 		Mensaje mensajePrueba = new Mensaje( new Texto("textoPrueba", "Es un texto de prueba"));
 
+		//Introduzco el mensaje en el archivador y obtengo el espacio restante disponible
 		archivadorSimple.almacenarCorreo(mensajePrueba);
 		assertEquals(79, archivadorSimple.obtenerEspacioDisponible());
 	}

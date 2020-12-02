@@ -21,13 +21,13 @@ public class DelegadoTest {
 	 */
 	@Test
 	public void almacenarCorreo() {
-		
+		//Se crea un delegado a partir de un archivador
 		ArchivadorSimple archivador = new ArchivadorSimple(nombreArchivador, espacioArchivador);
 		Delegado delegado = new Delegado(archivador);
-		
+		//Se crea un mensaje , introduciendo un texto(nombre del texto, y contenido del texto)
 		Correo correo = new Mensaje(texto);
 		
-		
+		//Se comprueba que el delegado es capaz de almacenar dicho mensaje de correo.
 		assertEquals(true, delegado.almacenarCorreo(correo));
 	}
 	/*
@@ -36,9 +36,11 @@ public class DelegadoTest {
 	@Test
 	public void EstablecerYObtenerDelegado() {
 		
+		//Se crea un delegado a partir de un archivador
 		ArchivadorSimple archivador = new ArchivadorSimple(nombreArchivador, espacioArchivador);
 		Delegado delegado = new Delegado(archivador);
 		
+		//Se establece dicho archivador como delegado y se comprueba que ha sido establecido
 		delegado.establecerDelegado(archivador);
 		
 		assertEquals(delegado.obtenerDelegado(), archivador);
