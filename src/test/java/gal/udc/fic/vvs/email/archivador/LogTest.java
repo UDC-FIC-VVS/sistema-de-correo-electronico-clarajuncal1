@@ -2,6 +2,8 @@ package gal.udc.fic.vvs.email.archivador;
 
 import static org.junit.Assert.assertEquals;
 
+import org.junit.Test;
+
 import gal.udc.fic.vvs.email.archivo.Texto;
 import gal.udc.fic.vvs.email.correo.Correo;
 import gal.udc.fic.vvs.email.correo.Mensaje;
@@ -14,6 +16,7 @@ public class LogTest {
 	private String contenido = "Texto de prueba";
 	Texto texto = new Texto(nombreTexto, contenido);
 	
+	@Test
 	public void almacenarCorreo() {
 		//Se crea un Log a partir de un Archivador
 		ArchivadorSimple archivador = new ArchivadorSimple(nombreArchivador, espacioArchivador);

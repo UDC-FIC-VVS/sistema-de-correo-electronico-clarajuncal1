@@ -78,17 +78,6 @@ public class ReenvioTest {
 	}
 	
 	/*
-	 * Obtener reenvio no leido, para ello se crea un reenvio y se comprueba que 
-	 * dicho reenvio no ha sido leido todavía
-	 */
-	public void ObtenerNoLeido() {
-		
-		Reenvio reenvio = new Reenvio(mensajeAbstracto, correo);
-
-		assertEquals(1, reenvio.obtenerNoLeidos());
-	}
-	
-	/*
 	 * Obtener Ruta, para ello se crea un reenvio y se comprueba que la ruta
 	 *  del mensaje coincide con la ruta del reenvio
 	 */

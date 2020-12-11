@@ -4,7 +4,7 @@ import static org.junit.Assert.assertEquals;
 
 import org.junit.Test;
 
-public class ImagenTest {
+public class TestImagen {
 
 	private String nombrePrueba = "ImagenPrueba";
 	private String contenido = "Imagen de Prueba";

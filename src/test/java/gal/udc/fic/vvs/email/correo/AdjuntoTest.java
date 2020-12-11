@@ -131,6 +131,7 @@ public class AdjuntoTest {
 		Correo correo = new Mensaje(new Texto("prueba", "Intentar añadir un correo"));
 		
 		adjunto.añadir(correo);
+		
 	}
 	
 	/*

@@ -1,6 +1,7 @@
 package gal.udc.fic.vvs.email;
 
 import gal.udc.fic.vvs.email.archivador.*;
+
 import gal.udc.fic.vvs.email.archivo.*;
 import gal.udc.fic.vvs.email.cliente.*;
 import gal.udc.fic.vvs.email.correo.*;

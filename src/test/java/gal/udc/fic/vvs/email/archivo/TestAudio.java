@@ -4,7 +4,7 @@ import static org.junit.Assert.assertEquals;
 
 import org.junit.Test;
 
-public class AudioTest {
+public class TestAudio {
 
 	private String nombrePrueba = "AudioPrueba";
 	private String contenido = "Audio de Prueba";
