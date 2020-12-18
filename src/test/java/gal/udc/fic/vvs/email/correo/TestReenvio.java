@@ -6,7 +6,7 @@ import org.junit.Test;
 
 import gal.udc.fic.vvs.email.archivo.Texto;
 
-public class ReenvioTest {
+public class TestReenvio {
 
 	Texto textoMensaje = new Texto("textoMensaje", "texto del mensaje abstracto");
 	Mensaje mensajeAbstracto = new Mensaje(textoMensaje);
@@ -67,7 +67,7 @@ public class ReenvioTest {
 	 * ningún leido
 	 */
 	@Test 
-	public void EstablecerLeido() throws OperacionInvalida {
+	public void establecerYObtenerLeido() throws OperacionInvalida {
 		Reenvio reenvio = new Reenvio(mensajeAbstracto, correo);
 		
 		assertEquals(1, reenvio.obtenerNoLeidos());

@@ -7,7 +7,7 @@ import org.junit.Test;
 import gal.udc.fic.vvs.email.archivo.Archivo;
 import gal.udc.fic.vvs.email.archivo.Texto;
 
-public class AdjuntoTest {
+public class TestAdjunto {
 	
 	Texto texto = new Texto("TextoPrueba", "Realizando una prueba");
 	Mensaje mensajePrueba = new Mensaje(texto);

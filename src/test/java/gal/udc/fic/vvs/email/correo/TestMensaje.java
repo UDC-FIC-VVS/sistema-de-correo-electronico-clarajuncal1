@@ -8,7 +8,7 @@ import org.junit.Test;
 
 import gal.udc.fic.vvs.email.archivo.Texto;
 
-public class MensajeTest {
+public class TestMensaje {
 
 	/*
 	 * Establecer un Mensaje como Leido y comprobar que posteriormente no se obtiene como no leido

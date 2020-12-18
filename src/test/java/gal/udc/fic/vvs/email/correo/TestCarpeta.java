@@ -6,7 +6,7 @@ import org.junit.Test;
 
 import gal.udc.fic.vvs.email.archivo.Texto;
 
-public class CarpetaTest {
+public class TestCarpeta {
 
 	private String nombre = "nombreCarpeta";
 	private String nombreTexto = "TextoPrueba";
