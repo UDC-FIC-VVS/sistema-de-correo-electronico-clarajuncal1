@@ -12,7 +12,7 @@ public class TestTextoProperty {
 	/*
 	 * Descripción : Obtener el nombre de un Texto  
 	 * Nivel : Prueba de Unidad.
-	 * Categoría : Prueba dinámica de caja negra, positiva.
+	 * Categoría : Prueba dinámica de caja negra, positiva, funcional.
 	 * Mecanismo de selección de datos : Se obtiene mediante generación automática de datos:
 	 * 		nombre : un String cualquiera para el nombre del Texto,
 	 * 		contenido : un String cualquiera para el contenido del Texto.
@@ -27,7 +27,7 @@ public class TestTextoProperty {
 	/*
 	 * Descripción : Obtener el contenido de un Texto  
 	 * Nivel : Prueba de Unidad.
-	 * Categoría : Prueba dinámica de caja negra, positiva.
+	 * Categoría : Prueba dinámica de caja negra, positiva, funcional.
 	 * Mecanismo de selección de datos : Se obtiene mediante generación automática de datos:
 	 * 		nombre : un String cualquiera para el nombre del Texto,
 	 * 		contenido : un String cualquiera para el contenido del Texto.
@@ -42,7 +42,7 @@ public class TestTextoProperty {
 	/*
 	 * Descripción : Obtener el tamaño de un Texto  
 	 * Nivel : Prueba de Unidad.
-	 * Categoría : Prueba dinámica de caja negra, positiva.
+	 * Categoría : Prueba dinámica de caja negra, positiva, funcional.
 	 * Mecanismo de selección de datos : Se obtiene mediante generación automática de datos:
 	 * 		nombre : un String cualquiera para el nombre del Texto,
 	 * 		contenido : un String cualquiera para el contenido del Texto.
@@ -58,7 +58,7 @@ public class TestTextoProperty {
 	/*
 	 * Descripción : Obtener la previsualización de un Texto  
 	 * Nivel : Prueba de Unidad.
-	 * Categoría : Prueba dinámica de caja negra, positiva.
+	 * Categoría : Prueba dinámica de caja negra, positiva, funcional.
 	 * Mecanismo de selección de datos : Se obtiene mediante generación automática de datos:
 	 * 		nombre : un String cualquiera para el nombre del Texto,
 	 * 		contenido : un String cualquiera para el contenido del Texto.

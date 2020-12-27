@@ -12,7 +12,7 @@ public class TestImagenProperty {
 	/*
 	 * Descripción : Obtener el nombre de una Imagen  
 	 * Nivel : Prueba de Unidad.
-	 * Categoría : Prueba dinámica de caja negra, positiva.
+	 * Categoría : Prueba dinámica de caja negra, positiva, funcional.
 	 * Mecanismo de selección de datos : Se obtiene mediante generación automática de datos:
 	 * 		nombre : un String cualquiera para el nombre de la Imagen,
 	 * 		contenido : un String cualquiera para el contenido de la Imagen.
@@ -27,7 +27,7 @@ public class TestImagenProperty {
 	/*
 	 * Descripción : Obtener el contenido de una Imagen  
 	 * Nivel : Prueba de Unidad.
-	 * Categoría : Prueba dinámica de caja negra, positiva.
+	 * Categoría : Prueba dinámica de caja negra, positiva, funcional.
 	 * Mecanismo de selección de datos : Se obtiene mediante generación automática de datos:
 	 * 		nombre : un String cualquiera para el nombre de la Imagen,
 	 * 		contenido : un String cualquiera para el contenido de la Imagen.
@@ -42,7 +42,7 @@ public class TestImagenProperty {
 	/*
 	 * Descripción : Obtener el tamaño de una Imagen  
 	 * Nivel : Prueba de Unidad.
-	 * Categoría : Prueba dinámica de caja negra, positiva.
+	 * Categoría : Prueba dinámica de caja negra, positiva, funcional.
 	 * Mecanismo de selección de datos : Se obtiene mediante generación automática de datos:
 	 * 		nombre : un String cualquiera para el nombre de la Imagen,
 	 * 		contenido : un String cualquiera para el contenido de la Imagen.
@@ -58,7 +58,7 @@ public class TestImagenProperty {
 	/*
 	 * Descripción : Obtener la Visualización de una Imagen  
 	 * Nivel : Prueba de Unidad.
-	 * Categoría : Prueba dinámica de caja negra, positiva.
+	 * Categoría : Prueba dinámica de caja negra, positiva, funcional.
 	 * Mecanismo de selección de datos : Se obtiene mediante generación automática de datos:
 	 * 		nombre : un String cualquiera para el nombre de la Imagen,
 	 * 		contenido : un String cualquiera para el contenido de la Imagen.

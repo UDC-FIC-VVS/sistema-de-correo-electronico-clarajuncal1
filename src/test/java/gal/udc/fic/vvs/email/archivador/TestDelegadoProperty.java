@@ -19,7 +19,7 @@ public class TestDelegadoProperty {
 	/*
 	 * Descripción : Almacenar un correo correctamente en un delegado.
 	 * Nivel : Prueba de Unidad.
-	 * Categoría : Prueba dinámica de caja negra, positiva.
+	 * Categoría : Prueba dinámica de caja negra, positiva, funcional.
 	 * Mecanismo de selección de datos : Se obtiene mediante generación automática de datos:
 	 * 		nombre : un String cualquiera para el nombre del Delegado,
 	 * 		espacio : un integer mayor que 0 cualquiera para el espacio del Delegado,
@@ -43,7 +43,7 @@ public class TestDelegadoProperty {
 	/*
 	 * Descripción : Establecer y Obtener el delegado de un archivador.
 	 * Nivel : Prueba de Unidad.
-	 * Categoría : Prueba dinámica de caja negra, positiva.
+	 * Categoría : Prueba dinámica de caja negra, positiva, funcional.
 	 * Mecanismo de selección de datos : Se obtiene mediante generación automática de datos:
 	 * 		nombre : un String cualquiera para el nombre del Delegado,
 	 * 		espacio : un integer mayor que 0 cualquiera para el espacio del Delegado.
@@ -66,7 +66,7 @@ public class TestDelegadoProperty {
 	/*
 	 * Descripción : Obtener el nombre de un delegado.
 	 * Nivel : Prueba de Unidad.
-	 * Categoría : Prueba dinámica de caja negra, positiva.
+	 * Categoría : Prueba dinámica de caja negra, positiva, funcional.
 	 * Mecanismo de selección de datos : Se obtiene mediante generación automática de datos:
 	 * 		nombre : un String cualquiera para el nombre del Delegado,
 	 * 		espacio : un integer mayor que 0 cualquiera para el espacio del Delegado.
@@ -85,7 +85,7 @@ public class TestDelegadoProperty {
 	/*
 	 * Descripción : Obtener el espacio total de un delegado una vez se crea
 	 * Nivel  : Prueba de Unidad
-	 * Categoría : Prueba dinámica de caja negra, positiva
+	 * Categoría : Prueba dinámica de caja negra, positiva, funcional.
 	 * Mecanismo de selección de datos : Se obtiene mediante generación automática de datos:
 	 * 		nombre : un String cualquiera para el nombre del Delegado,
 	 * 		espacio : un integer mayor que 0 cualquiera para el espacio del Delegado.
@@ -105,7 +105,7 @@ public class TestDelegadoProperty {
 	/*
 	 * Descripción : Obtener el espacio disponible de un Delegado después de haber almacenado un correo.
 	 * Nivel : Prueba de Unidad
-	 * Categoría : Prueba dinámica de caja negra, positiva.
+	 * Categoría : Prueba dinámica de caja negra, positiva, funcional.
 	 * Mecanismo de selección de datos : Se obtiene mediante generación automática de datos:
 	 * 		nombre : un String cualquiera para el nombre del Delegado,
 	 * 		espacio : un integer mayor que 0 cualquiera para el espacio del Delegado,

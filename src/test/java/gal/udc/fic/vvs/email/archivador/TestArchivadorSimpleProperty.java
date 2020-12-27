@@ -20,7 +20,7 @@ public class TestArchivadorSimpleProperty {
 	/*
 	 * Descripción : Obtener el nombre de un archivador  
 	 * Nivel : Prueba de Unidad.
-	 * Categoría : Prueba dinámica de caja negra, positiva.
+	 * Categoría : Prueba dinámica de caja negra, positiva, funcional.
 	 * Mecanismo de selección de datos : Se obtiene mediante generación automática de datos:
 	 * 		nombre : un String cualquiera para el nombre del Archivador Simple,
 	 * 		espacio : un integer mayor que 0 cualquiera para el espacio del Archivador.
@@ -38,7 +38,7 @@ public class TestArchivadorSimpleProperty {
 	/*
 	 * Descripción : Almacenar un correo en un Archivador Simple correctamente  
 	 * Nivel : Prueba de Unidad.
-	 * Categoría : Prueba dinámica de caja negra, positiva.
+	 * Categoría : Prueba dinámica de caja negra, positiva, funcional.
 	 * Mecanismo de selección de datos : Se obtiene mediante generación automática de datos:
 	 * 		nombre : un String cualquiera para el nombre del Archivador Simple,
 	 * 		espacio : un integer mayor que 0 cualquiera para el espacio del Archivador,
@@ -61,7 +61,7 @@ public class TestArchivadorSimpleProperty {
 	/*
 	 * Descripción : Obtener el espacio total de un archivador despues de crearlo 
 	 * Nivel : Prueba de Unidad.
-	 * Categoría : Prueba dinámica de caja negra, positiva.
+	 * Categoría : Prueba dinámica de caja negra, positiva, funcional.
 	 * Mecanismo de selección de datos : Se obtiene mediante generación automática de datos:
 	 * 		nombre : un String cualquiera para el nombre del Archivador Simple,
 	 * 		espacio : un integer mayor que 0 cualquiera para el espacio del Archivador.
@@ -79,7 +79,7 @@ public class TestArchivadorSimpleProperty {
 	/*
 	 * Descripción : Obtener el espacio disponible después de almacenar un correo en un Archivador Simple. 
 	 * Nivel : Prueba de Unidad.
-	 * Categoría : Prueba dinámica de caja negra, positiva.
+	 * Categoría : Prueba dinámica de caja negra, positiva, funcional.
 	 * Mecanismo de selección de datos : Se obtiene mediante generación automática de datos:
 	 * 		nombre : un String cualquiera para el nombre del Archivador Simple,
 	 * 		espacio : un integer mayor que 0 cualquiera para el espacio del Archivador,
@@ -104,7 +104,7 @@ public class TestArchivadorSimpleProperty {
 	/*
 	 * Descripción : Establecer y obtener el delegado de un archivador.
 	 * Nivel : Prueba de Unidad.
-	 * Categoría : Prueba dinámica de caja negra, positiva.
+	 * Categoría : Prueba dinámica de caja negra, positiva, funcional.
 	 * Mecanismo de selección de datos : Se obtiene mediante generación automática de datos:
 	 * 		nombre : un String cualquiera para el nombre del Archivador Simple,
 	 * 		espacio : un integer mayor que 0 cualquiera para el espacio del Archivador.

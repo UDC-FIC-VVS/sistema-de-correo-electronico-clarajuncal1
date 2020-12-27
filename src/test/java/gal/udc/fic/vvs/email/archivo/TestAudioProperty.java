@@ -12,7 +12,7 @@ public class TestAudioProperty {
 	/*
 	 * Descripción : Obtener el nombre de un Audio  
 	 * Nivel : Prueba de Unidad.
-	 * Categoría : Prueba dinámica de caja negra, positiva.
+	 * Categoría : Prueba dinámica de caja negra, positiva, funcional.
 	 * Mecanismo de selección de datos : Se obtiene mediante generación automática de datos:
 	 * 		nombre : un String cualquiera para el nombre del Audio,
 	 * 		contenido : un String cualquiera para el contenido del Audio.
@@ -27,7 +27,7 @@ public class TestAudioProperty {
 	/*
 	 * Descripción : Obtener el contenido de un Audio  
 	 * Nivel : Prueba de Unidad.
-	 * Categoría : Prueba dinámica de caja negra, positiva.
+	 * Categoría : Prueba dinámica de caja negra, positiva, funcional.
 	 * Mecanismo de selección de datos : Se obtiene mediante generación automática de datos:
 	 * 		nombre : un String cualquiera para el nombre del Audio,
 	 * 		contenido : un String cualquiera para el contenido del Audio.
@@ -42,7 +42,7 @@ public class TestAudioProperty {
 	/*
 	 * Descripción : Obtener el tamaño de un Audio  
 	 * Nivel : Prueba de Unidad.
-	 * Categoría : Prueba dinámica de caja negra, positiva.
+	 * Categoría : Prueba dinámica de caja negra, positiva, funcional.
 	 * Mecanismo de selección de datos : Se obtiene mediante generación automática de datos:
 	 * 		nombre : un String cualquiera para el nombre del Audio,
 	 * 		contenido : un String cualquiera para el contenido del Audio.
@@ -58,7 +58,7 @@ public class TestAudioProperty {
 	/*
 	 * Descripción : Obtener la Visualización de un Audio  
 	 * Nivel : Prueba de Unidad.
-	 * Categoría : Prueba dinámica de caja negra, positiva.
+	 * Categoría : Prueba dinámica de caja negra, positiva, funcional.
 	 * Mecanismo de selección de datos : Se obtiene mediante generación automática de datos:
 	 * 		nombre : un String cualquiera para el nombre del Audio,
 	 * 		contenido : un String cualquiera para el contenido del Audio.

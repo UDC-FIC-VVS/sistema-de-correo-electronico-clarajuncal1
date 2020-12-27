@@ -15,7 +15,7 @@ public class TestCabeceraProperty {
 	/*
 	 * Descripción : Obtener el tamaño de una cabecera.  
 	 * Nivel : Prueba de Unidad.
-	 * Categoría : Prueba dinámica de caja negra, positiva.
+	 * Categoría : Prueba dinámica de caja negra, positiva, funcional.
 	 * Mecanismo de selección de datos : Se obtiene mediante generación automática de datos:
 	 * 		nombreMensaje : un String cualquiera para el nombre del mensaje de la Cabecera,
 	 * 		contenidoMensaje : un String cualquiera para el contenido del mensaje de la Cabecera,
@@ -36,7 +36,7 @@ public class TestCabeceraProperty {
 	/*
 	 * Descripción : Obtener la visualización de una cabecera.  
 	 * Nivel : Prueba de Unidad.
-	 * Categoría : Prueba dinámica de caja negra, positiva.
+	 * Categoría : Prueba dinámica de caja negra, positiva, funcional.
 	 * Mecanismo de selección de datos : Se obtiene mediante generación automática de datos:
 	 * 		nombreMensaje : un String cualquiera para el nombre del mensaje de la Cabecera,
 	 * 		contenidoMensaje : un String cualquiera para el contenido del mensaje de la Cabecera,
@@ -56,7 +56,7 @@ public class TestCabeceraProperty {
 	/*
 	 * Descripción : Obtener el tamaño de una cabecera.  
 	 * Nivel : Prueba de Unidad.
-	 * Categoría : Prueba dinámica de caja negra, positiva.
+	 * Categoría : Prueba dinámica de caja negra, positiva, funcional.
 	 * Mecanismo de selección de datos : Se obtiene mediante generación automática de datos:
 	 * 		nombreMensaje : un String cualquiera para el nombre del mensaje de la Cabecera,
 	 * 		contenidoMensaje : un String cualquiera para el contenido del mensaje de la Cabecera,
@@ -76,7 +76,7 @@ public class TestCabeceraProperty {
 	/*
 	 * Descripción : Establecer y obtener los leidos de una Cabecera.  
 	 * Nivel : Prueba de Unidad.
-	 * Categoría : Prueba dinámica de caja negra, positiva.
+	 * Categoría : Prueba dinámica de caja negra, positiva, funcional.
 	 * Mecanismo de selección de datos : Se obtiene mediante generación automática de datos:
 	 * 		nombreMensaje : un String cualquiera para el nombre del mensaje de la Cabecera,
 	 * 		contenidoMensaje : un String cualquiera para el contenido del mensaje de la Cabecera,
@@ -99,7 +99,7 @@ public class TestCabeceraProperty {
 	
 	/*
 	 * Descripción : Obtener el icono de una Cabecera.  
-	 * Nivel : Prueba de Unidad.
+	 * Nivel : Prueba dinámica de caja negra, positiva, funcional.
 	 * Categoría : Prueba dinámica de caja negra, positiva.
 	 * Mecanismo de selección de datos : Se obtiene mediante generación automática de datos:
 	 * 		nombreMensaje : un String cualquiera para el nombre del mensaje de la Cabecera,
@@ -120,7 +120,7 @@ public class TestCabeceraProperty {
 	/*
 	 * Descripción : Obtener la previsualización de una Cabecera.  
 	 * Nivel : Prueba de Unidad.
-	 * Categoría : Prueba dinámica de caja negra, positiva.
+	 * Categoría : Prueba dinámica de caja negra, positiva, funcional.
 	 * Mecanismo de selección de datos : Se obtiene mediante generación automática de datos:
 	 * 		nombreMensaje : un String cualquiera para el nombre del mensaje de la Cabecera,
 	 * 		contenidoMensaje : un String cualquiera para el contenido del mensaje de la Cabecera,
@@ -140,7 +140,7 @@ public class TestCabeceraProperty {
 	/*
 	 * Descripción : Obtener el padre de una cabecera despues de haber sido añadida a una carpeta.  
 	 * Nivel : Prueba de Unidad.
-	 * Categoría : Prueba dinámica de caja negra, positiva.
+	 * Categoría : Prueba dinámica de caja negra, positiva, funcional.
 	 * Mecanismo de selección de datos : Se obtiene mediante generación automática de datos:
 	 * 		nombreMensaje : un String cualquiera para el nombre del mensaje de la Cabecera,
 	 * 		contenidoMensaje : un String cualquiera para el contenido del mensaje de la Cabecera,

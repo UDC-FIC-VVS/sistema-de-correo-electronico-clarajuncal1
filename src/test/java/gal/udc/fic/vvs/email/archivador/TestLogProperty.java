@@ -20,7 +20,7 @@ public class TestLogProperty {
 	/*
 	 * Descripción : Almacenar un correo correctamente en un Log.
 	 * Nivel : Prueba de Unidad
-	 * Categoría : Prueba dinámica de caja negra, positiva
+	 * Categoría : Prueba dinámica de caja negra, positiva, funcional.
 	 * Mecanismo de selección de datos : Se obtiene mediante generación automática de datos:
 	 * 		nombreLog : un String cualquiera para el nombre del Log,
 	 * 		espacio : un integer mayor que 0 cualquiera para el espacio del Log,
@@ -44,7 +44,7 @@ public class TestLogProperty {
 	/*
 	 * Descripción : Obtener el nombre de un Log. 
 	 * Nivel : Prueba de Unidad.
-	 * Categoría : Prueba dinámica de caja negra, positiva.
+	 * Categoría : Prueba dinámica de caja negra, positiva, funcional.
 	 * Mecanismo de selección de datos : Se obtiene mediante generación automática de datos:
 	 * 		nombreLog : un String cualquiera para el nombre del Log,
 	 * 		espacio : un integer mayor que 0 cualquiera para el espacio del Log.
@@ -63,7 +63,7 @@ public class TestLogProperty {
 	/*
 	 * Descripción : Establecer y Obtener el delegado de un archivador.
 	 * Nivel : Prueba de Unidad.
-	 * Categoría : Prueba dinámica de caja negra, positiva
+	 * Categoría : Prueba dinámica de caja negra, positiva, funcional.
 	 * Mecanismo de selección de datos : Se obtiene mediante generación automática de datos:
 	 * 		nombreLog : un String cualquiera para el nombre del Log,
 	 * 		espacio : un integer mayor que 0 cualquiera para el espacio del Log.
@@ -87,7 +87,7 @@ public class TestLogProperty {
 	/*
 	 * Descripción : Obtener el espacio total de un Log.
 	 * Nivel : Prueba de Unidad.
-	 * Categoría : Prueba dinámica de caja negra, positiva.
+	 * Categoría : Prueba dinámica de caja negra, positiva, funcional.
 	 * Mecanismo de selección de datos : Se obtiene mediante generación automática de datos:
 	 * 		nombreLog : un String cualquiera para el nombre del Log,
 	 * 		espacio : un integer mayor que 0 cualquiera para el espacio del Log.
@@ -106,7 +106,7 @@ public class TestLogProperty {
 	/*
 	 * Descripción : Obtener el espacio disponible de un archivador después de haber almacenado un correo.
 	 * Nivel : Prueba de Unidad
-	 * Categoría : Prueba dinámica de caja negra, positiva.
+	 * Categoría : Prueba dinámica de caja negra, positiva, funcional.
 	 * Mecanismo de selección de datos : Se obtiene mediante generación automática de datos:
 	 * 		nombreLog : un String cualquiera para el nombre del Log,
 	 * 		espacio : un integer mayor que 0 cualquiera para el espacio del Log.

@@ -16,7 +16,7 @@ public class TestAdjuntoProperty {
 	/*
 	 * Descripción : Obtener el tamaño de un Adjunto.  
 	 * Nivel : Prueba de Unidad.
-	 * Categoría : Prueba dinámica de caja negra, positiva.
+	 * Categoría : Prueba dinámica de caja negra, positiva, funcional.
 	 * Mecanismo de selección de datos : Se obtiene mediante generación automática de datos:
 	 * 		nombreMensaje : un String cualquiera para el nombre del mensaje del Adjunto,
 	 * 		contenidoMensaje : un String cualquiera para el contenido del mensaje del Adjunto,
@@ -37,7 +37,7 @@ public class TestAdjuntoProperty {
 	/*
 	 * Descripción : Obtener la visualización de un Adjunto.  
 	 * Nivel : Prueba de Unidad.
-	 * Categoría : Prueba dinámica de caja negra, positiva.
+	 * Categoría : Prueba dinámica de caja negra, positiva, funcional.
 	 * Mecanismo de selección de datos : Se obtiene mediante generación automática de datos:
 	 * 		nombreMensaje : un String cualquiera para el nombre del mensaje del Adjunto,
 	 * 		contenidoMensaje : un String cualquiera para el contenido del mensaje del Adjunto,
@@ -58,7 +58,7 @@ public class TestAdjuntoProperty {
 	/*
 	 * Descripción : Obtener la visualización de un Adjunto.  
 	 * Nivel : Prueba de Unidad.
-	 * Categoría : Prueba dinámica de caja negra, positiva.
+	 * Categoría : Prueba dinámica de caja negra, positiva, funcional.
 	 * Mecanismo de selección de datos : Se obtiene mediante generación automática de datos:
 	 * 		nombreMensaje : un String cualquiera para el nombre del mensaje del Adjunto,
 	 * 		contenidoMensaje : un String cualquiera para el contenido del mensaje del Adjunto,
@@ -79,7 +79,7 @@ public class TestAdjuntoProperty {
 	/*
 	 * Descripción : Obtener la ruta de un Adjunto.  
 	 * Nivel : Prueba de Unidad.
-	 * Categoría : Prueba dinámica de caja negra, positiva.
+	 * Categoría : Prueba dinámica de caja negra, positiva, funcional.
 	 * Mecanismo de selección de datos : Se obtiene mediante generación automática de datos:
 	 * 		nombreMensaje : un String cualquiera para el nombre del mensaje del Adjunto,
 	 * 		contenidoMensaje : un String cualquiera para el contenido del mensaje del Adjunto,
@@ -100,7 +100,7 @@ public class TestAdjuntoProperty {
 	/*
 	 * Descripción : Establecer y Obtener si un Adjunto ha sido leido.  
 	 * Nivel : Prueba de Unidad.
-	 * Categoría : Prueba dinámica de caja negra, positiva.
+	 * Categoría : Prueba dinámica de caja negra, positiva, funcional.
 	 * Mecanismo de selección de datos : Se obtiene mediante generación automática de datos:
 	 * 		nombreMensaje : un String cualquiera para el nombre del mensaje del Adjunto,
 	 * 		contenidoMensaje : un String cualquiera para el contenido del mensaje del Adjunto,
@@ -125,7 +125,7 @@ public class TestAdjuntoProperty {
 	/*
 	 * Descripción : Obtener el icono de un Adjunto.  
 	 * Nivel : Prueba de Unidad.
-	 * Categoría : Prueba dinámica de caja negra, positiva.
+	 * Categoría : Prueba dinámica de caja negra, positiva, funcional.
 	 * Mecanismo de selección de datos : Se obtiene mediante generación automática de datos:
 	 * 		nombreMensaje : un String cualquiera para el nombre del mensaje del Adjunto,
 	 * 		contenidoMensaje : un String cualquiera para el contenido del mensaje del Adjunto,
@@ -146,7 +146,7 @@ public class TestAdjuntoProperty {
 	/*
 	 * Descripción : Obtener el padre de un Adjunto.  
 	 * Nivel : Prueba de Unidad.
-	 * Categoría : Prueba dinámica de caja negra, positiva.
+	 * Categoría : Prueba dinámica de caja negra, positiva, funcional.
 	 * Mecanismo de selección de datos : Se obtiene mediante generación automática de datos:
 	 * 		nombreMensaje : un String cualquiera para el nombre del mensaje del Adjunto,
 	 * 		contenidoMensaje : un String cualquiera para el contenido del mensaje del Adjunto,
@@ -172,7 +172,7 @@ public class TestAdjuntoProperty {
 	/*
 	 * Descripción : Búsqueda de un Adjunto.  
 	 * Nivel : Prueba de Unidad.
-	 * Categoría : Prueba dinámica de caja negra, positiva.
+	 * Categoría : Prueba dinámica de caja negra, positiva, funcional.
 	 * Mecanismo de selección de datos : Se obtiene mediante generación automática de datos:
 	 * 		nombreMensaje : un String cualquiera para el nombre del mensaje del Adjunto,
 	 * 		contenidoMensaje : un String cualquiera para el contenido del mensaje del Adjunto,

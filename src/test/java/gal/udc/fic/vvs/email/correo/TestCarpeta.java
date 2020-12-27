@@ -185,4 +185,15 @@ public class TestCarpeta {
 		
 		assertEquals(correo, carpeta.obtenerHijo(0));
 	}
+	
+	@Test
+	public void obtenerRuta() throws OperacionInvalida {
+		
+		Carpeta carpeta = new Carpeta(nombre);
+		Correo correo = new Mensaje(texto);
+		
+		carpeta.añadir(correo);
+		
+		assertEquals(nombre + " (" +  carpeta.obtenerNoLeidos() + ")", carpeta.obtenerRuta());
+	}
 }

@@ -15,7 +15,7 @@ public class TestMensajeProperty {
 	/*
 	 * Descripción : Establecer y Obtener si un Mensaje ha sido leido.  
 	 * Nivel : Prueba de Unidad.
-	 * Categoría : Prueba dinámica de caja negra, positiva.
+	 * Categoría : Prueba dinámica de caja negra, positiva, funcional.
 	 * Mecanismo de selección de datos : Se obtiene mediante generación automática de datos:
 	 * 		nombre : un String cualquiera para el nombre del Mensaje,
 	 * 		contenido : un String cualquiera para el contenido del Mensaje.
@@ -35,7 +35,7 @@ public class TestMensajeProperty {
 	/*
 	 * Descripción : Obtener el tamaño de un Mensaje.  
 	 * Nivel : Prueba de Unidad.
-	 * Categoría : Prueba dinámica de caja negra, positiva.
+	 * Categoría : Prueba dinámica de caja negra, positiva, funcional.
 	 * Mecanismo de selección de datos : Se obtiene mediante generación automática de datos:
 	 * 		nombre : un String cualquiera para el nombre del Mensaje,
 	 * 		contenido : un String cualquiera para el contenido del Mensaje.
@@ -52,7 +52,7 @@ public class TestMensajeProperty {
 	/*
 	 * Descripción : Obtener el icono de un Mensaje.  
 	 * Nivel : Prueba de Unidad.
-	 * Categoría : Prueba dinámica de caja negra, positiva.
+	 * Categoría : Prueba dinámica de caja negra, positiva, funcional.
 	 * Mecanismo de selección de datos : Se obtiene mediante generación automática de datos:
 	 * 		nombre : un String cualquiera para el nombre del Mensaje,
 	 * 		contenido : un String cualquiera para el contenido del Mensaje.
@@ -72,7 +72,7 @@ public class TestMensajeProperty {
 	/*
 	 * Descripción : Obtener la visualización de un Mensaje.  
 	 * Nivel : Prueba de Unidad.
-	 * Categoría : Prueba dinámica de caja negra, positiva.
+	 * Categoría : Prueba dinámica de caja negra, positiva, funcional.
 	 * Mecanismo de selección de datos : Se obtiene mediante generación automática de datos:
 	 * 		nombre : un String cualquiera para el nombre del Mensaje,
 	 * 		contenido : un String cualquiera para el contenido del Mensaje.
