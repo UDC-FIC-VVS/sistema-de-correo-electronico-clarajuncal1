@@ -1,14 +1,14 @@
 package gal.udc.fic.vvs.email.archivo;
 
+import static org.junit.Assert.assertEquals;
+
 import com.pholser.junit.quickcheck.Property;
 import com.pholser.junit.quickcheck.runner.JUnitQuickcheck;
 import org.junit.runner.RunWith;
 
-import static org.junit.Assert.assertEquals;
-
 @RunWith(JUnitQuickcheck.class)
 public class TestAudioProperty {
-  /*
+  /**
   * Descripción : Obtener el nombre de un Audio  
   * Nivel : Prueba de Unidad.
   * Categoría : Prueba dinámica de caja negra, positiva, funcional.
@@ -23,7 +23,7 @@ public class TestAudioProperty {
     assertEquals(nombre, audio.obtenerNombre());
   }
 
-  /*
+  /**
   * Descripción : Obtener el contenido de un Audio  
   * Nivel : Prueba de Unidad.
   * Categoría : Prueba dinámica de caja negra, positiva, funcional.
@@ -38,7 +38,7 @@ public class TestAudioProperty {
     assertEquals(contenido, audio.obtenerContenido());
   }
 
-  /*
+  /**
   * Descripción : Obtener el tamaño de un Audio  
   * Nivel : Prueba de Unidad.
   * Categoría : Prueba dinámica de caja negra, positiva, funcional.
@@ -54,7 +54,7 @@ public class TestAudioProperty {
 
   }
 
-  /*
+  /**
   * Descripción : Obtener la Visualización de un Audio  
   * Nivel : Prueba de Unidad.
   * Categoría : Prueba dinámica de caja negra, positiva, funcional.
@@ -63,7 +63,7 @@ public class TestAudioProperty {
   *     contenido : un String cualquiera para el contenido del Audio.
   */
   @Property 
-  public void obtenerVisualizacionProperty(String nombre, String contenido) {
+  public void obtenerPrevisualizacionProperty(String nombre, String contenido) {
     Audio audio = new Audio(nombre, contenido);
 
     assertEquals(audio.obtenerPreVisualizacion(), 

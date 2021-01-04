@@ -1,10 +1,10 @@
 package gal.udc.fic.vvs.email.archivador;
 
+import static org.junit.Assert.assertEquals;
+
 import gal.udc.fic.vvs.email.archivo.Texto;
 import gal.udc.fic.vvs.email.correo.Correo;
 import gal.udc.fic.vvs.email.correo.Mensaje;
-
-import static org.junit.Assert.assertEquals;
 import org.junit.Test;
 
 public class DelegadoTest {
@@ -14,8 +14,10 @@ public class DelegadoTest {
   private String contenido = "Texto de prueba";
   Texto texto = new Texto(nombreTexto, contenido);
 
-  /*
-  * Comprobar que el correo se almacena correctamente
+  /**
+  * Descripción : Almacenar un correo correctamente en un delegado.
+  * Nivel : Prueba de Unidad.
+  * Categoría : Prueba dinámica de caja negra, positiva, funcional.
   */
   @Test
   public void almacenarCorreo() {
@@ -29,9 +31,11 @@ public class DelegadoTest {
     assertEquals(true, delegado.almacenarCorreo(correo));
   }
 
-  /*
-   * Comprobar que se establecen y se obtienen correctamente los delegados
-   */
+  /**
+  * Descripción : Establecer y Obtener el delegado de un archivador.
+  * Nivel : Prueba de Unidad.
+  * Categoría : Prueba dinámica de caja negra, positiva, funcional.
+  */
   @Test
   public void establecerYObtenerDelegado() {
 
@@ -43,5 +47,53 @@ public class DelegadoTest {
     delegado.establecerDelegado(archivador);
 
     assertEquals(delegado.obtenerDelegado(), archivador);
+  }
+  
+  /**
+  * Descripción : Obtener el nombre de un delegado.
+  * Nivel : Prueba de Unidad.
+  * Categoría : Prueba dinámica de caja negra, positiva, funcional.
+  */
+  @Test
+   public void obtenerNombreProperty() {
+
+    ArchivadorSimple archivador = new ArchivadorSimple(nombreArchivador, espacioArchivador);
+    Delegado delegado = new Delegado(archivador);
+
+    assertEquals(archivador.obtenerNombre(), delegado.obtenerNombre());
+  }
+   
+  /**
+  * Descripción : Obtener el espacio total de un delegado una vez se crea
+  * Nivel  : Prueba de Unidad
+  * Categoría : Prueba dinámica de caja negra, positiva, funcional.
+  */
+  @Test
+  public void obtenerEspacioTotalProperty() {
+
+    ArchivadorSimple archivador = new ArchivadorSimple(nombreArchivador, espacioArchivador);
+    Delegado delegado = new Delegado(archivador);
+
+    assertEquals(archivador.obtenerEspacioTotal(), delegado.obtenerEspacioTotal());
+  }
+
+  /**
+ * Descripción : Obtener el espacio disponible después de haber almacenado un correo.
+ * Nivel : Prueba de Unidad
+ * Categoría : Prueba dinámica de caja negra, positiva, funcional.
+ */
+  @Test
+  public void obtenerEspacioDisponibleProperty() {
+
+    ArchivadorSimple archivador = new ArchivadorSimple(nombreArchivador, espacioArchivador);
+    Delegado delegado = new Delegado(archivador);
+
+    Correo correo = new Mensaje(new Texto(nombreTexto, contenido));
+
+    delegado.almacenarCorreo(correo);
+
+    assertEquals(archivador.obtenerEspacioTotal() - correo.obtenerTamaño(), 
+                  delegado.obtenerEspacioDisponible());
+
   }
 }

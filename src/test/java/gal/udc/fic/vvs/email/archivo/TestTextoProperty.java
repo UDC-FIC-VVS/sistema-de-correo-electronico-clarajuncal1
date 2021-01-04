@@ -1,13 +1,15 @@
 package gal.udc.fic.vvs.email.archivo;
 
+import static org.junit.Assert.assertEquals;
+
 import com.pholser.junit.quickcheck.Property;
 import com.pholser.junit.quickcheck.runner.JUnitQuickcheck;
 import org.junit.runner.RunWith;
-import static org.junit.Assert.assertEquals;
+
 
 @RunWith(JUnitQuickcheck.class)
 public class TestTextoProperty {
-  /*
+  /**
   * Descripción : Obtener el nombre de un Texto  
   * Nivel : Prueba de Unidad.
   * Categoría : Prueba dinámica de caja negra, positiva, funcional.
@@ -22,7 +24,7 @@ public class TestTextoProperty {
     assertEquals(nombre, texto.obtenerNombre());
   }
 
-  /*
+  /**
   * Descripción : Obtener el contenido de un Texto  
   * Nivel : Prueba de Unidad.
   * Categoría : Prueba dinámica de caja negra, positiva, funcional.
@@ -37,7 +39,7 @@ public class TestTextoProperty {
     assertEquals(contenido, texto.obtenerContenido());
   }
 
-  /*
+  /**
   * Descripción : Obtener el tamaño de un Texto  
   * Nivel : Prueba de Unidad.
   * Categoría : Prueba dinámica de caja negra, positiva, funcional.
@@ -53,7 +55,7 @@ public class TestTextoProperty {
 
   }
 
-  /*
+  /**
   * Descripción : Obtener la previsualización de un Texto  
   * Nivel : Prueba de Unidad.
   * Categoría : Prueba dinámica de caja negra, positiva, funcional.
@@ -62,7 +64,7 @@ public class TestTextoProperty {
   *     contenido : un String cualquiera para el contenido del Texto.
   */
   @Property 
-  public void obtenerVisualizacionProperty(String nombre, String contenido) {
+  public void obtenerPrevisualizacionProperty(String nombre, String contenido) {
     Texto texto = new Texto(nombre, contenido);
 
     assertEquals(texto.obtenerPreVisualizacion(), 

@@ -1,13 +1,14 @@
 package gal.udc.fic.vvs.email.archivo;
 
+import static org.junit.Assert.assertEquals;
+
 import com.pholser.junit.quickcheck.Property;
 import com.pholser.junit.quickcheck.runner.JUnitQuickcheck;
 import org.junit.runner.RunWith;
-import static org.junit.Assert.assertEquals;
 
 @RunWith(JUnitQuickcheck.class)
 public class TestImagenProperty {
-  /*
+  /**
   * Descripción : Obtener el nombre de una Imagen  
   * Nivel : Prueba de Unidad.
   * Categoría : Prueba dinámica de caja negra, positiva, funcional.
@@ -22,7 +23,7 @@ public class TestImagenProperty {
     assertEquals(nombre, imagen.obtenerNombre());
   }
 
-  /*
+  /**
   * Descripción : Obtener el contenido de una Imagen  
   * Nivel : Prueba de Unidad.
   * Categoría : Prueba dinámica de caja negra, positiva, funcional.
@@ -37,7 +38,7 @@ public class TestImagenProperty {
     assertEquals(contenido, audio.obtenerContenido());
   }
 
-  /*
+  /**
   * Descripción : Obtener el tamaño de una Imagen  
   * Nivel : Prueba de Unidad.
   * Categoría : Prueba dinámica de caja negra, positiva, funcional.
@@ -53,7 +54,7 @@ public class TestImagenProperty {
  
   }
 
-  /*
+  /**
   * Descripción : Obtener la Visualización de una Imagen  
   * Nivel : Prueba de Unidad.
   * Categoría : Prueba dinámica de caja negra, positiva, funcional.
@@ -62,7 +63,7 @@ public class TestImagenProperty {
   *     contenido : un String cualquiera para el contenido de la Imagen.
   */
   @Property
-  public void obtenerVisualizacionProperty(String nombre, String contenido) {
+  public void obtenerPrevisualizacionProperty(String nombre, String contenido) {
     Imagen imagen = new Imagen(nombre, contenido);
 
     assertEquals(imagen.obtenerPreVisualizacion(), 

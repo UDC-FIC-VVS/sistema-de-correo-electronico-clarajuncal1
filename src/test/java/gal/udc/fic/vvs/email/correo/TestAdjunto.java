@@ -10,10 +10,13 @@ public class TestAdjunto {
   Mensaje mensajePrueba = new Mensaje(texto);
   Archivo archivoPrueba = new Texto("ArchivoPrueba", "Archivo de la prueba");
 
-  /*
-  * Obtener el tamaño de un adjunto, para ello se crea un adjunto formado por un mensaje 
-  * y un archivo y se comprueba que el tamaño del mensaje mas el mensaje de un archivo coincide
-  * con el tamaño del adjunto
+  /**
+  * Descripción : Obtener el tamaño de un Adjunto, para ello se comprueba 
+  *  que el tamaño del mensaje mas el mensaje de un archivo coincide
+  *  con el tamaño del adjunto.  
+  * Nivel : Prueba de Unidad.
+  * Categoría : Prueba dinámica de caja negra, positiva, funcional.
+  * @Param Adjunto : adjunto formado por un mensaje y un archivo.
   */
   @Test 
   public void obtenerTamano() {
@@ -25,11 +28,13 @@ public class TestAdjunto {
 
   }
 
-  /*
-  * Obtener la visualizacion de un adjunto, para ello se crea un adjunto formado por un mensaje 
-  * y un archivo y se comprueba que la visualizacion del mensaje 
-  * mas la previsualizacion de un archivo coincide
-  * con la visualizacion del adjunto
+  /**
+  * Descripción : Obtener la visualización de un Adjunto, para ello se comprueba que la 
+  *  visualizacion del mensaje mas la previsualizacion de un archivo coincide
+  *  con la visualizacion del adjunto  
+  * Nivel : Prueba de Unidad.
+  * Categoría : Prueba dinámica de caja negra, positiva, funcional.
+  * @Param Adjunto : adjunto formado por un mensaje y un archivo.
   */
   @Test
   public void obtenerVisualizacion() {
@@ -40,9 +45,12 @@ public class TestAdjunto {
                   + "\n\nAdxunto: " + archivoPrueba.obtenerPreVisualizacion());
   }
 
-  /*
-  * Obtener la ruta de un ajunto, para ello se crea un adjunto formado por un mensaje y un archivo
-  * y se comprueba que el contenido del mensaje coincide con la ruta del adjunto
+  /**
+  * Descripción : Obtener la ruta de un Adjunto, para ello se comprueba que el contenido 
+  *  del mensaje coincide con la ruta del adjunto.  
+  * Nivel : Prueba de Unidad.
+  * Categoría : Prueba dinámica de caja negra, positiva, funcional.
+  * @Param Adjunto : adjunto formado por un mensaje y un archivo.
   */
   @Test
   public void obtenerRuta() {
@@ -52,12 +60,13 @@ public class TestAdjunto {
     assertEquals("Realizando una prueba...", adjunto.obtenerRuta());
   }
 
-  /*
-  * Obtener la ruta de un ajunto dentro de una carpeta, 
-  * para ello se crea un adjunto formado por un mensaje y un archivo
-  * y una carpeta y se añade el adjunto a la carpeta y se comprueba 
-  * que la ruta del padre mas la previsualizacion del adjunto
-  * coincidan con la ruta del adjunto
+  /**
+  * Descripción : Obtener la ruta de un Adjunto, para ello se comprueba que la ruta del padre
+  *  mas la previsualizacion del adjunto coincidan con la ruta del adjunto 
+  * Nivel : Prueba de Unidad.
+  * Categoría : Prueba dinámica de caja negra, positiva, funcional.
+  * @Param Adjunto : adjunto formado por un mensaje y un archivo.
+  * @Param Carpeta : Carpeta a la que se añade el adjunto
   */
   @Test
   public void obtenerRutaConPadre() throws OperacionInvalida {
@@ -70,10 +79,11 @@ public class TestAdjunto {
     assertEquals("carpeta (1) > Realizando una prueba...", adjunto.obtenerRuta());
   }
 
-  /*
-  * Se crea un adjunto y se comprueba que no ha sido leido, 
-  * posteriormente se establece dicho adjunto como leido y
-  * se comprueba que ahora sí ha sido leido y en consecuencia no obtenemos ningún no leido
+  /**
+  * Descripción : Establecer y Obtener si un Adjunto ha sido leido.  
+  * Nivel : Prueba de Unidad.
+  * Categoría : Prueba dinámica de caja negra, positiva, funcional.
+  * @Param Adjunto : adjunto formado por un mensaje y un archivo.
   */
   @Test
   public void establecerYObtenerLeido() {
@@ -87,11 +97,12 @@ public class TestAdjunto {
     assertEquals(0, adjunto.obtenerNoLeidos());
   }
 
-  /*
-   * Obtener Icono, para ello se crea un adjunto y se comprueba 
-   * que el icono de dicho adjunto corresponde
-   * con el icono de un mensaje nuevo
-   */
+  /**
+  * Descripción : Obtener el icono de un Adjunto.  
+  * Nivel : Prueba de Unidad.
+  * Categoría : Prueba dinámica de caja negra, positiva, funcional.
+  * @Param Adjunto : adjunto formado por un mensaje y un archivo.
+  */
   @Test
   public void obtenerIcono() {
 
@@ -100,10 +111,13 @@ public class TestAdjunto {
     assertEquals(Adjunto.ICONO_NUEVO_MENSAJE, adjunto.obtenerIcono());
   }
 
-  /*
-  * Obtener Previsualizacion, para ello se crea un adjunto 
-  * y se comprueba que el contenido del mensaje de dicho 
-  * adjunto corresponde con la previsualizacion del adjunto
+  /**
+  * Descripción : Obtener la visualización de un Adjunto, para ello se comprueba que
+  *  el contenido del mensaje e dicho adjunto corresponde con la previsualizacion 
+  *  del adjunto
+  * Nivel : Prueba de Unidad.
+  * Categoría : Prueba dinámica de caja negra, positiva, funcional.
+  * @Param Adjunto : adjunto formado por un mensaje y un archivo.
   */
   @Test
   public void obtenerPrevisualizacion() {
@@ -113,9 +127,13 @@ public class TestAdjunto {
     assertEquals("Realizando una prueba...", adjunto.obtenerPreVisualizacion());
   }
 
-  /*
-  * Explorar un adjunto, se crea un adjunto y se intenta explorar pero no es posible
-  * puesto que es una operación invalida y se produce la excepcion OperacionInvaldia.class
+  /**
+  * Descripción : Explorar un Adjunto.  
+  * Nivel : Prueba de Unidad.
+  * Categoría : Prueba dinámica de caja negra, positiva, funcional.
+  * @Param Adjunto : adjunto formado por un mensaje y un archivo.
+  * @Exception OperacionInvalida : Devuelve una excepción, pues un
+  *  adjunto no puede realizar dicha operación.
   */
   @Test(expected = OperacionInvalida.class)
   public void explorar() throws OperacionInvalida {
@@ -125,9 +143,13 @@ public class TestAdjunto {
     adjunto.explorar();
   }
 
-  /*
-  * Añadir , se intenta añadir un nuevo mensaje al correo con Adjunto pero no es posible puesto que
-  * es una operación invalida y en consecuencia se devuelve la excepción OperaciónInvalida.class
+  /**
+  * Descripción : Añadir un Adjunto.  
+  * Nivel : Prueba de Unidad.
+  * Categoría : Prueba dinámica de caja negra, positiva, funcional.
+  * @Param Adjunto : adjunto formado por un mensaje y un archivo.
+  * @Exception OperacionInvalida : Devuelve una excepción, pues un
+  *  adjunto no puede realizar dicha operación.
   */
   @Test(expected = OperacionInvalida.class)
   public void anadir() throws OperacionInvalida {
@@ -139,9 +161,13 @@ public class TestAdjunto {
 
   }
 
-  /*
-  * Eliminar , se intenta eliminar un mensaje en el correo con Adjunto pero no es posible puesto que
-  * es una operación invalida y en consecuencia se devuelve la excepción OperaciónInvalida.class
+  /**
+  * Descripción : Eliminar un Adjunto.  
+  * Nivel : Prueba de Unidad.
+  * Categoría : Prueba dinámica de caja negra, positiva, funcional.
+  * @Param Adjunto : adjunto formado por un mensaje y un archivo.
+  * @Exception OperacionInvalida : Devuelve una excepción, pues un
+  *  adjunto no puede realizar dicha operación.
   */
   @Test(expected = OperacionInvalida.class)
   public void eliminar() throws OperacionInvalida {
@@ -152,9 +178,13 @@ public class TestAdjunto {
     adjunto.eliminar(correo);
   }
 
-  /*
-  * ObtenerHijo , se intenta obtener el hijo de un  correo con Adjunto pero no es posible puesto que
-  * es una operación invalida y en consecuencia se devuelve la excepción OperaciónInvalida.class
+  /**
+  * Descripción : Obtener el hijo de un Adjunto.  
+  * Nivel : Prueba de Unidad.
+  * Categoría : Prueba dinámica de caja negra, positiva, funcional.
+  * @Param Adjunto : adjunto formado por un mensaje y un archivo.
+  * @Exception OperacionInvalida : Devuelve una excepción, pues un
+  *    adjunto no puede realizar dicha operación.
   */
   @Test(expected = OperacionInvalida.class)
   public void obtenerHijo() throws OperacionInvalida {
@@ -164,10 +194,12 @@ public class TestAdjunto {
     adjunto.obtenerHijo(0);
   }
 
-  /*
-  * ObtenerPadre, para ello creamos un correo con adjunto y una carpeta 
-  * y se establece que dicha carpeta
-  * es padre del correo adjunto y comprobamos que la carpeta coincida con el padre del adjunto
+  /**
+  * Descripción : Obtener el padre de un Adjunto.  
+  * Nivel : Prueba de Unidad.
+  * Categoría : Prueba dinámica de caja negra, positiva, funcional.
+  * @Param Adjunto : adjunto formado por un mensaje y un archivo.
+  * @Param Carpeta : Se crea una carpeta donde se va a añadir el adjunto.
   */
   @Test
   public void obtenerPadre() throws OperacionInvalida {
@@ -180,10 +212,11 @@ public class TestAdjunto {
     assertEquals(carpeta, adjunto.obtenerPadre());
   }
 
-  /*
-  * Buscar adjunto, para ello se crea un correo adjunto 
-  * formado por un mensaje y un archivo y una carpeta
-  * y añadimos el adjunto a dicha carpeta y comprobamos que el correo contiene el mensaje
+  /**
+  * Descripción : Búsqueda de un Adjunto.  
+  * Nivel : Prueba de Unidad.
+  * Categoría : Prueba dinámica de caja negra, positiva, funcional.
+  * @Param Adjunto : adjunto formado por un mensaje y un archivo.
   */
   @Test
   public void buscar() throws OperacionInvalida {

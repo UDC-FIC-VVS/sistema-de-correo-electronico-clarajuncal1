@@ -1,19 +1,20 @@
 package gal.udc.fic.vvs.email.archivador;
 
+import static org.hamcrest.Matchers.greaterThan;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
+import static org.junit.Assume.assumeThat;
+
 import com.pholser.junit.quickcheck.Property;
 import com.pholser.junit.quickcheck.runner.JUnitQuickcheck;
 import gal.udc.fic.vvs.email.archivo.Texto;
 import gal.udc.fic.vvs.email.correo.Correo;
 import gal.udc.fic.vvs.email.correo.Mensaje;
-import static org.hamcrest.Matchers.greaterThan;
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertTrue;
-import static org.junit.Assume.assumeThat;
 import org.junit.runner.RunWith;
 
 @RunWith(JUnitQuickcheck.class)
 public class TestLogProperty {
-  /*
+  /**
   * Descripción : Almacenar un correo correctamente en un Log.
   * Nivel : Prueba de Unidad
   * Categoría : Prueba dinámica de caja negra, positiva, funcional.
@@ -37,7 +38,7 @@ public class TestLogProperty {
     assertTrue(log.almacenarCorreo(correo));
   }
 
-  /*
+  /**
   * Descripción : Obtener el nombre de un Log. 
   * Nivel : Prueba de Unidad.
   * Categoría : Prueba dinámica de caja negra, positiva, funcional.
@@ -56,7 +57,7 @@ public class TestLogProperty {
     assertEquals(nombreLog, log.obtenerNombre());
   }
 
-  /*
+  /**
   * Descripción : Establecer y Obtener el delegado de un archivador.
   * Nivel : Prueba de Unidad.
   * Categoría : Prueba dinámica de caja negra, positiva, funcional.
@@ -80,7 +81,7 @@ public class TestLogProperty {
     assertEquals(archivador, log.obtenerDelegado());
   }
 
-  /*
+  /**
   * Descripción : Obtener el espacio total de un Log.
   * Nivel : Prueba de Unidad.
   * Categoría : Prueba dinámica de caja negra, positiva, funcional.
@@ -99,7 +100,7 @@ public class TestLogProperty {
     assertEquals(espacio, log.obtenerEspacioTotal());
   }
 
-  /*
+  /**
   * Descripción : Obtener el espacio disponible después de haber almacenado un correo.
   * Nivel : Prueba de Unidad
   * Categoría : Prueba dinámica de caja negra, positiva, funcional.

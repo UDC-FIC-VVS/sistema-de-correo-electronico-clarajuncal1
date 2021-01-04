@@ -1,18 +1,20 @@
 package gal.udc.fic.vvs.email.archivador;
 
+import static org.hamcrest.Matchers.greaterThan;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
+import static org.junit.Assume.assumeThat;
+
 import com.pholser.junit.quickcheck.Property;
 import com.pholser.junit.quickcheck.runner.JUnitQuickcheck;
 import gal.udc.fic.vvs.email.archivo.Texto;
 import gal.udc.fic.vvs.email.correo.Correo;
 import gal.udc.fic.vvs.email.correo.Mensaje;
-import static org.hamcrest.Matchers.greaterThan;
-import static org.junit.Assert.*;
-import static org.junit.Assume.assumeThat;
 import org.junit.runner.RunWith;
 
 @RunWith(JUnitQuickcheck.class)
 public class TestDelegadoProperty {
-  /*
+  /**
   * Descripción : Almacenar un correo correctamente en un delegado.
   * Nivel : Prueba de Unidad.
   * Categoría : Prueba dinámica de caja negra, positiva, funcional.
@@ -36,7 +38,7 @@ public class TestDelegadoProperty {
     assertTrue(delegado.almacenarCorreo(correo));
   }
 
-  /*
+  /**
   * Descripción : Establecer y Obtener el delegado de un archivador.
   * Nivel : Prueba de Unidad.
   * Categoría : Prueba dinámica de caja negra, positiva, funcional.
@@ -59,7 +61,7 @@ public class TestDelegadoProperty {
     assertEquals(archivador, delegado.obtenerDelegado());
   }
 
-  /*
+  /**
   * Descripción : Obtener el nombre de un delegado.
   * Nivel : Prueba de Unidad.
   * Categoría : Prueba dinámica de caja negra, positiva, funcional.
@@ -78,7 +80,7 @@ public class TestDelegadoProperty {
     assertEquals(nombreDelegado, delegado.obtenerNombre());
   }
 
-  /*
+  /**
   * Descripción : Obtener el espacio total de un delegado una vez se crea
   * Nivel  : Prueba de Unidad
   * Categoría : Prueba dinámica de caja negra, positiva, funcional.
@@ -97,7 +99,7 @@ public class TestDelegadoProperty {
     assertEquals(espacio, delegado.obtenerEspacioTotal());
   }
 
-  /*
+  /**
   * Descripción : Obtener el espacio disponible después de haber almacenado un correo.
   * Nivel : Prueba de Unidad
   * Categoría : Prueba dinámica de caja negra, positiva, funcional.

@@ -8,6 +8,11 @@ public class TestTexto {
   private String nombrePrueba = "TextoPrueba";
   private String contenido = "Texto de Prueba";
   
+  /**
+  * Descripción : Obtener el nombre de un Texto  
+  * Nivel : Prueba de Unidad.
+  * Categoría : Prueba dinámica de caja negra, positiva, funcional.
+  */
   @Test
   public void obtenerNombre() {
 
@@ -19,6 +24,11 @@ public class TestTexto {
 
   }
 
+  /**
+  * Descripción : Obtener el contenido de un Texto  
+  * Nivel : Prueba de Unidad.
+  * Categoría : Prueba dinámica de caja negra, positiva, funcional.
+  */
   @Test
   public void obtenerContenido() {
 
@@ -29,6 +39,11 @@ public class TestTexto {
     assertEquals(texto.obtenerContenido(), contenido);
   }
 
+  /**
+  * Descripción : Obtener el tamaño de un Texto  
+  * Nivel : Prueba de Unidad.
+  * Categoría : Prueba dinámica de caja negra, positiva, funcional.
+  */
   @Test
   public void obtenerTamano() {
 
@@ -39,6 +54,11 @@ public class TestTexto {
     assertEquals(texto.obtenerTamaño(), contenido.length());
   }
 
+  /**
+  * Descripción : Obtener la previsualizacion de un Texto  
+  * Nivel : Prueba de Unidad.
+  * Categoría : Prueba dinámica de caja negra, positiva, funcional.
+  */
   @Test
   public void obtenerPrevisualizacion() {
 

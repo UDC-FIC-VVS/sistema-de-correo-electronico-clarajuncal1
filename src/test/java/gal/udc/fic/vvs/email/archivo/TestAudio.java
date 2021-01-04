@@ -8,8 +8,11 @@ public class TestAudio {
   private String nombrePrueba = "AudioPrueba";
   private String contenido = "Audio de Prueba";
 
-  /*
-  * Obtener el nombre de un audio
+
+  /**
+  * Descripción : Obtener el nombre de un Audio  
+  * Nivel : Prueba de Unidad.
+  * Categoría : Prueba dinámica de caja negra, positiva, funcional.
   */
   @Test
   public void obtenerNombre() {
@@ -22,8 +25,10 @@ public class TestAudio {
 
   }
 
-  /*
-  * Obtener el contenido de un audio
+  /**
+  * Descripción : Obtener el contenido de un Audio  
+  * Nivel : Prueba de Unidad.
+  * Categoría : Prueba dinámica de caja negra, positiva, funcional.
   */
   @Test
   public void obtenerContenido() {
@@ -35,8 +40,10 @@ public class TestAudio {
     assertEquals(audio.obtenerContenido(), contenido);
   }
 
-  /*
-  * Obtener el tamaño de un audio
+  /**
+  * Descripción : Obtener el tamaño de un Audio  
+  * Nivel : Prueba de Unidad.
+  * Categoría : Prueba dinámica de caja negra, positiva, funcional.
   */
   @Test
   public void obtenerTamano() {
@@ -48,8 +55,10 @@ public class TestAudio {
     assertEquals(audio.obtenerTamaño(), contenido.length());
   }
 
-  /*
-  * Obtener la previsualizacion de un audio
+  /**
+  * Descripción : Obtener la Visualización de un Audio  
+  * Nivel : Prueba de Unidad.
+  * Categoría : Prueba dinámica de caja negra, positiva, funcional.
   */
   @Test
   public void obtenerPrevisualizacion() {

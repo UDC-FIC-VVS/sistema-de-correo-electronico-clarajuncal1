@@ -13,8 +13,10 @@ public class ArchivadorSimpleTest {
   private String nombrePrueba = "NombreDePrueba";
   private int espacioPrueba = 100;
 
-  /*
-   * Obtener el nombre de un archivador
+  /**
+   * Descripción : Obtener el nombre de un archivador  
+   * Nivel : Prueba de Unidad.
+   * Categoría : Prueba dinámica de caja negra, positiva, funcional.
    */
   @Test
   public void obtenerNombreTest() {
@@ -25,9 +27,11 @@ public class ArchivadorSimpleTest {
     assertEquals(nombrePrueba, archivadorSimple.obtenerNombre());
   }
 
-  /*
-   * Comprobar que el correo se almacena correctamente
-   */
+  /**
+  * Descripción : Almacenar un correo en un Archivador Simple correctamente  
+  * Nivel : Prueba de Unidad.
+  * Categoría : Prueba dinámica de caja negra, positiva, funcional.
+  */
   @Test
   public void almacenarCorreoCorrectamente() {
 
@@ -42,9 +46,11 @@ public class ArchivadorSimpleTest {
     assertTrue(archivadorSimple.almacenarCorreo(mensajePrueba));
   }
   
-  /*
-   * Probar el caso en el que el correo no se almacene correctamente
-   */
+  /**
+  * Descripción : Almacenar un correo en un Archivador Simple incorrectamente  
+  * Nivel : Prueba de Unidad.
+  * Categoría : Prueba dinámica de caja negra, positiva, funcional.
+  */
   @Test
   public void almacenarCorreoIncorrectamente() {
 
@@ -57,8 +63,10 @@ public class ArchivadorSimpleTest {
     assertFalse(archivadorSimple.almacenarCorreo(mensajePrueba));
   }
 
-  /*
-  * Comprobar el espacio total del Archivador
+  /**
+  * Descripción : Obtener el nombre de un archivador  
+  * Nivel : Prueba de Unidad.
+  * Categoría : Prueba dinámica de caja negra, positiva, funcional.
   */
   @Test
   public void obtenerEspacioTotalTest() {
@@ -69,9 +77,11 @@ public class ArchivadorSimpleTest {
     assertEquals(espacioPrueba, archivadorSimple.obtenerEspacioTotal());
   }
 
-  /*
-   * Comprobar el disponible del Archivador después de haber añadido Correo
-   */
+  /**
+   * Descripción : Obtener el espacio disponible después de almacenar un correo. 
+   * Nivel : Prueba de Unidad.
+   * Categoría : Prueba dinámica de caja negra, positiva, funcional.
+   */ 
   @Test
   public void obtenerEspacioDisponibleTest() {
     //Se crea un nuevo archivador, introduciendo un nombre y un espacio
@@ -84,8 +94,10 @@ public class ArchivadorSimpleTest {
     assertEquals(79, archivadorSimple.obtenerEspacioDisponible());
   }
 
-  /*
-   * Comprobar que despues de establecer el delegado no se obtiene
+  /**
+   *  Descripción : Establecer y obtener el delegado de un archivador.
+   *  Nivel : Prueba de Unidad.
+   *  Categoría : Prueba dinámica de caja negra, positiva, funcional.
    */
   @Test
   public void establecerYObtenerDelegado() {

@@ -8,8 +8,10 @@ public class TestImagen {
   private String nombrePrueba = "ImagenPrueba";
   private String contenido = "Imagen de Prueba";
 
-  /*
-  * Obtener el nombre de una imagen
+  /**
+  * Descripción : Obtener el nombre de una Imagen  
+  * Nivel : Prueba de Unidad.
+  * Categoría : Prueba dinámica de caja negra, positiva, funcional.
   */
   @Test
   public void obtenerNombre() {
@@ -22,8 +24,10 @@ public class TestImagen {
 
   }
 
-  /*
-  * Obtener el contenido de una imagen
+  /**
+  * Descripción : Obtener el contenido de una Imagen  
+  * Nivel : Prueba de Unidad.
+  * Categoría : Prueba dinámica de caja negra, positiva, funcional.
   */
   @Test
   public void obtenerContenido() {
@@ -35,8 +39,10 @@ public class TestImagen {
     assertEquals(imagen.obtenerContenido(), contenido);
   }
 
-  /*
-  * Obtener el tamaño de una imagen
+  /**
+  * Descripción : Obtener el tamaño de una Imagen  
+  * Nivel : Prueba de Unidad.
+  * Categoría : Prueba dinámica de caja negra, positiva, funcional.
   */
   @Test
   public void obtenerTamano() {
@@ -48,8 +54,10 @@ public class TestImagen {
     assertEquals(imagen.obtenerTamaño(), contenido.length());
   }
 
-  /*
-  * Obtener la previsualizacion de una imagen
+  /**
+  * Descripción : Obtener la Visualización de una Imagen  
+  * Nivel : Prueba de Unidad.
+  * Categoría : Prueba dinámica de caja negra, positiva, funcional.
   */
   @Test
   public void obtenerPrevisualizacion() {
