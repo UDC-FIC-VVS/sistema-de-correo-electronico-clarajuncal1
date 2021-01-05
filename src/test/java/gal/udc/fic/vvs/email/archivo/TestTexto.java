@@ -4,7 +4,9 @@ import static org.junit.Assert.assertEquals;
 
 import org.junit.Test;
 
-public class TestTexto {
+import gal.udc.fic.vvs.email.TestJETM;
+
+public class TestTexto extends TestJETM{
   private String nombrePrueba = "TextoPrueba";
   private String contenido = "Texto de Prueba";
   
@@ -60,7 +62,7 @@ public class TestTexto {
   * Categoría : Prueba dinámica de caja negra, positiva, funcional.
   */
   @Test
-  public void obtenerPrevisualizacionTextoTest() {
+  public void obtenerPrevisualizacionTextosTest() {
 
     //Se crea un nuevo texto introduciendo un nombre y un contenido
     Texto texto = new Texto(nombrePrueba, contenido);

@@ -2,11 +2,12 @@ package gal.udc.fic.vvs.email.correo;
 
 import static org.junit.Assert.assertEquals;
 
+import gal.udc.fic.vvs.email.TestJETM;
 import gal.udc.fic.vvs.email.archivo.Texto;
 import org.junit.Test;
 
 
-public class TestCarpeta {
+public class TestCarpeta extends TestJETM{
   private String nombre = "nombreCarpeta";
   private String nombreTexto = "TextoPrueba";
   private String contenido = "Texto de prueba";

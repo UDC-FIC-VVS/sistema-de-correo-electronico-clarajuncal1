@@ -1,5 +1,6 @@
 package gal.udc.fic.vvs.email.archivador;
 
+import gal.udc.fic.vvs.email.TestJETM;
 import gal.udc.fic.vvs.email.archivo.Texto;
 import gal.udc.fic.vvs.email.correo.Mensaje;
 
@@ -11,7 +12,7 @@ import org.junit.Test;
 import etm.core.configuration.EtmManager;
 import etm.core.monitor.EtmMonitor;
 
-public class ArchivadorSimpleTest {
+public class ArchivadorSimpleTest extends TestJETM{
   
   private String nombrePrueba = "NombreDePrueba";
   private int espacioPrueba = 100;

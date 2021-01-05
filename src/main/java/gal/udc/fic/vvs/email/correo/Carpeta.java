@@ -9,7 +9,7 @@ import etm.core.monitor.EtmPoint;
 import java.util.Collection;
 
 public class Carpeta extends CorreoAbstracto {
-	
+	private static EtmMonitor etmMonitor = EtmManager.getEtmMonitor();
     public Carpeta(String nombre) {
         _nombre = nombre;
         _hijos = new Vector();
@@ -34,16 +34,20 @@ public class Carpeta extends CorreoAbstracto {
     }
 
     public int obtenerTamaño() {
+    	EtmPoint point = etmMonitor.createPoint("Carpeta:obtenerTamaño");
         int resultado = 0;
         try {
             for (int i = 0; i < _hijos.size(); i++) {
                 resultado += obtenerHijo(i).obtenerTamaño();
             }
+            point.collect();
         } catch (OperacionInvalida e) { }
         return resultado;
     }
 
     public Integer obtenerIcono() {
+    	EtmPoint point = etmMonitor.createPoint("Carpeta:obtenerIcono");
+        point.collect();
         return Correo.ICONO_CARPETA;
     }
 
@@ -74,12 +78,15 @@ public class Carpeta extends CorreoAbstracto {
     }
 
     public void añadir(Correo correo) throws OperacionInvalida {
+    //EtmPoint point = etmMonitor.createPoint("Carpeta:añadir");
     	
 	if (correo.obtenerPadre() != null) {
 	    correo.obtenerPadre().eliminar(correo);
 	}
         ((CorreoAbstracto) correo).establecerPadre(this);
         _hijos.addElement(correo);
+        
+        //point.collect();
     }
 
     public void eliminar(Correo correo) throws OperacionInvalida {

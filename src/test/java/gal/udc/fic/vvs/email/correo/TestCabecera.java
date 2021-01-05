@@ -125,7 +125,7 @@ public class TestCabecera {
   * @Param Cabecera : cabecera formada por un mensaje, un nombre y su valor.
   */
   @Test
-  public void obtenerPrevisualizacion() {
+  public void obtenerPrevisualizacionCabeceraTest() {
 
     Cabecera cabecera = new Cabecera(mensaje, nombreCabecera, valorCabecera);
 

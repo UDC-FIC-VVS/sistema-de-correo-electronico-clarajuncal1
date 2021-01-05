@@ -9,6 +9,8 @@ import gal.udc.fic.vvs.email.correo.Correo;
 
 public class ArchivadorSimple implements Archivador {
 	
+	private static EtmMonitor monitor = EtmManager.getEtmMonitor();
+	
     public ArchivadorSimple(String nombre, int espacio) {
         _nombre = nombre;
         _espacioTotal = espacio;
@@ -17,6 +19,8 @@ public class ArchivadorSimple implements Archivador {
     }
 
     public String obtenerNombre() {
+    	EtmPoint point = monitor.createPoint("ArchivadorSimple:obtenerNombre");
+    	point.collect();
         return _nombre;
     }
 

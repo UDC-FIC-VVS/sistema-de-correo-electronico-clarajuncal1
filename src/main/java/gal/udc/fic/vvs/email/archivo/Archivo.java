@@ -1,13 +1,19 @@
 package gal.udc.fic.vvs.email.archivo;
 
-public abstract class Archivo {
+import etm.core.configuration.EtmManager;
+import etm.core.monitor.EtmMonitor;
+import etm.core.monitor.EtmPoint;
 
+public abstract class Archivo {
+	private static EtmMonitor etmMonitor = EtmManager.getEtmMonitor();
     public Archivo(String nombre, String contenido) {
         _nombre = nombre;
         _contenido = contenido;
     }
 
     public String obtenerNombre() {
+    	EtmPoint point = etmMonitor.createPoint("Texto:obtenerNombre");
+    	point.collect();
         return _nombre;
     }
 
