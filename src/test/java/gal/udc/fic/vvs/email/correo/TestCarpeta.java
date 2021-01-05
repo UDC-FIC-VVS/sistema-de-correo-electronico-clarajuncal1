@@ -88,7 +88,7 @@ public class TestCarpeta {
   * @throws OperacionInvalida
   */
   @Test
-  public void obtenerPreVisualizacion() throws OperacionInvalida {
+  public void obtenerPreVisualizacionCarpetaTest() throws OperacionInvalida {
 
     Carpeta carpeta = new Carpeta(nombre);
     Mensaje mensaje = new Mensaje(new Texto("TextoPrueba", "Texto de prueba"));

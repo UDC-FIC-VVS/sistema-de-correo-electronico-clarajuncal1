@@ -123,7 +123,7 @@ public class TestCarpetaLimitadaProperty {
   * @throws OperacionInvalida
   */
   @Property
-  public void obtenerPrevisualizacion(String nombreCarpeta,
+  public void obtenerPrevisualizacionCarpetaLimitadaPropertyTest(String nombreCarpeta,
                int tamanoCarpeta, String nombreCorreo, String contenidoCorreo) 
                     throws OperacionInvalida {
 

@@ -97,7 +97,7 @@ public class TestMensajeProperty {
   *    contenido : un String cualquiera para el contenido del Mensaje.
   */
   @Property
-  public void obtenerPrevisualizacionPropertyTest(String nombre, String contenido) {
+  public void obtenerPrevisualizacionMensajePropertyTest(String nombre, String contenido) {
 	  
 	  Mensaje mensaje = new Mensaje(new Texto(nombre, contenido));
 	  assertEquals(mensaje.obtenerVisualizacion().substring(0, Math.min(mensaje.obtenerVisualizacion().length(), 32)) + "...", mensaje.obtenerPreVisualizacion()); 

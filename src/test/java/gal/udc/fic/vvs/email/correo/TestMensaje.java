@@ -96,7 +96,7 @@ public class TestMensaje {
   * @Param Mensaje : mensaje formado por un texto
   */
   @Test
-  public void obtenerPrevisualizacion() {
+  public void obtenerPrevisualizacionMensajeTest() {
 
     Texto texto = new Texto("textoPrueba", "Texto de prueba");
     Mensaje mensaje = new Mensaje(texto);

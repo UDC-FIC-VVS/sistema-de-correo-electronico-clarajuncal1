@@ -60,7 +60,7 @@ public class TestTexto {
   * Categoría : Prueba dinámica de caja negra, positiva, funcional.
   */
   @Test
-  public void obtenerPrevisualizacion() {
+  public void obtenerPrevisualizacionTextoTest() {
 
     //Se crea un nuevo texto introduciendo un nombre y un contenido
     Texto texto = new Texto(nombrePrueba, contenido);

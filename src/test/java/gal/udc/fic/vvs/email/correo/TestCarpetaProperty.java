@@ -74,7 +74,7 @@ public class TestCarpetaProperty {
   * @throws OperacionInvalida
   */
   @Property
-  public void obtenerPrevisualizacion(String nombreCarpeta, String nombreTexto, 
+  public void obtenerPrevisualizacionCarpetaTest(String nombreCarpeta, String nombreTexto, 
                String contenidoTexto) throws OperacionInvalida {
 
     Carpeta carpeta = new Carpeta(nombreCarpeta);

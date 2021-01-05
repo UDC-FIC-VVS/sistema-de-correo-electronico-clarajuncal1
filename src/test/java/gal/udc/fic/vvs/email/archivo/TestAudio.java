@@ -61,7 +61,7 @@ public class TestAudio {
   * Categoría : Prueba dinámica de caja negra, positiva, funcional.
   */
   @Test
-  public void obtenerPrevisualizacion() {
+  public void obtenerPrevisualizacionTest() {
 
     //Se crea un nuevo audio introduciendo un nombre y un contenido
     Audio audio = new Audio(nombrePrueba, contenido);

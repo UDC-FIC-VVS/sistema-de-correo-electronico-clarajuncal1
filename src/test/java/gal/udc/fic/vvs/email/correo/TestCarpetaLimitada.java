@@ -80,7 +80,7 @@ public class TestCarpetaLimitada {
   * Categoría : Prueba dinámica de caja negra, positiva, funcional.
   */
   @Test
-  public void obtenerPrevisualizacion() {
+  public void obtenerPrevisualizacionCarpetaLimitadaTest() {
 
     CarpetaLimitada carpetaLimitada = new CarpetaLimitada(carpeta, tamano);
 

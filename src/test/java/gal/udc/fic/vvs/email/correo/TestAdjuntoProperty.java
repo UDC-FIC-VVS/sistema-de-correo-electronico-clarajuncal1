@@ -66,7 +66,7 @@ public class TestAdjuntoProperty {
   *     contenidoArchivo : un String cualquiera para el contenido del Archivo del adjunto.
   */
   @Property
-  public void obtenerPreVisualizacionPropertyTest(String nombreMensaje, String contenidoMensaje,
+  public void obtenerPreVisualizacionAdjuntoPropertyTest(String nombreMensaje, String contenidoMensaje,
                String nombreArchivo, String contenidoArchivo) {
 
     Mensaje mensaje = new Mensaje(new Texto(nombreMensaje, contenidoMensaje));

@@ -60,7 +60,7 @@ public class TestImagen {
   * Categoría : Prueba dinámica de caja negra, positiva, funcional.
   */
   @Test
-  public void obtenerPrevisualizacion() {
+  public void obtenerPrevisualizacionTest() {
 
     //Se crea una nueva imagen introduciendo un nombre y un contenido
     Imagen imagen = new Imagen(nombrePrueba, contenido);

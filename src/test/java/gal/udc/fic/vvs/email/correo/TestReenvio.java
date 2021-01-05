@@ -51,7 +51,7 @@ public class TestReenvio {
   * @Param Reenvio : reenvio formada por un mensaje y un correo.
   */
   @Test
-  public void obtenerPrevisualizacion() {
+  public void obtenerPrevisualizacionReenvioTest() {
 
     Reenvio reenvio = new Reenvio(mensajeAbstracto, correo);
     

@@ -132,7 +132,7 @@ public class TestCabeceraProperty {
   *    valor : un String cualquiera para el valor de la Cabecera.
   */
   @Property
-  public void obtenerPrevisualizacionPropertyTest(String nombreMensaje,
+  public void obtenerPrevisualizacionCabeceraPropertyTest(String nombreMensaje,
                String contenidoMensaje, String nombreCabecera, String valor) {
 
     Mensaje mensaje = new Mensaje(new Texto(nombreMensaje, contenidoMensaje));

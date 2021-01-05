@@ -120,7 +120,7 @@ public class TestAdjunto {
   * @Param Adjunto : adjunto formado por un mensaje y un archivo.
   */
   @Test
-  public void obtenerPrevisualizacion() {
+  public void obtenerPreVisualizacionAdjuntoTest() {
   
     Adjunto adjunto = new Adjunto(mensajePrueba, archivoPrueba);
 
