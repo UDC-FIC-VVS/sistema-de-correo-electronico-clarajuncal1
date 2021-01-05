@@ -47,6 +47,7 @@ public class TestCarpetaLimitada {
   * Descripción : Obtener los leidos de una carpeta limitada.  
   * Nivel : Prueba de Unidad.
   * Categoría : Prueba dinámica de caja negra, positiva, funcional.
+  * @throws OperacionInvalida
   */
   @Test
   public void obtenerNoLeido() throws OperacionInvalida {
@@ -116,6 +117,7 @@ public class TestCarpetaLimitada {
   * Descripción : Explorar que una carpeta limitada contenga correos.  
   * Nivel : Prueba de Unidad.
   * Categoría : Prueba dinámica de caja negra, positiva, funcional.
+  * @throws OperacionInvalida
   */
   @Test
   public void explorar() throws OperacionInvalida {
@@ -129,6 +131,7 @@ public class TestCarpetaLimitada {
   * Descripción : Añadir un correo a una carpeta limitada.  
   * Nivel : Prueba de Unidad.
   * Categoría : Prueba dinámica de caja negra, positiva, funcional.
+  * @throws OperacionInvalida
   */
   @Test
   public void anadir() throws OperacionInvalida {
@@ -137,12 +140,15 @@ public class TestCarpetaLimitada {
     Correo correo = new Mensaje(texto);
 
     carpetaLimitada.añadir(correo);
+    
+    assertEquals(correo.obtenerTamaño(), carpetaLimitada.obtenerTamaño());
   }
 
   /**
   * Descripción : Eliminar un correo de una carpeta limitada.  
   * Nivel : Prueba de Unidad.
   * Categoría : Prueba dinámica de caja negra, positiva, funcional.
+  * @throws OperacionInvalida
   */
   @Test
   public void eliminar() throws OperacionInvalida {
@@ -151,6 +157,8 @@ public class TestCarpetaLimitada {
     Correo correo = new Mensaje(texto);
 
     carpetaLimitada.eliminar(correo);
+    
+    assertEquals(0, carpetaLimitada.obtenerTamaño());
   }
 
   /**
@@ -158,6 +166,7 @@ public class TestCarpetaLimitada {
   *  de un correo previamente añadido.  
   * Nivel : Prueba de Unidad.
   * Categoría : Prueba dinámica de caja negra, positiva, funcional.
+  * @throws OperacionInvalida
   */
   @Test
   public void obtenerHijo() throws OperacionInvalida {

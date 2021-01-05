@@ -29,6 +29,7 @@ public class TestCarpetaLimitadaProperty {
   *      que se almacena en la carpetaLimitada,
   *    contenidoCorreo : un String cualquiera para el contenido del correo 
   *      que se almacena en la carpetaLimitada.
+  * @throws OperacionInvalida
   */
   @Property
   public void establecerYObtenerLeidoPropertyTest(String nombreCarpeta, 
@@ -63,6 +64,7 @@ public class TestCarpetaLimitadaProperty {
   *      que se almacena en la carpetaLimitada,
   *    contenidoCorreo : un String cualquiera para el contenido del correo 
   *      que se almacena en la carpetaLimitada.
+  * @throws OperacionInvalida
   */
   @Property
   public void obtenerIconoPropertyTest(String nombreCarpeta, 
@@ -87,6 +89,7 @@ public class TestCarpetaLimitadaProperty {
   *     que se almacena en la carpetaLimitada,
   *    contenidoCorreo : un String cualquiera para el contenido del correo 
   *     que se almacena en la carpetaLimitada.
+  * @throws OperacionInvalida
   */
   @Property
   public void obtenerTamanoPropertyTest(String nombreCarpeta, 
@@ -117,6 +120,7 @@ public class TestCarpetaLimitadaProperty {
   *     que se almacena en la carpetaLimitada,
   *    contenidoCorreo : un String cualquiera para el contenido del correo 
   *     que se almacena en la carpetaLimitada.
+  * @throws OperacionInvalida
   */
   @Property
   public void obtenerPrevisualizacion(String nombreCarpeta,
@@ -147,6 +151,7 @@ public class TestCarpetaLimitadaProperty {
   *     que se almacena en la carpetaLimitada,
   *    contenidoCorreo : un String cualquiera para el contenido del correo 
   *     que se almacena en la carpetaLimitada.
+  * @throws OperacionInvalida
   */
   @Property
   public void obtenerVisualizacion(String nombreCarpeta, int tamanoCarpeta, 
@@ -176,6 +181,7 @@ public class TestCarpetaLimitadaProperty {
   *     que se almacena en la carpetaLimitada,
   *    contenidoCorreo : un String cualquiera para el contenido del correo 
   *     que se almacena en la carpetaLimitada.
+  * @throws OperacionInvalida
   */
   @Property
   public void obtenerRuta(String nombreCarpeta, int tamanoCarpeta, 
@@ -201,6 +207,7 @@ public class TestCarpetaLimitadaProperty {
   *     que se almacena en la carpetaLimitada,
   *    contenidoCorreo : un String cualquiera para el contenido del correo 
   *     que se almacena en la carpetaLimitada.
+  * @throws OperacionInvalida
   */
   @Property
   public void explorarPropertyTest(String nombreCarpeta, int tamanoCarpeta, 
@@ -229,6 +236,7 @@ public class TestCarpetaLimitadaProperty {
   *     que se almacena en la carpetaLimitada,
   *    contenidoCorreo : un String cualquiera para el contenido del correo 
   *     que se almacena en la carpetaLimitada.
+  * @throws OperacionInvalida
   */
   @Property
   public void anadirPropertyTest(String nombreCarpeta, String nombreCorreo, 
@@ -257,6 +265,7 @@ public class TestCarpetaLimitadaProperty {
   *     que se almacena en la carpetaLimitada,
   *    contenidoCorreo : un String cualquiera para el contenido del correo 
   *      que se almacena en la carpetaLimitada.
+  * @throws OperacionInvalida
   */
   @Property
   public void eliminarPropertyTest(String nombreCarpeta, String nombreCorreo, 
@@ -290,6 +299,7 @@ public class TestCarpetaLimitadaProperty {
   *     que se almacena en la carpetaLimitada,
   *    contenidoCorreo : un String cualquiera para el contenido del correo 
   *      que se almacena en la carpetaLimitada.
+  * @throws OperacionInvalida
   */
   @Property
   public void obtenerHijoPropertyTest(String nombreCarpeta, int tamanoCarpeta, 
@@ -318,6 +328,7 @@ public class TestCarpetaLimitadaProperty {
   *     que se almacena en la carpetaLimitada,
   *    contenidoCorreo : un String cualquiera para el contenido del correo 
   *     que se almacena en la carpetaLimitada.
+  * @throws OperacionInvalida
   */
   @Property
   public void obtenerPadrePropertyTest(String nombreCarpeta, int tamanoCarpeta, 
@@ -343,6 +354,7 @@ public class TestCarpetaLimitadaProperty {
   *    nombreCarpeta : un String cualquiera para el nombre de la carpetaLimitada,
   *    tamañoCarpeta : un integer mayor que 0 cualquiera para el tamaño de la carpetaLimitadas,
   *    busqueda : un String cualquiera para la busqueda en la carpetaLimitada.
+  * @throws OperacionInvalida
   */
   @Property
   public void buscarPropertyTest(String nombreCarpeta, int tamanoCarpeta, 

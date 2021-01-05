@@ -1,10 +1,6 @@
 package gal.udc.fic.vvs.email.correo;
 
-import static org.hamcrest.Matchers.greaterThan;
 import static org.junit.Assert.assertEquals;
-import static org.junit.Assume.assumeThat;
-
-import java.util.Vector;
 
 import com.pholser.junit.quickcheck.Property;
 import com.pholser.junit.quickcheck.runner.JUnitQuickcheck;
@@ -161,6 +157,7 @@ public class TestAdjuntoProperty {
   *     nombreArchivo : un String cualquiera para el nombre del archivo del Adjunto,
   *     contenidoArchivo : un String cualquiera para el contenido del Archivo del adjunto,
   *     nombreCarpeta : un String cualquiera para el nombre de la carpeta que contiene el Adjunto.
+  * @Throws OperacionInvalida
   */
   @Property
   public void obtenerPadrePropertyTest(String nombreMensaje, String contenidoMensaje,

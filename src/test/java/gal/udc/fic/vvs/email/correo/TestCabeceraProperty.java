@@ -1,10 +1,6 @@
 package gal.udc.fic.vvs.email.correo;
 
-import static org.hamcrest.Matchers.greaterThan;
 import static org.junit.Assert.assertEquals;
-import static org.junit.Assume.assumeThat;
-
-import java.util.Vector;
 
 import com.pholser.junit.quickcheck.Property;
 import com.pholser.junit.quickcheck.runner.JUnitQuickcheck;
@@ -157,6 +153,7 @@ public class TestCabeceraProperty {
   *    valor : un String cualquiera para el valor de la Cabecera,
   *    nombreCarpeta : un String cualquiera para el nombre de la 
   *    carpeta donde se va a almacenar la Cabecera.
+  * @throws OperacionInvalida
   */
   @Property
   public void obtenerPadre(String nombreMensaje, String contenidoMensaje, 

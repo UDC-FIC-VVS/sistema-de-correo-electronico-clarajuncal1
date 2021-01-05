@@ -14,11 +14,12 @@ public class TestCarpetaProperty {
   /**
   * Descripción : Establecer y obtener el leido de una Carpeta.  
   * Nivel : Prueba de Unidad.
-  * Categoría : Prueba dinámica de caja negra, positiva.
+  * Categoría : Prueba dinámica de caja negra, positiva, funcional.
   * Mecanismo de selección de datos : Se obtiene mediante generación automática de datos:
   *    nombreTexto : un String cualquiera para el nombre del mensaje del Correo,
   *    contenidoTexto : un String cualquiera para el contenido del mensaje del Correo,
   *    nombreCarpeta : un String cualquiera para el nombre de la Carpeta.
+  * @throws OperacionInvalida
   */
   @Property
   public void establecerYObtenerNoLeidoPropertyTest(String nombreCarpeta, 
@@ -40,11 +41,12 @@ public class TestCarpetaProperty {
   /**
   * Descripción : Obtener el tamaño de una Carpeta.  
   * Nivel : Prueba de Unidad.
-  * Categoría : Prueba dinámica de caja negra, positiva.
+  * Categoría : Prueba dinámica de caja negra, positiva, funcional.
   * Mecanismo de selección de datos : Se obtiene mediante generación automática de datos:
   *    nombreTexto : un String cualquiera para el nombre del mensaje del Correo,
   *    contenidoTexto : un String cualquiera para el contenido del mensaje del Correo,
   *    nombreCarpeta : un String cualquiera para el nombre de la Carpeta.
+  * @throws OperacionInvalida
   */
   @Property
   public void obtenerTamano(String nombreCarpeta, String nombreTexto,
@@ -64,11 +66,12 @@ public class TestCarpetaProperty {
   /**
   * Descripción : Obtener la previsualizacion de una Carpeta.  
   * Nivel : Prueba de Unidad.
-  * Categoría : Prueba dinámica de caja negra, positiva.
+  * Categoría : Prueba dinámica de caja negra, positiva, funcional.
   * Mecanismo de selección de datos : Se obtiene mediante generación automática de datos:
   *    nombreTexto : un String cualquiera para el nombre del mensaje del Correo,
   *    contenidoTexto : un String cualquiera para el contenido del mensaje del Correo,
   *    nombreCarpeta : un String cualquiera para el nombre de la Carpeta.
+  * @throws OperacionInvalida
   */
   @Property
   public void obtenerPrevisualizacion(String nombreCarpeta, String nombreTexto, 
@@ -86,11 +89,12 @@ public class TestCarpetaProperty {
   /**
   * Descripción : Obtener el icono de una Carpeta.  
   * Nivel : Prueba de Unidad.
-  * Categoría : Prueba dinámica de caja negra, positiva.
+  * Categoría : Prueba dinámica de caja negra, positiva, funcional.
   * Mecanismo de selección de datos : Se obtiene mediante generación automática de datos:
   *    nombreTexto : un String cualquiera para el nombre del mensaje del Correo,
   *    contenidoTexto : un String cualquiera para el contenido del mensaje del Correo,
   *    nombreCarpeta : un String cualquiera para el nombre de la Carpeta.
+  * @throws OperacionInvalida
   */
   @Property
   public void obtenerIconoPropertyTest(String nombreCarpeta, String nombreTexto,
@@ -107,11 +111,12 @@ public class TestCarpetaProperty {
   /**
   * Descripción : Obtener la visualizacion de una Carpeta.  
   * Nivel : Prueba de Unidad.
-  * Categoría : Prueba dinámica de caja negra, positiva.
+  * Categoría : Prueba dinámica de caja negra, positiva, funcional.
   * Mecanismo de selección de datos : Se obtiene mediante generación automática de datos:
   *    nombreTexto : un String cualquiera para el nombre del mensaje del Correo,
   *    contenidoTexto : un String cualquiera para el contenido del mensaje del Correo,
   *    nombreCarpeta : un String cualquiera para el nombre de la Carpeta.
+  * @throws OperacionInvalida
   */
   @Property
   public void obtenerVisualizacionPropertyTest(String nombreCarpeta, 
@@ -130,11 +135,12 @@ public class TestCarpetaProperty {
   /**
   * Descripción : Añadir un correo a una Carpeta.  
   * Nivel : Prueba de Unidad.
-  * Categoría : Prueba dinámica de caja negra, positiva.
+  * Categoría : Prueba dinámica de caja negra, positiva, funcional.
   * Mecanismo de selección de datos : Se obtiene mediante generación automática de datos:
   *    nombreTexto : un String cualquiera para el nombre del mensaje del Correo,
   *    contenidoTexto : un String cualquiera para el contenido del mensaje del Correo,
   *    nombreCarpeta : un String cualquiera para el nombre de la Carpeta.
+  * @throws OperacionInvalida
   */
   @Property
   public void anadirPropertyTest(String nombreCarpeta, String nombreTexto, 
@@ -151,11 +157,12 @@ public class TestCarpetaProperty {
   /**
   * Descripción : Eliminar el correo de una Carpeta.  
   * Nivel : Prueba de Unidad.
-  * Categoría : Prueba dinámica de caja negra, positiva.
+  * Categoría : Prueba dinámica de caja negra, positiva, funcional.
   * Mecanismo de selección de datos : Se obtiene mediante generación automática de datos:
   *    nombreTexto : un String cualquiera para el nombre del mensaje del Correo,
   *    contenidoTexto : un String cualquiera para el contenido del mensaje del Correo,
   *    nombreCarpeta : un String cualquiera para el nombre de la Carpeta.
+  * @throws OperacionInvalida
   */
   @Property
   public void eliminarPropertyTest(String nombreCarpeta, String nombreTexto, 
@@ -179,11 +186,12 @@ public class TestCarpetaProperty {
   /**
   * Descripción : Obtener el hijo de una Carpeta.  
   * Nivel : Prueba de Unidad.
-  * Categoría : Prueba dinámica de caja negra, positiva.
+  * Categoría : Prueba dinámica de caja negra, positiva, funcional.
   * Mecanismo de selección de datos : Se obtiene mediante generación automática de datos:
   *    nombreTexto : un String cualquiera para el nombre del mensaje del Correo,
   *    contenidoTexto : un String cualquiera para el contenido del mensaje del Correo,
   *    nombreCarpeta : un String cualquiera para el nombre de la Carpeta.
+   * @throws OperacionInvalida
   */
   @Property
   public void obtenerHijoPropertyTest(String nombreCarpeta, String nombreTexto, 
@@ -200,11 +208,12 @@ public class TestCarpetaProperty {
   /**
   * Descripción : Explorar una Carpeta.  
   * Nivel : Prueba de Unidad.
-  * Categoría : Prueba dinámica de caja negra, positiva.
+  * Categoría : Prueba dinámica de caja negra, positiva, funcional.
   * Mecanismo de selección de datos : Se obtiene mediante generación automática de datos:
   *    nombreTexto : un String cualquiera para el nombre del mensaje del Correo,
   *    contenidoTexto : un String cualquiera para el contenido del mensaje del Correo,
   *    nombreCarpeta : un String cualquiera para el nombre de la Carpeta.
+  * @throws OperacionInvalida
   */
   @Property
   public void explorarPropertyTest(String nombreCarpeta, String nombreTexto, 
@@ -221,11 +230,12 @@ public class TestCarpetaProperty {
   /**
   * Descripción : Obtener la ruta de una Carpeta.  
   * Nivel : Prueba de Unidad.
-  * Categoría : Prueba dinámica de caja negra, positiva.
+  * Categoría : Prueba dinámica de caja negra, positiva, funcional.
   * Mecanismo de selección de datos : Se obtiene mediante generación automática de datos:
   *    nombreTexto : un String cualquiera para el nombre del mensaje del Correo,
   *    contenidoTexto : un String cualquiera para el contenido del mensaje del Correo,
   *    nombreCarpeta : un String cualquiera para el nombre de la Carpeta.
+  * @throws OperacionInvalida
   */
   @Property
   public void obtenerRutaPropertyTest(String nombreCarpeta, 
@@ -243,10 +253,11 @@ public class TestCarpetaProperty {
   /**
   * Descripción : buscar un correo a una Carpeta.  
   * Nivel : Prueba de Unidad.
-  * Categoría : Prueba dinámica de caja negra, positiva.
+  * Categoría : Prueba dinámica de caja negra, positiva, funcional.
   * Mecanismo de selección de datos : Se obtiene mediante generación automática de datos:
-  *    nombreCarpeta : un String cualquiera para el nombre de la Carpeta.,
-  *    busqueda : un String cualquiera para la busqueda en una carpeta
+  *    nombreCarpeta : un String cualquiera para el nombre de la Carpeta,
+  *    busqueda : un String cualquiera para la busqueda en una carpeta.
+  * @throws OperacionInvalida
   */
   @Property
   public void buscarPropertyTest(String nombreCarpeta, 

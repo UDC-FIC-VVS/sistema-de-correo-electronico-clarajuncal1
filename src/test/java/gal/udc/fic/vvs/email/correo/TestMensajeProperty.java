@@ -1,10 +1,6 @@
 package gal.udc.fic.vvs.email.correo;
 
-import static org.hamcrest.Matchers.greaterThan;
 import static org.junit.Assert.assertEquals;
-import static org.junit.Assume.assumeThat;
-
-import java.util.Vector;
 
 import com.pholser.junit.quickcheck.Property;
 import com.pholser.junit.quickcheck.runner.JUnitQuickcheck;
@@ -91,4 +87,19 @@ public class TestMensajeProperty {
     assertEquals(contenido, mensaje.obtenerVisualizacion());
   }
   
+  /**
+  * Descripción : Obtener la previsualización de un Mensaje.  
+  * Nivel : Prueba de Unidad.
+  * Categoría : Prueba dinámica de caja negra, positiva, funcional.
+  * Mecanismo de selección de datos : Se obtiene mediante 
+  *  generación automática de datos:
+  *    nombre : un String cualquiera para el nombre del Mensaje,
+  *    contenido : un String cualquiera para el contenido del Mensaje.
+  */
+  @Property
+  public void obtenerPrevisualizacionPropertyTest(String nombre, String contenido) {
+	  
+	  Mensaje mensaje = new Mensaje(new Texto(nombre, contenido));
+	  assertEquals(mensaje.obtenerVisualizacion().substring(0, Math.min(mensaje.obtenerVisualizacion().length(), 32)) + "...", mensaje.obtenerPreVisualizacion()); 
+  }
 }

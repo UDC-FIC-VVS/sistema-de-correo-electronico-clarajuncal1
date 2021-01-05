@@ -71,6 +71,7 @@ public class TestCabecera {
   * Categoría : Prueba dinámica de caja negra, positiva, funcional.
   * @Param Cabecera : cabecera formada por un mensaje, un nombre y su valor.
   * @Param Carpeta : carpeta a la que se añade la cabecera.
+  * @throws OperacionInvalida
   */
   @Test
   public void obtenerRutaConPadre() throws OperacionInvalida {
@@ -134,10 +135,11 @@ public class TestCabecera {
   /**
   * Descripción : Explorar una cabecera.  
   * Nivel : Prueba de Unidad.
-  * Categoría : Prueba dinámica de caja negra, positiva, funcional.
+  * Categoría : Prueba dinámica de caja negra, negativa, funcional.
   * @Param Cabecera : cabecera formada por un mensaje, un nombre y su valor.
-  * @Exception OperacionInvalida : Devuelve una excepción, pues un
+  * @Throws OperacionInvalida : Devuelve una excepción, pues un
   *    adjunto no puede realizar dicha operación.
+  *  
   */
   @Test(expected = OperacionInvalida.class)
   public void explorar() throws OperacionInvalida {
@@ -150,9 +152,9 @@ public class TestCabecera {
   /**
   * Descripción : Añadir una cabecera.  
   * Nivel : Prueba de Unidad.
-  * Categoría : Prueba dinámica de caja negra, positiva, funcional.
+  * Categoría : Prueba dinámica de caja negra, negativa, funcional.
   * @Param Cabecera : cabecera formada por un mensaje, un nombre y su valor.
-  * @Exception OperacionInvalida : Devuelve una excepción, pues un
+  * @Throws OperacionInvalida : Devuelve una excepción, pues un
   *    adjunto no puede realizar dicha operación.
   */
   @Test(expected = OperacionInvalida.class)
@@ -167,9 +169,9 @@ public class TestCabecera {
   /**
   * Descripción : Eliminar una cabecera.  
   * Nivel : Prueba de Unidad.
-  * Categoría : Prueba dinámica de caja negra, positiva, funcional.
+  * Categoría : Prueba dinámica de caja negra, negativa, funcional.
   * @Param Cabecera : cabecera formada por un mensaje, un nombre y su valor.
-  * @Exception OperacionInvalida : Devuelve una excepción, pues un
+  * @Throws OperacionInvalida : Devuelve una excepción, pues un
   *    adjunto no puede realizar dicha operación.
   */
   @Test(expected = OperacionInvalida.class)
@@ -184,9 +186,9 @@ public class TestCabecera {
   /**
   * Descripción : Obtener el hijo de una cabecera.  
   * Nivel : Prueba de Unidad.
-  * Categoría : Prueba dinámica de caja negra, positiva, funcional.
+  * Categoría : Prueba dinámica de caja negra, negativa, funcional.
   * @Param Cabecera : cabecera formada por un mensaje, un nombre y su valor.
-  * @Exception OperacionInvalida : Devuelve una excepción, pues un
+  * @Throws OperacionInvalida : Devuelve una excepción, pues un
   *    adjunto no puede realizar dicha operación.
   */
   @Test(expected = OperacionInvalida.class)
@@ -203,6 +205,7 @@ public class TestCabecera {
   * Categoría : Prueba dinámica de caja negra, positiva, funcional.
   * @Param Cabecera : cabecera formada por un mensaje, un nombre y su valor.
   * @Param Carpeta : carpeta a la que se añade la cabecera.
+  * @Throws OperacionInvalida
   */
   @Test
   public void obtenerPadre() throws OperacionInvalida {
@@ -221,6 +224,7 @@ public class TestCabecera {
   * Categoría : Prueba dinámica de caja negra, positiva, funcional.
   * @Param Cabecera : cabecera formada por un mensaje, un nombre y su valor.
   * @Param Carpeta : carpeta a la que se añade la cabecera.
+  * @Throws OperacionInvalida
   */
   @Test
   public void buscar() throws OperacionInvalida {

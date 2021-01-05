@@ -15,7 +15,8 @@ public class TestCarpeta {
   /**
   * Descripción : Obtener el leido de una Carpeta.  
   * Nivel : Prueba de Unidad.
-  * Categoría : Prueba dinámica de caja negra, positiva.
+  * Categoría : Prueba dinámica de caja negra, positiva, funcional.
+  * @throws OperacionInvalida
   */
   @Test
   public void obtenerNoLeido() throws OperacionInvalida {
@@ -30,7 +31,8 @@ public class TestCarpeta {
   /**
   * Descripción : Establecer el leido de una Carpeta.  
   * Nivel : Prueba de Unidad.
-  * Categoría : Prueba dinámica de caja negra, positiva.
+  * Categoría : Prueba dinámica de caja negra, positiva, funcional.
+  * @throws OperacionInvalida
   */
   @Test
   public void establecerYObtenerLeido() throws OperacionInvalida {
@@ -48,7 +50,8 @@ public class TestCarpeta {
   /**
   * Descripción : Obtener el tamaño de una Carpeta.  
   * Nivel : Prueba de Unidad.
-  * Categoría : Prueba dinámica de caja negra, positiva.
+  * Categoría : Prueba dinámica de caja negra, positiva, funciona.
+  * @throws OperacionInvalida
   */
   @Test
   public void obtenerTamano() throws OperacionInvalida {
@@ -64,7 +67,8 @@ public class TestCarpeta {
   /**
   * Descripción : Obtener el icono de una Carpeta.  
   * Nivel : Prueba de Unidad.
-  * Categoría : Prueba dinámica de caja negra, positiva.
+  * Categoría : Prueba dinámica de caja negra, positiva, funcional.
+  * @throws OperacionInvalida
   */
   @Test
   public void obtenerIcono() throws OperacionInvalida {
@@ -80,7 +84,8 @@ public class TestCarpeta {
   /**
   * Descripción : Obtener la previsualizacion de una Carpeta.  
   * Nivel : Prueba de Unidad.
-  * Categoría : Prueba dinámica de caja negra, positiva.
+  * Categoría : Prueba dinámica de caja negra, positiva, funcional.
+  * @throws OperacionInvalida
   */
   @Test
   public void obtenerPreVisualizacion() throws OperacionInvalida {
@@ -96,7 +101,8 @@ public class TestCarpeta {
   /**
   * Descripción : Obtener la visualizacion de una Carpeta.  
   * Nivel : Prueba de Unidad.
-  * Categoría : Prueba dinámica de caja negra, positiva.
+  * Categoría : Prueba dinámica de caja negra, positiva, funcional.
+  * @throws OperacionInvalida
   */
   @Test
   public void obtenerVisualizacion() throws OperacionInvalida {
@@ -112,7 +118,8 @@ public class TestCarpeta {
   /**
   * Descripción : Explorar una Carpeta.  
   * Nivel : Prueba de Unidad.
-  * Categoría : Prueba dinámica de caja negra, positiva.
+  * Categoría : Prueba dinámica de caja negra, positiva, funcional.
+  * @throws OperacionInvalida
   */
   @Test
   public void explorar() throws OperacionInvalida {
@@ -128,7 +135,8 @@ public class TestCarpeta {
   /**
   * Descripción : buscar un correo a una Carpeta.  
   * Nivel : Prueba de Unidad.
-  * Categoría : Prueba dinámica de caja negra, positiva.
+  * Categoría : Prueba dinámica de caja negra, positiva, funcional.
+  * @throws OperacionInvalida
   */
   @Test
   public void buscar() throws OperacionInvalida {
@@ -145,7 +153,8 @@ public class TestCarpeta {
   /**
   * Descripción : Añadir un correo a una Carpeta.  
   * Nivel : Prueba de Unidad.
-  * Categoría : Prueba dinámica de caja negra, positiva.
+  * Categoría : Prueba dinámica de caja negra, positiva, funcional.
+  * @throws OperacionInvalida
   */
   @Test
   public void anadir() throws OperacionInvalida {
@@ -161,7 +170,8 @@ public class TestCarpeta {
   /**
   * Descripción : Eliminar el correo de una Carpeta.  
   * Nivel : Prueba de Unidad.
-  * Categoría : Prueba dinámica de caja negra, positiva.
+  * Categoría : Prueba dinámica de caja negra, positiva, funcional.
+  * @throws OperacionInvalida
   */
   @Test
   public void eliminar() throws OperacionInvalida {
@@ -181,7 +191,8 @@ public class TestCarpeta {
   /**
   * Descripción : Obtener el hijo de una Carpeta.  
   * Nivel : Prueba de Unidad.
-  * Categoría : Prueba dinámica de caja negra, positiva.
+  * Categoría : Prueba dinámica de caja negra, positiva, funcional.
+  * @throws OperacionInvalida
   */
   @Test
   public void obtenerHijo() throws OperacionInvalida {
@@ -197,7 +208,8 @@ public class TestCarpeta {
   /**
   * Descripción : Obtener la ruta de una Carpeta.  
   * Nivel : Prueba de Unidad.
-  * Categoría : Prueba dinámica de caja negra, positiva.
+  * Categoría : Prueba dinámica de caja negra, positiva, funcional.
+  * @throws OperacionInvalida
   */
   @Test
   public void obtenerRuta() throws OperacionInvalida {
