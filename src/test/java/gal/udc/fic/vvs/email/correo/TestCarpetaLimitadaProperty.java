@@ -5,6 +5,8 @@ import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 import static org.junit.Assume.assumeThat;
 
+import java.util.Vector;
+
 import com.pholser.junit.quickcheck.Property;
 import com.pholser.junit.quickcheck.runner.JUnitQuickcheck;
 import gal.udc.fic.vvs.email.archivo.Texto;
@@ -331,5 +333,28 @@ public class TestCarpetaLimitadaProperty {
     carpetaLimitada.añadir(correo);
 
     assertEquals(carpeta, correo.obtenerPadre());
+  }
+  
+  /**
+  * Descripción : Búsqueda en una carpera Limitada.  
+  * Nivel : Prueba de Unidad.
+  * Categoría : Prueba dinámica de caja negra, positiva, funcional.
+  * Mecanismo de selección de datos : Se obtiene mediante generación automática de datos:
+  *    nombreCarpeta : un String cualquiera para el nombre de la carpetaLimitada,
+  *    tamañoCarpeta : un integer mayor que 0 cualquiera para el tamaño de la carpetaLimitadas,
+  *    busqueda : un String cualquiera para la busqueda en la carpetaLimitada.
+  */
+  @Property
+  public void buscarPropertyTest(String nombreCarpeta, int tamanoCarpeta, 
+               String busqueda) throws OperacionInvalida {
+
+    assumeThat(tamanoCarpeta, greaterThan(0));
+
+    Carpeta carpeta = new Carpeta(nombreCarpeta);
+    CarpetaLimitada carpetaLimitada = new CarpetaLimitada(carpeta, tamanoCarpeta);
+    
+    Vector resultado = new Vector();
+    
+    assertEquals(carpetaLimitada.buscar(busqueda), resultado);
   }
 }

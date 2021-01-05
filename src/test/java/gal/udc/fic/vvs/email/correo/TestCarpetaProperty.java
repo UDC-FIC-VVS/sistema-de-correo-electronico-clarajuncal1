@@ -2,6 +2,8 @@ package gal.udc.fic.vvs.email.correo;
 
 import static org.junit.Assert.assertEquals;
 
+import java.util.Vector;
+
 import com.pholser.junit.quickcheck.Property;
 import com.pholser.junit.quickcheck.runner.JUnitQuickcheck;
 import gal.udc.fic.vvs.email.archivo.Texto;
@@ -238,21 +240,21 @@ public class TestCarpetaProperty {
                   carpeta.obtenerPreVisualizacion());
   }
   
-//  /**
-//  * Descripción : buscar un correo a una Carpeta.  
-//  * Nivel : Prueba de Unidad.
-//  * Categoría : Prueba dinámica de caja negra, positiva.
-//  */
-//  @Property
-//  public void buscar(String nombreCarpeta, 
-//          String nombreTexto, String contenidoTexto) throws OperacionInvalida {
-//
-//    Carpeta carpeta = new Carpeta(nombreCarpeta);
-//    Correo correo = new Mensaje(new Texto(nombreTexto, contenidoTexto));
-//
-//    carpeta.añadir(correo);
-//
-//    assertEquals(true, carpeta.buscar(nombreTexto).contains(correo));
-//    assertEquals(1, carpeta.buscar(nombreTexto).size());
-//  }
+  /**
+  * Descripción : buscar un correo a una Carpeta.  
+  * Nivel : Prueba de Unidad.
+  * Categoría : Prueba dinámica de caja negra, positiva.
+  * Mecanismo de selección de datos : Se obtiene mediante generación automática de datos:
+  *    nombreCarpeta : un String cualquiera para el nombre de la Carpeta.,
+  *    busqueda : un String cualquiera para la busqueda en una carpeta
+  */
+  @Property
+  public void buscarPropertyTest(String nombreCarpeta, 
+          String busqueda) throws OperacionInvalida {
+
+    Carpeta carpeta = new Carpeta(nombreCarpeta);
+    Vector resultado = new Vector();
+    
+    assertEquals(carpeta.buscar(busqueda), resultado);
+  }
 }

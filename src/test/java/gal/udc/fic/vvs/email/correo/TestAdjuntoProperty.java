@@ -1,6 +1,10 @@
 package gal.udc.fic.vvs.email.correo;
 
+import static org.hamcrest.Matchers.greaterThan;
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assume.assumeThat;
+
+import java.util.Vector;
 
 import com.pholser.junit.quickcheck.Property;
 import com.pholser.junit.quickcheck.runner.JUnitQuickcheck;
@@ -173,21 +177,5 @@ public class TestAdjuntoProperty {
     carpeta.añadir(adjunto);
 
     assertEquals(carpeta, adjunto.obtenerPadre());
-  }
-
-  /**
-  * Descripción : Búsqueda de un Adjunto.  
-  * Nivel : Prueba de Unidad.
-  * Categoría : Prueba dinámica de caja negra, positiva, funcional.
-  * Mecanismo de selección de datos : Se obtiene mediante generación automática de datos:
-  *     nombreMensaje : un String cualquiera para el nombre del mensaje del Adjunto,
-  *     contenidoMensaje : un String cualquiera para el contenido del mensaje del Adjunto,
-  *     nombreArchivo : un String cualquiera para el nombre del archivo del Adjunto,
-  *     contenidoArchivo : un String cualquiera para el contenido del Archivo del adjunto,
-  *     nombreCarpeta : un String cualquiera para el nombre de la carpeta que contiene el Adjunto.
-  */
-  @Property
-  public void buscarPropertyTest() {
-
   }
 }

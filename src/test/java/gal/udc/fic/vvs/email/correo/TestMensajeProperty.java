@@ -1,6 +1,10 @@
 package gal.udc.fic.vvs.email.correo;
 
+import static org.hamcrest.Matchers.greaterThan;
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assume.assumeThat;
+
+import java.util.Vector;
 
 import com.pholser.junit.quickcheck.Property;
 import com.pholser.junit.quickcheck.runner.JUnitQuickcheck;
@@ -86,4 +90,5 @@ public class TestMensajeProperty {
 
     assertEquals(contenido, mensaje.obtenerVisualizacion());
   }
+  
 }
