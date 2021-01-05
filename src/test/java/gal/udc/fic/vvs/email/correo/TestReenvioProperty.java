@@ -56,28 +56,6 @@ public class TestReenvioProperty {
                   + "\n\n---- Correo reenviado ----\n\n" + correo.obtenerVisualizacion() 
                   + "\n---- Fin correo reenviado ----", reenvio.obtenerVisualizacion());
   }
-  
-  /**
-  * Descripción : Obtener la previsualización de un Reenvio.  
-  * Nivel : Prueba de Unidad.
-  * Categoría : Prueba dinámica de caja negra, positiva, funcional.
-  * Mecanismo de selección de datos : Se obtiene mediante generación automática de datos:
-  *    nombreMensaje : un String cualquiera para el nombre del mensaje del Reenvio,
-  *    contenidoMensaje : un String cualquiera para el contenido del mensaje del Reenvio,
-  *    nombreCorreo : un String cualquiera para el nombre del correo del Reenvio,
-  *    contenidoCorreo : un String cualquiera para el contenido del correo del Reenvio.
-  */
-  @Property
-  public void obtenerPrevisualizacionPropertyTest(String nombreMensaje, String contenidoMensaje, 
-               String nombreCorreo, String contenidoCorreo) {
-
-    Mensaje mensaje = new Mensaje(new Texto(nombreMensaje, contenidoMensaje));
-    Correo correo = new Mensaje(new Texto(nombreCorreo, contenidoCorreo));
-
-    Reenvio reenvio = new Reenvio(mensaje, correo);
- 
-	  assertEquals(reenvio.obtenerVisualizacion().substring(0, Math.min(reenvio.obtenerVisualizacion().length(), 32)) + "...", reenvio.obtenerPreVisualizacion());
-  }
 
   /**
   * Descripción : Obtener el icono de un Reenvio.  

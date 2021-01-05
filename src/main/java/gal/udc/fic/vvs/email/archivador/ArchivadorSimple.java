@@ -1,10 +1,14 @@
 package gal.udc.fic.vvs.email.archivador;
 
 import java.util.Vector;
+
+import etm.core.configuration.EtmManager;
+import etm.core.monitor.EtmMonitor;
+import etm.core.monitor.EtmPoint;
 import gal.udc.fic.vvs.email.correo.Correo;
 
 public class ArchivadorSimple implements Archivador {
-
+	
     public ArchivadorSimple(String nombre, int espacio) {
         _nombre = nombre;
         _espacioTotal = espacio;
@@ -30,6 +34,7 @@ public class ArchivadorSimple implements Archivador {
     }
 
     public int obtenerEspacioDisponible() {
+    	
         return _espacioDisponible;
     }
 

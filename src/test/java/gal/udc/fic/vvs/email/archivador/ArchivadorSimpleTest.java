@@ -8,8 +8,11 @@ import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
 import org.junit.Test;
 
-public class ArchivadorSimpleTest {
+import etm.core.configuration.EtmManager;
+import etm.core.monitor.EtmMonitor;
 
+public class ArchivadorSimpleTest {
+  
   private String nombrePrueba = "NombreDePrueba";
   private int espacioPrueba = 100;
 
@@ -91,7 +94,8 @@ public class ArchivadorSimpleTest {
 
     //Introduzco el mensaje en el archivador y obtengo el espacio restante disponible
     archivadorSimple.almacenarCorreo(mensajePrueba);
-    assertEquals(79, archivadorSimple.obtenerEspacioDisponible());
+    assertEquals(archivadorSimple.obtenerEspacioTotal() - mensajePrueba.obtenerTamaño(), 
+    		archivadorSimple.obtenerEspacioDisponible());
   }
 
   /**

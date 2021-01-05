@@ -1,10 +1,15 @@
 package gal.udc.fic.vvs.email.correo;
 
 import java.util.Vector;
+
+import etm.core.configuration.EtmManager;
+import etm.core.monitor.EtmMonitor;
+import etm.core.monitor.EtmPoint;
+
 import java.util.Collection;
 
 public class Carpeta extends CorreoAbstracto {
-
+	
     public Carpeta(String nombre) {
         _nombre = nombre;
         _hijos = new Vector();
@@ -69,6 +74,7 @@ public class Carpeta extends CorreoAbstracto {
     }
 
     public void añadir(Correo correo) throws OperacionInvalida {
+    	
 	if (correo.obtenerPadre() != null) {
 	    correo.obtenerPadre().eliminar(correo);
 	}
