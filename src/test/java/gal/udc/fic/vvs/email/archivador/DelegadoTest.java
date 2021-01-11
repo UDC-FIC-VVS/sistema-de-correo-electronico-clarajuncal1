@@ -1,6 +1,7 @@
 package gal.udc.fic.vvs.email.archivador;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertFalse;
 
 import gal.udc.fic.vvs.email.archivo.Texto;
 import gal.udc.fic.vvs.email.correo.Correo;
@@ -27,8 +28,32 @@ public class DelegadoTest {
     //Se crea un mensaje , introduciendo un texto(nombre del texto, y contenido del texto)
     Correo correo = new Mensaje(texto);
 
+    delegado.establecerDelegado(archivador);
+
     //Se comprueba que el delegado es capaz de almacenar dicho mensaje de correo.
     assertEquals(true, delegado.almacenarCorreo(correo));
+  }
+  
+  /**
+  * Descripción : Almacenar un correo correctamente en un delegado.
+  * Nivel : Prueba de Unidad.
+  * Categoría : Prueba dinámica de caja negra, positiva, funcional.
+  * @Exception: Salta una excepción puesto que el espacio es insuficiente
+  * y no se puede almacenar el correo
+  */
+  @Test
+  public void almacenarCorreoIncorrectamente() {
+    //Se crea un delegado a partir de un archivador
+    ArchivadorSimple archivador = new ArchivadorSimple(nombreArchivador, -10);
+    Delegado delegado = new Delegado(archivador);
+    
+    delegado.establecerDelegado(archivador);
+
+    //Se crea un mensaje , introduciendo un texto(nombre del texto, y contenido del texto)
+    Correo correo = new Mensaje(texto);
+    
+    //Se comprueba que el delegado es capaz de almacenar dicho mensaje de correo.
+    assertFalse(delegado.almacenarCorreo(correo));
   }
 
   /**

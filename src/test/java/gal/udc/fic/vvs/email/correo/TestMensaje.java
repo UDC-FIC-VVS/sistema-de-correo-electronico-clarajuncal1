@@ -139,4 +139,60 @@ public class TestMensaje {
 
     assertEquals(true, resultado.isEmpty());
   }
+  
+  /**
+  * Descripción : Obtener el padre de un Reenvio.  
+  * Nivel : Prueba de Unidad.
+  * Categoría : Prueba dinámica de caja negra, positiva, funcional.
+  * @Param Reenvio : reenvio formada por un mensaje y un correo.
+  */
+  @Test
+  public void establecerYObtenerPadre() throws OperacionInvalida {
+
+    Texto texto = new Texto("textoPrueba", "Texto de prueba");
+    Mensaje mensaje = new Mensaje(texto);
+    Carpeta carpeta = new Carpeta("carpeta");
+
+    mensaje.establecerPadre(carpeta);
+
+    assertEquals(carpeta, mensaje.obtenerPadre());
+  }
+  
+  /**
+  * Descripción : obtener el hijo de un mensaje.  
+  * Nivel : Prueba de Unidad.
+  * Categoría : Prueba dinámica de caja negra, negativa, funcional.
+  * @Param Mensaje : mensaje formada por un texto.
+  * @Exception OperacionInvalida : Devuelve una excepción, pues un
+  *    adjunto no puede realizar dicha operación.
+  */
+  @Test(expected = OperacionInvalida.class)
+  public void obtenerHijo() throws OperacionInvalida {
+
+    Texto texto = new Texto("textoPrueba", "Texto de prueba");
+    Mensaje mensaje = new Mensaje(texto);
+    mensaje.obtenerHijo(0);
+  }
+  
+  /**
+  * Descripción : Explicar un mensaje.  
+  * Nivel : Prueba de Unidad.
+  * Categoría : Prueba dinámica de caja negra, negativa, funcional.
+  * @Param Mensaje : mensaje formado por un texto.
+  * @Param Carpeta : carpeta a la que se añade el mensaje.
+  * @Exception OperacionInvalida : Devuelve una excepción, pues un
+  *    adjunto no puede realizar dicha operación.
+  */
+  @Test(expected = OperacionInvalida.class)
+  public void explorar() throws OperacionInvalida {
+
+    Texto texto = new Texto("textoPrueba", "Texto de prueba");
+    Mensaje mensaje = new Mensaje(texto);
+    Carpeta carpeta = new Carpeta("Carpeta");
+
+    carpeta.añadir(mensaje);
+
+    mensaje.explorar();
+
+  }
 }

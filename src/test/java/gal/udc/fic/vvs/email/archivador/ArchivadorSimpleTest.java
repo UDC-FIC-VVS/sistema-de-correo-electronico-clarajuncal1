@@ -2,15 +2,20 @@ package gal.udc.fic.vvs.email.archivador;
 
 import gal.udc.fic.vvs.email.TestJETM;
 import gal.udc.fic.vvs.email.archivo.Texto;
+import gal.udc.fic.vvs.email.correo.Correo;
 import gal.udc.fic.vvs.email.correo.Mensaje;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
+
+import java.util.Vector;
+
 import org.junit.Test;
 
 import etm.core.configuration.EtmManager;
 import etm.core.monitor.EtmMonitor;
+import etm.core.monitor.EtmPoint;
 
 public class ArchivadorSimpleTest extends TestJETM{
   
@@ -21,14 +26,19 @@ public class ArchivadorSimpleTest extends TestJETM{
    * Descripción : Obtener el nombre de un archivador  
    * Nivel : Prueba de Unidad.
    * Categoría : Prueba dinámica de caja negra, positiva, funcional.
+   * PiTest : Sobrevive un mutante pues no se comprueba el point creado
+   * por el monitor de JETM
    */
   @Test
   public void obtenerNombreTest() {
+	EtmPoint point = monitor.createPoint("ArchivadorSimple:ArchivadorSimpleTest_obtenerNombreTest");
+
     //Creo un nuevo archivador, introduciendo un nombre y un espacio
     ArchivadorSimple archivadorSimple = new ArchivadorSimple(nombrePrueba, espacioPrueba);
 
     //Se compara que el nombre del archivador añadido sea el mismo que el que hemos definido
     assertEquals(nombrePrueba, archivadorSimple.obtenerNombre());
+    point.collect();
   }
 
   /**
@@ -44,10 +54,10 @@ public class ArchivadorSimpleTest extends TestJETM{
 
     //Creo un mensaje , introduciendo un texto(nombre del texto, y contenido del texto)
     Texto texto = new Texto("textoPrueba", "Es un texto de prueba");
-    Mensaje mensajePrueba = new Mensaje(texto);
+    Correo correo = new Mensaje(texto);
 
     //Compruebo que es posible almacenar el mensaje en el archivador
-    assertTrue(archivadorSimple.almacenarCorreo(mensajePrueba));
+    assertTrue(archivadorSimple.almacenarCorreo(correo));
   }
   
   /**
@@ -59,12 +69,12 @@ public class ArchivadorSimpleTest extends TestJETM{
   public void almacenarCorreoIncorrectamente() {
 
     //Creo un nuevo archivador, introduciendo un nombre y un espacio
-    ArchivadorSimple archivadorSimple = new ArchivadorSimple(nombrePrueba, 10);
+    ArchivadorSimple archivadorSimple = new ArchivadorSimple(nombrePrueba, -10);
     //Creo un mensaje , introduciendo un texto(nombre del texto, y contenido del texto
-    Mensaje mensajePrueba = new Mensaje(new Texto("textoPrueba", "Es un texto de prueba"));
+    Correo correo = new Mensaje(new Texto("textoPrueba", "Es un texto de prueba"));
 
     //Compruebo que no es posible almacenar el mensaje, el archivador no tiene espacio suficiente
-    assertFalse(archivadorSimple.almacenarCorreo(mensajePrueba));
+    assertFalse(archivadorSimple.almacenarCorreo(correo));
   }
 
   /**

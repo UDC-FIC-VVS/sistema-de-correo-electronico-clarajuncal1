@@ -6,6 +6,8 @@ import gal.udc.fic.vvs.email.TestJETM;
 import gal.udc.fic.vvs.email.archivo.Texto;
 import org.junit.Test;
 
+import etm.core.monitor.EtmPoint;
+
 
 public class TestCarpeta extends TestJETM{
   private String nombre = "nombreCarpeta";
@@ -53,15 +55,19 @@ public class TestCarpeta extends TestJETM{
   * Nivel : Prueba de Unidad.
   * Categoría : Prueba dinámica de caja negra, positiva, funciona.
   * @throws OperacionInvalida
+  * PiTest: Queda un mutante vivo debido al point del etmMonitor
+  * creado con JETM.
   */
   @Test
   public void obtenerTamano() throws OperacionInvalida {
+	EtmPoint point = monitor.createPoint("Carpeta:obtenerTamano");
 
     Carpeta carpeta = new Carpeta(nombre);
     Correo correo = new Mensaje(texto);
 
     carpeta.añadir(correo);
 
+    point.collect();
     assertEquals(carpeta.obtenerTamaño(), correo.obtenerTamaño());
   }
 
@@ -70,15 +76,18 @@ public class TestCarpeta extends TestJETM{
   * Nivel : Prueba de Unidad.
   * Categoría : Prueba dinámica de caja negra, positiva, funcional.
   * @throws OperacionInvalida
+  * PiTest: Queda un mutante vivo debido al point del etmMonitor
+  * creado con JETM.
   */
   @Test
   public void obtenerIcono() throws OperacionInvalida {
+	EtmPoint point = monitor.createPoint("Carpeta:obtenerIcono");
 
     Carpeta carpeta = new Carpeta(nombre);
     Correo correo = new Mensaje(texto);
 
     carpeta.añadir(correo);
-
+    point.collect();
     assertEquals(Correo.ICONO_CARPETA, carpeta.obtenerIcono());
   }
 
@@ -114,6 +123,25 @@ public class TestCarpeta extends TestJETM{
     carpeta.añadir(correo);
 
     assertEquals(carpeta.obtenerVisualizacion(), nombre + " (" + carpeta.obtenerNoLeidos() + ")");
+  }
+  
+  /**
+  * Descripción : Obtener la visualizacion de una Carpeta.  
+  * Nivel : Prueba de Unidad.
+  * Categoría : Prueba dinámica de caja negra, positiva, funcional.
+  * @throws OperacionInvalida
+  */
+  @Test
+  public void obtenerVisualizacionSinLeidos() throws OperacionInvalida {
+
+    Carpeta carpeta = new Carpeta(nombre);
+    Correo correo = new Mensaje(texto);
+
+    carpeta.añadir(correo);
+    
+    carpeta.establecerLeido(true);
+
+    assertEquals(carpeta.obtenerVisualizacion(), nombre );
   }
 
   /**
@@ -167,6 +195,25 @@ public class TestCarpeta extends TestJETM{
 
     assertEquals(carpeta.obtenerTamaño(), correo.obtenerTamaño());
   }
+  
+  /**
+  * Descripción : Añadir un correo a una Carpeta.  
+  * Nivel : Prueba de Unidad.
+  * Categoría : Prueba dinámica de caja negra, positiva, funcional.
+  * @throws OperacionInvalida
+  */
+  @Test
+  public void anadirCarpetaConHijo() throws OperacionInvalida {
+
+    Carpeta carpeta = new Carpeta(nombre);
+    Carpeta carpetaHijo = new Carpeta("carpetaHijo");
+    Correo correo = new Mensaje(texto);
+
+    carpetaHijo.añadir(correo);
+    carpeta.añadir(carpetaHijo);
+
+    assertEquals(carpeta.obtenerTamaño(), correo.obtenerTamaño());
+  }
 
   /**
   * Descripción : Eliminar el correo de una Carpeta.  
@@ -186,7 +233,8 @@ public class TestCarpeta extends TestJETM{
 
     carpeta.eliminar(correo1);
 
-    assertEquals(1, carpeta.buscar("Prueba").size());
+    assertEquals(false, carpeta.explorar().contains(correo1));
+    assertEquals(null, correo1.obtenerPadre());
   }
 
   /**

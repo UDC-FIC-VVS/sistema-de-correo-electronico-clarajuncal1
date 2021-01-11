@@ -23,18 +23,41 @@ public class LogTest {
   * Descripción : Almacenar un correo correctamente en un Log.
   * Nivel : Prueba de Unidad
   * Categoría : Prueba dinámica de caja negra, positiva, funcional.
+  * PiTest: Queda un mutante vivo pues no se ejecuta el mensaje de
+  * println en el test.
   */
   @Test
   public void almacenarCorreo() {
     //Se crea un Log a partir de un Archivador
     ArchivadorSimple archivador = new ArchivadorSimple(nombreArchivador, espacioArchivador);
+	ArchivadorSimple archivadorDelegado = new ArchivadorSimple("archivadorDelegado", 1);
+
+    Log log = new Log(archivador);
+
+    log.establecerDelegado(archivadorDelegado);
+    //Se crea un mensaje de correo nuevo
+    Correo correo = new Mensaje(texto);
+
+    //Se comprueba que el log es capaz de almacenar dicho mensaje de correo
+    assertEquals(true, log.almacenarCorreo(correo));
+  }
+  
+  /**
+  * Descripción : Almacenar un correo incorrectamente en un Log.
+  * Nivel : Prueba de Unidad
+  * Categoría : Prueba dinámica de caja negra, negativa, funcional.
+  */
+  @Test
+  public void almacenarCorreoIncorrectamente() {
+    //Se crea un Log a partir de un Archivador
+    ArchivadorSimple archivador = new ArchivadorSimple(nombreArchivador, -10);
     Log log = new Log(archivador);
 
     //Se crea un mensaje de correo nuevo
     Correo correo = new Mensaje(texto);
 
     //Se comprueba que el log es capaz de almacenar dicho mensaje de correo
-    assertEquals(true, log.almacenarCorreo(correo));
+    assertEquals(false, log.almacenarCorreo(correo));
   }
   
   /**

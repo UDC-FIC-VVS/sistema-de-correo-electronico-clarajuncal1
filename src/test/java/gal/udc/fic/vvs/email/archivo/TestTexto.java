@@ -4,6 +4,7 @@ import static org.junit.Assert.assertEquals;
 
 import org.junit.Test;
 
+import etm.core.monitor.EtmPoint;
 import gal.udc.fic.vvs.email.TestJETM;
 
 public class TestTexto extends TestJETM{
@@ -14,16 +15,19 @@ public class TestTexto extends TestJETM{
   * Descripción : Obtener el nombre de un Texto  
   * Nivel : Prueba de Unidad.
   * Categoría : Prueba dinámica de caja negra, positiva, funcional.
+  * PiTest: Queda un mutante vivo debido al point del etmMonitor
+  * creado con JETM.
   */
   @Test
   public void obtenerNombre() {
 
+	EtmPoint point = monitor.createPoint("Archivo:TestTexto_obtenerNombre");
     //Se crea un nuevo texto introduciendo un nombre y un contenido
     Texto texto = new Texto(nombrePrueba, contenido);
 
     //Se comprueba que el nombre introducido es el nombre definido previamente
     assertEquals(texto.obtenerNombre(), nombrePrueba);
-
+    point.collect();
   }
 
   /**

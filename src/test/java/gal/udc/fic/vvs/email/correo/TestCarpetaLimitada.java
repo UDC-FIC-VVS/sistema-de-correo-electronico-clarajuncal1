@@ -208,4 +208,24 @@ public class TestCarpetaLimitada {
 
     assertEquals(null, carpetaLimitada.obtenerPadre());
   }
+  
+  /**
+   * Descripción : buscar un correo a una Carpeta Limitada.  
+   * Nivel : Prueba de Unidad.
+   * Categoría : Prueba dinámica de caja negra, positiva, funcional.
+   * @throws OperacionInvalida
+   */
+   @Test
+   public void buscar() throws OperacionInvalida {
+
+	 CarpetaLimitada carpetaLimitada = new CarpetaLimitada(carpeta, 1);
+     Correo correo = new Mensaje(texto);
+     Correo correo2 = new Mensaje(texto);
+     
+     carpetaLimitada.añadir(correo);
+     carpetaLimitada.añadir(correo2);
+     
+     assertEquals(true, carpetaLimitada.buscar("Texto").contains(correo));
+     assertEquals(2, carpetaLimitada.buscar("Texto").size());
+   }
 }
