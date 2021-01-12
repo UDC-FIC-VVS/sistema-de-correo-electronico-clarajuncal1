@@ -47,7 +47,7 @@ public class TestCarpetaLimitada {
 
   /**
   * Descripción : Obtener los leidos de una carpeta limitada.  
-  * Nivel : Prueba de Unidad.
+  * Nivel : Prueba de Integración.
   * Categoría : Prueba dinámica de caja negra, positiva, funcional.
   * @throws OperacionInvalida
   */
@@ -139,15 +139,13 @@ public class TestCarpetaLimitada {
   public void explorarInexistente() throws OperacionInvalida {
 
 	CarpetaLimitada carpetaLimitada = new CarpetaLimitada(carpeta, tamano);
-    Correo correo = new Mensaje(texto);
 
-    assertEquals(false, carpetaLimitada.explorar().contains(correo));
     assertEquals(true, carpetaLimitada.explorar().isEmpty());
   }
 
   /**
   * Descripción : Añadir un correo a una carpeta limitada.  
-  * Nivel : Prueba de Unidad.
+  * Nivel : Prueba de Integración.
   * Categoría : Prueba dinámica de caja negra, positiva, funcional.
   * @throws OperacionInvalida
   */
@@ -164,7 +162,7 @@ public class TestCarpetaLimitada {
 
   /**
   * Descripción : Eliminar un correo de una carpeta limitada.  
-  * Nivel : Prueba de Unidad.
+  * Nivel : Prueba de Integración.
   * Categoría : Prueba dinámica de caja negra, positiva, funcional.
   * @throws OperacionInvalida
   */
@@ -182,7 +180,7 @@ public class TestCarpetaLimitada {
   /**
   * Descripción : Obtener el hijo de una carpeta limitada a partir 
   *  de un correo previamente añadido.  
-  * Nivel : Prueba de Unidad.
+  * Nivel : Prueba de Integración.
   * Categoría : Prueba dinámica de caja negra, positiva, funcional.
   * @throws OperacionInvalida
   */
@@ -210,14 +208,13 @@ public class TestCarpetaLimitada {
     Carpeta carpetaLimitada = new Carpeta(nombre);
     Correo correo = new Mensaje(texto);
 
-
     Assert.assertNull(correo.toString(), carpetaLimitada.obtenerHijo(1));
 
   }
 
   /**
   * Descripción : obtener la carpeta limitada padre de un correo previamente añadido.  
-  * Nivel : Prueba de Unidad.
+  * Nivel : Prueba de Integración.
   * Categoría : Prueba dinámica de caja negra, positiva, funcional.
   */
   @Test
@@ -246,7 +243,7 @@ public class TestCarpetaLimitada {
   
   /**
    * Descripción : buscar un correo a una Carpeta Limitada.  
-   * Nivel : Prueba de Unidad.
+   * Nivel : Prueba de Integración.
    * Categoría : Prueba dinámica de caja negra, positiva, funcional.
    * @throws OperacionInvalida
    * PiTest: No se puede matar un mutante pues no es posible acceder

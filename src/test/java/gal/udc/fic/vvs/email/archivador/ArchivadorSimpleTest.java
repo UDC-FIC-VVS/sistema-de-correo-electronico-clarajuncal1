@@ -43,7 +43,7 @@ public class ArchivadorSimpleTest extends TestJETM{
 
   /**
   * Descripción : Almacenar un correo en un Archivador Simple correctamente  
-  * Nivel : Prueba de Unidad.
+  * Nivel : Prueba de Integración.
   * Categoría : Prueba dinámica de caja negra, positiva, funcional.
   * PiTest : No se puede matar el mutante pues no es posible obtener el 
   * array de elementos.
@@ -64,7 +64,7 @@ public class ArchivadorSimpleTest extends TestJETM{
   
   /**
   * Descripción : Almacenar un correo en un Archivador Simple incorrectamente  
-  * Nivel : Prueba de Unidad.
+  * Nivel : Prueba de Integración.
   * Categoría : Prueba dinámica de caja negra, positiva, funcional.
   */
   @Test
@@ -95,7 +95,7 @@ public class ArchivadorSimpleTest extends TestJETM{
 
   /**
    * Descripción : Obtener el espacio disponible después de almacenar un correo. 
-   * Nivel : Prueba de Unidad.
+   * Nivel : Prueba de Integración.
    * Categoría : Prueba dinámica de caja negra, positiva, funcional.
    */ 
   @Test
@@ -107,6 +107,7 @@ public class ArchivadorSimpleTest extends TestJETM{
 
     //Introduzco el mensaje en el archivador y obtengo el espacio restante disponible
     archivadorSimple.almacenarCorreo(mensajePrueba);
+    
     assertEquals(archivadorSimple.obtenerEspacioTotal() - mensajePrueba.obtenerTamaño(), 
     		archivadorSimple.obtenerEspacioDisponible());
   }

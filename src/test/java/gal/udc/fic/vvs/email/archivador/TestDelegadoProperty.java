@@ -16,7 +16,7 @@ import org.junit.runner.RunWith;
 public class TestDelegadoProperty {
   /**
   * Descripción : Almacenar un correo correctamente en un delegado.
-  * Nivel : Prueba de Unidad.
+  * Nivel : Prueba de Integración.
   * Categoría : Prueba dinámica de caja negra, positiva, funcional.
   * Mecanismo de selección de datos : Se obtiene mediante generación automática de datos:
   *     nombre : un String cualquiera para el nombre del Delegado,
@@ -101,7 +101,7 @@ public class TestDelegadoProperty {
 
   /**
   * Descripción : Obtener el espacio disponible después de haber almacenado un correo.
-  * Nivel : Prueba de Unidad
+  * Nivel : Prueba de Integración
   * Categoría : Prueba dinámica de caja negra, positiva, funcional.
   * Mecanismo de selección de datos : Se obtiene mediante generación automática de datos:
   *     nombre : un String cualquiera para el nombre del Delegado,

@@ -67,7 +67,7 @@ public class TestCabecera {
   * Descripción : Obtener la ruta con padre de una cabecera, para ello se comprueba que 
   *  el contenido del mensaje más los no leidos de la carpeta coinciden con la 
   *  ruta de la cabecera.  
-  * Nivel : Prueba de Unidad.
+  * Nivel : Prueba de Integración.
   * Categoría : Prueba dinámica de caja negra, positiva, funcional.
   * @Param Cabecera : cabecera formada por un mensaje, un nombre y su valor.
   * @Param Carpeta : carpeta a la que se añade la cabecera.
@@ -104,8 +104,8 @@ public class TestCabecera {
   /**
   * Descripción : Obtener el icono de una Cabecera, para ello se comprueba que el icono 
   *  de dicha cabecera corresponde con el icono de un mensaje nuevo.  
-  * Nivel : Prueba dinámica de caja negra, positiva, funcional.
-  * Categoría : Prueba dinámica de caja negra, positiva.
+  * Nivel : Prueba de Unidad.
+  * Categoría : Prueba dinámica de caja negra, positiva, funcional.
   * @Param Cabecera : cabecera formada por un mensaje, un nombre y su valor.
   */
   @Test
@@ -151,7 +151,7 @@ public class TestCabecera {
 
   /**
   * Descripción : Añadir una cabecera.  
-  * Nivel : Prueba de Unidad.
+  * Nivel : Prueba de Integración.
   * Categoría : Prueba dinámica de caja negra, negativa, funcional.
   * @Param Cabecera : cabecera formada por un mensaje, un nombre y su valor.
   * @Throws OperacionInvalida : Devuelve una excepción, pues un
@@ -168,7 +168,7 @@ public class TestCabecera {
 
   /**
   * Descripción : Eliminar una cabecera.  
-  * Nivel : Prueba de Unidad.
+  * Nivel : Prueba de Integración.
   * Categoría : Prueba dinámica de caja negra, negativa, funcional.
   * @Param Cabecera : cabecera formada por un mensaje, un nombre y su valor.
   * @Throws OperacionInvalida : Devuelve una excepción, pues un
@@ -201,7 +201,7 @@ public class TestCabecera {
 
   /**
   * Descripción : Obtener el padre de una cabecera despues de haber sido añadida a una carpeta.  
-  * Nivel : Prueba de Unidad.
+  * Nivel : Prueba de Integración.
   * Categoría : Prueba dinámica de caja negra, positiva, funcional.
   * @Param Cabecera : cabecera formada por un mensaje, un nombre y su valor.
   * @Param Carpeta : carpeta a la que se añade la cabecera.
@@ -220,7 +220,7 @@ public class TestCabecera {
 
   /**
   * Descripción : Buscar una cabecera despues de haber sido añadida a una carpeta.  
-  * Nivel : Prueba de Unidad.
+  * Nivel : Prueba de Integración.
   * Categoría : Prueba dinámica de caja negra, positiva, funcional.
   * @Param Cabecera : cabecera formada por un mensaje, un nombre y su valor.
   * @Param Carpeta : carpeta a la que se añade la cabecera.

@@ -144,7 +144,7 @@ public class TestCabeceraProperty {
 
   /**
   * Descripción : Obtener el padre de una cabecera despues de haber sido añadida a una carpeta.  
-  * Nivel : Prueba de Unidad.
+  * Nivel : Prueba de Integración.
   * Categoría : Prueba dinámica de caja negra, positiva, funcional.
   * Mecanismo de selección de datos : Se obtiene mediante generación automática de datos:
   *    nombreMensaje : un String cualquiera para el nombre del mensaje de la Cabecera,

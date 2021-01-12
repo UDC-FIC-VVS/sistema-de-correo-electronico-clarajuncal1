@@ -35,7 +35,7 @@ public class TestArchivadorSimpleProperty {
 
   /**
   * Descripción : Almacenar un correo en un Archivador Simple correctamente  
-  * Nivel : Prueba de Unidad.
+  * Nivel : Prueba de Integración.
   * Categoría : Prueba dinámica de caja negra, positiva, funcional.
   * Mecanismo de selección de datos : Se obtiene mediante generación automática de datos:
   *   nombre : un String cualquiera para el nombre del Archivador Simple,
@@ -77,7 +77,7 @@ public class TestArchivadorSimpleProperty {
 
   /**
    * Descripción : Obtener el espacio disponible después de almacenar un correo. 
-   * Nivel : Prueba de Unidad.
+   * Nivel : Prueba de Integración.
    * Categoría : Prueba dinámica de caja negra, positiva, funcional.
    * Mecanismo de selección de datos : Se obtiene mediante generación automática de datos:
    *    nombre : un String cualquiera para el nombre del Archivador Simple,

@@ -13,7 +13,7 @@ import org.junit.runner.RunWith;
 public class TestCarpetaProperty {
   /**
   * Descripción : Establecer y obtener el leido de una Carpeta.  
-  * Nivel : Prueba de Unidad.
+  * Nivel : Prueba de Integración.
   * Categoría : Prueba dinámica de caja negra, positiva, funcional.
   * Mecanismo de selección de datos : Se obtiene mediante generación automática de datos:
   *    nombreTexto : un String cualquiera para el nombre del mensaje del Correo,
@@ -40,7 +40,7 @@ public class TestCarpetaProperty {
 
   /**
   * Descripción : Obtener el tamaño de una Carpeta.  
-  * Nivel : Prueba de Unidad.
+  * Nivel : Prueba de Integración.
   * Categoría : Prueba dinámica de caja negra, positiva, funcional.
   * Mecanismo de selección de datos : Se obtiene mediante generación automática de datos:
   *    nombreTexto : un String cualquiera para el nombre del mensaje del Correo,
@@ -65,7 +65,7 @@ public class TestCarpetaProperty {
 
   /**
   * Descripción : Obtener la previsualizacion de una Carpeta.  
-  * Nivel : Prueba de Unidad.
+  * Nivel : Prueba de Integración.
   * Categoría : Prueba dinámica de caja negra, positiva, funcional.
   * Mecanismo de selección de datos : Se obtiene mediante generación automática de datos:
   *    nombreTexto : un String cualquiera para el nombre del mensaje del Correo,
@@ -88,7 +88,7 @@ public class TestCarpetaProperty {
 
   /**
   * Descripción : Obtener el icono de una Carpeta.  
-  * Nivel : Prueba de Unidad.
+  * Nivel : Prueba de Integración.
   * Categoría : Prueba dinámica de caja negra, positiva, funcional.
   * Mecanismo de selección de datos : Se obtiene mediante generación automática de datos:
   *    nombreTexto : un String cualquiera para el nombre del mensaje del Correo,
@@ -110,7 +110,7 @@ public class TestCarpetaProperty {
 
   /**
   * Descripción : Obtener la visualizacion de una Carpeta.  
-  * Nivel : Prueba de Unidad.
+  * Nivel : Prueba de Integración.
   * Categoría : Prueba dinámica de caja negra, positiva, funcional.
   * Mecanismo de selección de datos : Se obtiene mediante generación automática de datos:
   *    nombreTexto : un String cualquiera para el nombre del mensaje del Correo,
@@ -134,7 +134,7 @@ public class TestCarpetaProperty {
 
   /**
   * Descripción : Añadir un correo a una Carpeta.  
-  * Nivel : Prueba de Unidad.
+  * Nivel : Prueba de Integración.
   * Categoría : Prueba dinámica de caja negra, positiva, funcional.
   * Mecanismo de selección de datos : Se obtiene mediante generación automática de datos:
   *    nombreTexto : un String cualquiera para el nombre del mensaje del Correo,
@@ -156,7 +156,7 @@ public class TestCarpetaProperty {
 
   /**
   * Descripción : Eliminar el correo de una Carpeta.  
-  * Nivel : Prueba de Unidad.
+  * Nivel : Prueba de Integración.
   * Categoría : Prueba dinámica de caja negra, positiva, funcional.
   * Mecanismo de selección de datos : Se obtiene mediante generación automática de datos:
   *    nombreTexto : un String cualquiera para el nombre del mensaje del Correo,
@@ -185,7 +185,7 @@ public class TestCarpetaProperty {
 
   /**
   * Descripción : Obtener el hijo de una Carpeta.  
-  * Nivel : Prueba de Unidad.
+  * Nivel : Prueba de Integración.
   * Categoría : Prueba dinámica de caja negra, positiva, funcional.
   * Mecanismo de selección de datos : Se obtiene mediante generación automática de datos:
   *    nombreTexto : un String cualquiera para el nombre del mensaje del Correo,
@@ -207,7 +207,7 @@ public class TestCarpetaProperty {
 
   /**
   * Descripción : Explorar una Carpeta.  
-  * Nivel : Prueba de Unidad.
+  * Nivel : Prueba de Integración.
   * Categoría : Prueba dinámica de caja negra, positiva, funcional.
   * Mecanismo de selección de datos : Se obtiene mediante generación automática de datos:
   *    nombreTexto : un String cualquiera para el nombre del mensaje del Correo,
@@ -229,7 +229,7 @@ public class TestCarpetaProperty {
 
   /**
   * Descripción : Obtener la ruta de una Carpeta.  
-  * Nivel : Prueba de Unidad.
+  * Nivel : Prueba de Integración.
   * Categoría : Prueba dinámica de caja negra, positiva, funcional.
   * Mecanismo de selección de datos : Se obtiene mediante generación automática de datos:
   *    nombreTexto : un String cualquiera para el nombre del mensaje del Correo,

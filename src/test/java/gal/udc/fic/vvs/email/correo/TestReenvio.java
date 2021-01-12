@@ -104,7 +104,7 @@ public class TestReenvio {
 
   /**
   * Descripción : Explicar un reenvio.  
-  * Nivel : Prueba de Unidad.
+  * Nivel : Prueba de Integración.
   * Categoría : Prueba dinámica de caja negra, negativa, funcional.
   * @Param Reenvio : reenvio formada por un mensaje y un correo.
   * @Param Carpeta : carpeta a la que se añade el reenvio.
@@ -125,7 +125,7 @@ public class TestReenvio {
 
   /**
   * Descripción : Añadir un reenvio.  
-  * Nivel : Prueba de Unidad.
+  * Nivel : Prueba de Integración.
   * Categoría : Prueba dinámica de caja negra, positiva, funcional.
   * @Param Reenvio : reenvio formada por un mensaje y un correo.
   * @Param Correo
@@ -177,7 +177,7 @@ public class TestReenvio {
 
   /**
   * Descripción : Obtener el padre de un Reenvio.  
-  * Nivel : Prueba de Unidad.
+  * Nivel : Prueba de Integración.
   * Categoría : Prueba dinámica de caja negra, positiva, funcional.
   * @Param Reenvio : reenvio formada por un mensaje y un correo.
   */

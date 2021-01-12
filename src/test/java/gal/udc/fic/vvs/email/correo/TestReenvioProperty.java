@@ -130,7 +130,7 @@ public class TestReenvioProperty {
 
   /**
   * Descripción : Obtener el padre de un Reenvio.  
-  * Nivel : Prueba de Unidad.
+  * Nivel : Prueba de Integración.
   * Categoría : Prueba dinámica de caja negra, positiva, funcional.
   * Mecanismo de selección de datos : Se obtiene mediante generación automática de datos:
   *    nombreMensaje : un String cualquiera para el nombre del mensaje del Reenvio,

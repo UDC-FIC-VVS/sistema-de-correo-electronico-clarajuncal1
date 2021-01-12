@@ -149,7 +149,7 @@ public class TestAdjuntoProperty {
 
   /**
   * Descripción : Obtener el padre de un Adjunto.  
-  * Nivel : Prueba de Unidad.
+  * Nivel : Prueba de Integración.
   * Categoría : Prueba dinámica de caja negra, positiva, funcional.
   * Mecanismo de selección de datos : Se obtiene mediante generación automática de datos:
   *     nombreMensaje : un String cualquiera para el nombre del mensaje del Adjunto,

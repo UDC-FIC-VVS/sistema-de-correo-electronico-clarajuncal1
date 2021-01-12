@@ -75,7 +75,7 @@ public class TestCarpeta extends TestJETM{
 
   /**
   * Descripción : Obtener el icono de una Carpeta.  
-  * Nivel : Prueba de Unidad.
+  * Nivel : Prueba de Integración.
   * Categoría : Prueba dinámica de caja negra, positiva, funcional.
   * @throws OperacionInvalida
   * PiTest: Queda un mutante vivo debido a que no se puede probar el
@@ -95,7 +95,7 @@ public class TestCarpeta extends TestJETM{
 
   /**
   * Descripción : Obtener la previsualizacion de una Carpeta.  
-  * Nivel : Prueba de Unidad.
+  * Nivel : Prueba de Integración.
   * Categoría : Prueba dinámica de caja negra, positiva, funcional.
   * @throws OperacionInvalida
   */
@@ -112,7 +112,7 @@ public class TestCarpeta extends TestJETM{
 
   /**
   * Descripción : Obtener la visualizacion de una Carpeta.  
-  * Nivel : Prueba de Unidad.
+  * Nivel : Prueba de Integración.
   * Categoría : Prueba dinámica de caja negra, positiva, funcional.
   * @throws OperacionInvalida
   */
@@ -129,7 +129,7 @@ public class TestCarpeta extends TestJETM{
   
   /**
   * Descripción : Obtener la visualizacion de una Carpeta.  
-  * Nivel : Prueba de Unidad.
+  * Nivel : Prueba de Integración.
   * Categoría : Prueba dinámica de caja negra, positiva, funcional.
   * @throws OperacionInvalida
   */
@@ -148,7 +148,7 @@ public class TestCarpeta extends TestJETM{
 
   /**
   * Descripción : Explorar una Carpeta.  
-  * Nivel : Prueba de Unidad.
+  * Nivel : Prueba de Integración.
   * Categoría : Prueba dinámica de caja negra, positiva, funcional.
   * @throws OperacionInvalida
   */
@@ -165,7 +165,7 @@ public class TestCarpeta extends TestJETM{
   
   /**
   * Descripción : Explorar una Carpeta Inexistente.  
-  * Nivel : Prueba de Unidad.
+  * Nivel : Prueba de Integración.
   * Categoría : Prueba dinámica de caja negra, positiva, funcional.
   * @throws OperacionInvalida
   */
@@ -181,7 +181,7 @@ public class TestCarpeta extends TestJETM{
 
   /**
   * Descripción : buscar un correo a una Carpeta.  
-  * Nivel : Prueba de Unidad.
+  * Nivel : Prueba de Integración.
   * Categoría : Prueba dinámica de caja negra, positiva, funcional.
   * @throws OperacionInvalida
   */
@@ -199,7 +199,7 @@ public class TestCarpeta extends TestJETM{
 
   /**
   * Descripción : Añadir un correo a una Carpeta.  
-  * Nivel : Prueba de Unidad.
+  * Nivel : Prueba de Integración.
   * Categoría : Prueba dinámica de caja negra, positiva, funcional.
   * @throws OperacionInvalida
   */
@@ -216,7 +216,7 @@ public class TestCarpeta extends TestJETM{
   
   /**
   * Descripción : Añadir un correo a una Carpeta.  
-  * Nivel : Prueba de Unidad.
+  * Nivel : Prueba de Integración.
   * Categoría : Prueba dinámica de caja negra, positiva, funcional.
   * @throws OperacionInvalida
   */
@@ -235,7 +235,7 @@ public class TestCarpeta extends TestJETM{
 
   /**
   * Descripción : Eliminar el correo de una Carpeta.  
-  * Nivel : Prueba de Unidad.
+  * Nivel : Prueba de Integración.
   * Categoría : Prueba dinámica de caja negra, positiva, funcional.
   * @throws OperacionInvalida
   */
@@ -257,7 +257,7 @@ public class TestCarpeta extends TestJETM{
 
   /**
   * Descripción : Obtener el hijo de una Carpeta.  
-  * Nivel : Prueba de Unidad.
+  * Nivel : Prueba de Integración.
   * Categoría : Prueba dinámica de caja negra, positiva, funcional.
   * @throws OperacionInvalida
   */
@@ -284,14 +284,13 @@ public class TestCarpeta extends TestJETM{
     Carpeta carpeta = new Carpeta(nombre);
     Correo correo = new Mensaje(texto);
 
-
     Assert.assertNull(correo.toString(), carpeta.obtenerHijo(1));
 
   }
 
   /**
   * Descripción : Obtener la ruta de una Carpeta.  
-  * Nivel : Prueba de Unidad.
+  * Nivel : Prueba de Integración.
   * Categoría : Prueba dinámica de caja negra, positiva, funcional.
   * @throws OperacionInvalida
   */

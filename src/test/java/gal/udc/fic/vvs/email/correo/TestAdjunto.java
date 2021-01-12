@@ -63,7 +63,7 @@ public class TestAdjunto {
   /**
   * Descripción : Obtener la ruta de un Adjunto, para ello se comprueba que la ruta del padre
   *  mas la previsualizacion del adjunto coincidan con la ruta del adjunto 
-  * Nivel : Prueba de Unidad.
+  * Nivel : Prueba de Integración.
   * Categoría : Prueba dinámica de caja negra, positiva, funcional.
   * @Param Adjunto : adjunto formado por un mensaje y un archivo.
   * @Param Carpeta : Carpeta a la que se añade el adjunto
@@ -145,7 +145,7 @@ public class TestAdjunto {
 
   /**
   * Descripción : Añadir un Adjunto.  
-  * Nivel : Prueba de Unidad.
+  * Nivel : Prueba de Integración.
   * Categoría : Prueba dinámica de caja negra, positiva, funcional.
   * @Param Adjunto : adjunto formado por un mensaje y un archivo.
   * @Exception OperacionInvalida : Devuelve una excepción, pues un
@@ -196,7 +196,7 @@ public class TestAdjunto {
 
   /**
   * Descripción : Obtener el padre de un Adjunto.  
-  * Nivel : Prueba de Unidad.
+  * Nivel : Prueba de Integración.
   * Categoría : Prueba dinámica de caja negra, positiva, funcional.
   * @Param Adjunto : adjunto formado por un mensaje y un archivo.
   * @Param Carpeta : Se crea una carpeta donde se va a añadir el adjunto.
@@ -214,7 +214,7 @@ public class TestAdjunto {
 
   /**
   * Descripción : Búsqueda de un Adjunto.  
-  * Nivel : Prueba de Unidad.
+  * Nivel : Prueba de Integración.
   * Categoría : Prueba dinámica de caja negra, positiva, funcional.
   * @Param Adjunto : adjunto formado por un mensaje y un archivo.
   */

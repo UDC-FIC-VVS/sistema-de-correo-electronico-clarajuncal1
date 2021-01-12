@@ -16,7 +16,7 @@ import org.junit.runner.RunWith;
 public class TestLogProperty {
   /**
   * Descripción : Almacenar un correo correctamente en un Log.
-  * Nivel : Prueba de Unidad
+  * Nivel : Prueba de Integración
   * Categoría : Prueba dinámica de caja negra, positiva, funcional.
   * Mecanismo de selección de datos : Se obtiene mediante generación automática de datos:
   *     nombreLog : un String cualquiera para el nombre del Log,
@@ -102,7 +102,7 @@ public class TestLogProperty {
 
   /**
   * Descripción : Obtener el espacio disponible después de haber almacenado un correo.
-  * Nivel : Prueba de Unidad
+  * Nivel : Prueba de Integración
   * Categoría : Prueba dinámica de caja negra, positiva, funcional.
   * Mecanismo de selección de datos : Se obtiene mediante generación automática de datos:
   *     nombreLog : un String cualquiera para el nombre del Log,

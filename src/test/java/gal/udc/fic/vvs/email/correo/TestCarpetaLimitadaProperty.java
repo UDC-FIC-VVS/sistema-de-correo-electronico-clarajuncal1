@@ -18,7 +18,7 @@ public class TestCarpetaLimitadaProperty {
 
   /**
   * Descripción : Establecer y obtener los leidos de una carpeta limitada.  
-  * Nivel : Prueba de Unidad.
+  * Nivel : Prueba de Integración.
   * Categoría : Prueba dinámica de caja negra, positiva, funcional.
   * Mecanismo de selección de datos : Se obtiene mediante 
   *  generación automática de datos:
@@ -80,7 +80,7 @@ public class TestCarpetaLimitadaProperty {
     
   /**
   * Descripción : obtener el tamaño de una carpeta limitada.  
-  * Nivel : Prueba de Unidad.
+  * Nivel : Prueba de Integración.
   * Categoría : Prueba dinámica de caja negra, positiva, funcional.
   * Mecanismo de selección de datos : Se obtiene mediante generación automática de datos:
   *    nombreCarpeta : un String cualquiera para el nombre de la carpetaLimitada,
@@ -110,7 +110,7 @@ public class TestCarpetaLimitadaProperty {
 
   /**
   * Descripción : Obtener la previsualización de una carpeta limitada.  
-  * Nivel : Prueba de Unidad.
+  * Nivel : Prueba de Integración.
   * Categoría : Prueba dinámica de caja negra, positiva, funcional.
   * Mecanismo de selección de datos : Se obtiene mediante generación automática de datos:
   *    nombreCarpeta : un String cualquiera para el nombre de la carpetaLimitada,
@@ -142,7 +142,7 @@ public class TestCarpetaLimitadaProperty {
 
   /**
   * Descripción : Obtener la visualizacion de una carpeta limitada.  
-  * Nivel : Prueba de Unidad.
+  * Nivel : Prueba de Integración.
   * Categoría : Prueba dinámica de caja negra, positiva, funcional.
   * Mecanismo de selección de datos : Se obtiene mediante generación automática de datos:
   *    nombreCarpeta : un String cualquiera para el nombre de la carpetaLimitada,
@@ -198,7 +198,7 @@ public class TestCarpetaLimitadaProperty {
   
   /**
   * Descripción : Explorar que una carpeta limitada contenga correos.  
-  * Nivel : Prueba de Unidad.
+  * Nivel : Prueba de Integración.
   * Categoría : Prueba dinámica de caja negra, positiva, funcional.
   * Mecanismo de selección de datos : Se obtiene mediante generación automática de datos:
   *    nombreCarpeta : un String cualquiera para el nombre de la carpetaLimitada,
@@ -227,7 +227,7 @@ public class TestCarpetaLimitadaProperty {
 
   /**
   * Descripción : Añadir un correo a una carpeta limitada.  
-  * Nivel : Prueba de Unidad.
+  * Nivel : Prueba de Integración.
   * Categoría : Prueba dinámica de caja negra, positiva, funcional.
   * Mecanismo de selección de datos : Se obtiene mediante generación automática de datos:
   *    nombreCarpeta : un String cualquiera para el nombre de la carpetaLimitada,
@@ -256,7 +256,7 @@ public class TestCarpetaLimitadaProperty {
 
   /**
   * Descripción : Eliminar un correo de una carpeta limitada.  
-  * Nivel : Prueba de Unidad.
+  * Nivel : Prueba de Integración.
   * Categoría : Prueba dinámica de caja negra, positiva, funcional.
   * Mecanismo de selección de datos : Se obtiene mediante generación automática de datos:
   *    nombreCarpeta : un String cualquiera para el nombre de la carpetaLimitada,
@@ -290,7 +290,7 @@ public class TestCarpetaLimitadaProperty {
   /**
   * Descripción : Obtener el hijo de una carpeta limitada a partir 
   *  de un correo previamente añadido.  
-  * Nivel : Prueba de Unidad.
+  * Nivel : Prueba de Integración.
   * Categoría : Prueba dinámica de caja negra, positiva, funcional.
   * Mecanismo de selección de datos : Se obtiene mediante generación automática de datos:
   *    nombreCarpeta : un String cualquiera para el nombre de la carpetaLimitada,
@@ -319,7 +319,7 @@ public class TestCarpetaLimitadaProperty {
 
   /**
   * Descripción : obtener la carpeta limitada padre de un correo previamente añadido.  
-  * Nivel : Prueba de Unidad.
+  * Nivel : Prueba de Integración.
   * Categoría : Prueba dinámica de caja negra, positiva, funcional.
   * Mecanismo de selección de datos : Se obtiene mediante generación automática de datos:
   *    nombreCarpeta : un String cualquiera para el nombre de la carpetaLimitada,

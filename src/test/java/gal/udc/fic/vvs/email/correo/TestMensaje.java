@@ -142,7 +142,7 @@ public class TestMensaje {
   
   /**
   * Descripción : Obtener el padre de un Reenvio.  
-  * Nivel : Prueba de Unidad.
+  * Nivel : Prueba de Integración.
   * Categoría : Prueba dinámica de caja negra, positiva, funcional.
   * @Param Reenvio : reenvio formada por un mensaje y un correo.
   */
@@ -175,8 +175,8 @@ public class TestMensaje {
   }
   
   /**
-  * Descripción : Explicar un mensaje.  
-  * Nivel : Prueba de Unidad.
+  * Descripción : Explorar un mensaje.  
+  * Nivel : Prueba de Integración.
   * Categoría : Prueba dinámica de caja negra, negativa, funcional.
   * @Param Mensaje : mensaje formado por un texto.
   * @Param Carpeta : carpeta a la que se añade el mensaje.

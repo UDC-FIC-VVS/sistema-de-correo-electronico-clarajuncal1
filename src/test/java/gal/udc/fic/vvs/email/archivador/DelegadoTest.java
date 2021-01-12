@@ -17,7 +17,7 @@ public class DelegadoTest {
 
   /**
   * Descripción : Almacenar un correo correctamente en un delegado.
-  * Nivel : Prueba de Unidad.
+  * Nivel : Prueba de Integración.
   * Categoría : Prueba dinámica de caja negra, positiva, funcional.
   */
   @Test
@@ -36,7 +36,7 @@ public class DelegadoTest {
   
   /**
   * Descripción : Almacenar un correo correctamente en un delegado.
-  * Nivel : Prueba de Unidad.
+  * Nivel : Prueba de Integración.
   * Categoría : Prueba dinámica de caja negra, positiva, funcional.
   * @Exception: Salta una excepción puesto que el espacio es insuficiente
   * y no se puede almacenar el correo
@@ -104,7 +104,7 @@ public class DelegadoTest {
 
   /**
  * Descripción : Obtener el espacio disponible después de haber almacenado un correo.
- * Nivel : Prueba de Unidad
+ * Nivel : Prueba de Integración
  * Categoría : Prueba dinámica de caja negra, positiva, funcional.
  */
   @Test

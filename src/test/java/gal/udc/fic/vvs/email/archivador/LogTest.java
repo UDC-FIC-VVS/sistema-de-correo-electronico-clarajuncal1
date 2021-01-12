@@ -21,7 +21,7 @@ public class LogTest {
 
   /**
   * Descripción : Almacenar un correo correctamente en un Log.
-  * Nivel : Prueba de Unidad
+  * Nivel : Prueba de Integración
   * Categoría : Prueba dinámica de caja negra, positiva, funcional.
   * PiTest: No se puede matar el mutante pues no se obtiene
   * el mensaje de println en el test.
@@ -44,7 +44,7 @@ public class LogTest {
   
   /**
   * Descripción : Almacenar un correo incorrectamente en un Log.
-  * Nivel : Prueba de Unidad
+  * Nivel : Prueba de Integración
   * Categoría : Prueba dinámica de caja negra, negativa, funcional.
   */
   @Test
@@ -112,7 +112,7 @@ public class LogTest {
 
   /**
   * Descripción : Obtener el espacio disponible después de haber almacenado un correo.
-  * Nivel : Prueba de Unidad
+  * Nivel : Prueba de Integración
   * Categoría : Prueba dinámica de caja negra, positiva, funcional.
   */
   @Test
