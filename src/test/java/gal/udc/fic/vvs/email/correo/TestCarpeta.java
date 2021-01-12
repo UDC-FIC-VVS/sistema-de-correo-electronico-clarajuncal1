@@ -2,6 +2,8 @@ package gal.udc.fic.vvs.email.correo;
 
 import static org.junit.Assert.assertEquals;
 
+import org.junit.Assert;
+
 import gal.udc.fic.vvs.email.TestJETM;
 import gal.udc.fic.vvs.email.archivo.Texto;
 import org.junit.Test;
@@ -55,8 +57,8 @@ public class TestCarpeta extends TestJETM{
   * Nivel : Prueba de Unidad.
   * Categoría : Prueba dinámica de caja negra, positiva, funciona.
   * @throws OperacionInvalida
-  * PiTest: Queda un mutante vivo debido al point del etmMonitor
-  * creado con JETM.
+  * PiTest: Queda un mutante vivo debido a que no se puede probar el
+  * point del etmMonitor creado para las pruebas con JETM.
   */
   @Test
   public void obtenerTamano() throws OperacionInvalida {
@@ -76,8 +78,8 @@ public class TestCarpeta extends TestJETM{
   * Nivel : Prueba de Unidad.
   * Categoría : Prueba dinámica de caja negra, positiva, funcional.
   * @throws OperacionInvalida
-  * PiTest: Queda un mutante vivo debido al point del etmMonitor
-  * creado con JETM.
+  * PiTest: Queda un mutante vivo debido a que no se puede probar el
+  * point del etmMonitor creado para las pruebas con JETM.
   */
   @Test
   public void obtenerIcono() throws OperacionInvalida {
@@ -159,6 +161,22 @@ public class TestCarpeta extends TestJETM{
     carpeta.añadir(correo);
 
     assertEquals(true, carpeta.explorar().contains(correo));
+  }
+  
+  /**
+  * Descripción : Explorar una Carpeta Inexistente.  
+  * Nivel : Prueba de Unidad.
+  * Categoría : Prueba dinámica de caja negra, positiva, funcional.
+  * @throws OperacionInvalida
+  */
+  @Test
+  public void explorarInexistente() throws OperacionInvalida {
+
+    Carpeta carpeta = new Carpeta(nombre);
+    Correo correo = new Mensaje(texto);
+
+    assertEquals(false, carpeta.explorar().contains(correo));
+    assertEquals(true, carpeta.explorar().isEmpty());
   }
 
   /**
@@ -252,6 +270,23 @@ public class TestCarpeta extends TestJETM{
     carpeta.añadir(correo);
 
     assertEquals(correo, carpeta.obtenerHijo(0));
+  }
+  
+  /**
+  * Descripción : Obtener el hijo de una Carpeta sin hijos.  
+  * Nivel : Prueba de Unidad.
+  * Categoría : Prueba dinámica de caja negra, positiva, funcional.
+  * @throws OperacionInvalida
+  */
+  @Test(expected = ArrayIndexOutOfBoundsException.class)
+  public void obtenerHijoInexistente() throws OperacionInvalida {
+
+    Carpeta carpeta = new Carpeta(nombre);
+    Correo correo = new Mensaje(texto);
+
+
+    Assert.assertNull(correo.toString(), carpeta.obtenerHijo(1));
+
   }
 
   /**

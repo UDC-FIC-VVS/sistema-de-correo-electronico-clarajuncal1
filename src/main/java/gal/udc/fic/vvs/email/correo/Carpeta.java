@@ -78,7 +78,6 @@ public class Carpeta extends CorreoAbstracto {
     }
 
     public void añadir(Correo correo) throws OperacionInvalida {
-    //EtmPoint point = etmMonitor.createPoint("Carpeta:añadir");
     	
 	if (correo.obtenerPadre() != null) {
 	    correo.obtenerPadre().eliminar(correo);
@@ -86,7 +85,6 @@ public class Carpeta extends CorreoAbstracto {
         ((CorreoAbstracto) correo).establecerPadre(this);
         _hijos.addElement(correo);
         
-        //point.collect();
     }
 
     public void eliminar(Correo correo) throws OperacionInvalida {

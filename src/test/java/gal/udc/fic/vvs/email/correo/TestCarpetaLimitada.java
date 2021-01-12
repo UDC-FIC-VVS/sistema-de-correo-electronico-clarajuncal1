@@ -2,6 +2,8 @@ package gal.udc.fic.vvs.email.correo;
 
 import static org.junit.Assert.assertEquals;
 
+import org.junit.Assert;
+
 import gal.udc.fic.vvs.email.archivo.Texto;
 import org.junit.Test;
 
@@ -126,6 +128,22 @@ public class TestCarpetaLimitada {
 
     assertEquals(carpetaLimitada.explorar(), carpeta.explorar());
   }
+  
+  /**
+  * Descripción : Explorar una CarpetaLimitada Inexistente.  
+  * Nivel : Prueba de Unidad.
+  * Categoría : Prueba dinámica de caja negra, positiva, funcional.
+  * @throws OperacionInvalida
+  */
+  @Test
+  public void explorarInexistente() throws OperacionInvalida {
+
+	CarpetaLimitada carpetaLimitada = new CarpetaLimitada(carpeta, tamano);
+    Correo correo = new Mensaje(texto);
+
+    assertEquals(false, carpetaLimitada.explorar().contains(correo));
+    assertEquals(true, carpetaLimitada.explorar().isEmpty());
+  }
 
   /**
   * Descripción : Añadir un correo a una carpeta limitada.  
@@ -179,6 +197,23 @@ public class TestCarpetaLimitada {
     assertEquals(correo, carpetaLimitada.obtenerHijo(0));
 
   }
+  
+  /**
+  * Descripción : Obtener el hijo de una CarpetaLimitada sin hijos.  
+  * Nivel : Prueba de Unidad.
+  * Categoría : Prueba dinámica de caja negra, positiva, funcional.
+  * @throws OperacionInvalida
+  */
+  @Test(expected = ArrayIndexOutOfBoundsException.class)
+  public void obtenerHijoInexistente() throws OperacionInvalida {
+
+    Carpeta carpetaLimitada = new Carpeta(nombre);
+    Correo correo = new Mensaje(texto);
+
+
+    Assert.assertNull(correo.toString(), carpetaLimitada.obtenerHijo(1));
+
+  }
 
   /**
   * Descripción : obtener la carpeta limitada padre de un correo previamente añadido.  
@@ -214,6 +249,8 @@ public class TestCarpetaLimitada {
    * Nivel : Prueba de Unidad.
    * Categoría : Prueba dinámica de caja negra, positiva, funcional.
    * @throws OperacionInvalida
+   * PiTest: No se puede matar un mutante pues no es posible acceder
+   * al array y en consecuencia eliminar un elemento.
    */
    @Test
    public void buscar() throws OperacionInvalida {

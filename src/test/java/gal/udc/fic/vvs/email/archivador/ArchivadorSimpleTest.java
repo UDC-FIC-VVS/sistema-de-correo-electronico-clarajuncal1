@@ -45,6 +45,8 @@ public class ArchivadorSimpleTest extends TestJETM{
   * Descripción : Almacenar un correo en un Archivador Simple correctamente  
   * Nivel : Prueba de Unidad.
   * Categoría : Prueba dinámica de caja negra, positiva, funcional.
+  * PiTest : No se puede matar el mutante pues no es posible obtener el 
+  * array de elementos.
   */
   @Test
   public void almacenarCorreoCorrectamente() {

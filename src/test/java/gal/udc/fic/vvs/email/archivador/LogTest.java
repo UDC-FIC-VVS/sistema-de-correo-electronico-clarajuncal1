@@ -23,8 +23,8 @@ public class LogTest {
   * Descripción : Almacenar un correo correctamente en un Log.
   * Nivel : Prueba de Unidad
   * Categoría : Prueba dinámica de caja negra, positiva, funcional.
-  * PiTest: Queda un mutante vivo pues no se ejecuta el mensaje de
-  * println en el test.
+  * PiTest: No se puede matar el mutante pues no se obtiene
+  * el mensaje de println en el test.
   */
   @Test
   public void almacenarCorreo() {

@@ -15,8 +15,8 @@ public class TestTexto extends TestJETM{
   * Descripción : Obtener el nombre de un Texto  
   * Nivel : Prueba de Unidad.
   * Categoría : Prueba dinámica de caja negra, positiva, funcional.
-  * PiTest: Queda un mutante vivo debido al point del etmMonitor
-  * creado con JETM.
+  * PiTest: Queda un mutante vivo(en la clase Archivo) debido al point 
+  * del etmMonitor creado para las pruebas con JETM.
   */
   @Test
   public void obtenerNombre() {
