@@ -11,7 +11,7 @@ import com.tngtech.archunit.lang.ArchRule;
 public class TestArquitecturaArchivador {
 
 	  /**
-	  * Descripción : Realización de un test de arquitectura para el paquete Archivador 
+	  * Descripción : Realización de un test de arquitectura para el paquete Archivador .
 	  * Categoría : Prueba dinámica de caja blanca, positiva, estructural.
 	  */
 	@Test

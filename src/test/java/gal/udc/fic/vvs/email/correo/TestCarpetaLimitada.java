@@ -21,6 +21,10 @@ public class TestCarpetaLimitada {
   * Descripción : obtener el tamaño de una carpeta limitada.  
   * Nivel : Prueba de Unidad.
   * Categoría : Prueba dinámica de caja negra, positiva, funcional.
+  * Mecanismo de selección de datos: Datos introducidos manualmente,
+  * para ello se utilizan particiones equivalentes, esto es, se escoge 
+  * un elemento que representa al grupo.
+  *    @Param CarpetaLimitada : Formada por un carpeta y un tamaño.
   */
   @Test
   public void obtenerTamano() {
@@ -34,6 +38,10 @@ public class TestCarpetaLimitada {
   * Descripción : Establecer los leidos de una carpeta limitada.  
   * Nivel : Prueba de Unidad.
   * Categoría : Prueba dinámica de caja negra, positiva, funcional.
+  * Mecanismo de selección de datos: Datos introducidos manualmente,
+  * para ello se utilizan particiones equivalentes, esto es, se escoge 
+  * un elemento que representa al grupo.
+  *    @Param CarpetaLimitada : Formada por un carpeta y un tamaño.
   */
   @Test
   public void establecerLeido() {
@@ -49,6 +57,11 @@ public class TestCarpetaLimitada {
   * Descripción : Obtener los leidos de una carpeta limitada.  
   * Nivel : Prueba de Integración.
   * Categoría : Prueba dinámica de caja negra, positiva, funcional.
+  * Mecanismo de selección de datos: Datos introducidos manualmente,
+  * para ello se utilizan particiones equivalentes, esto es, se escoge 
+  * un elemento que representa al grupo.
+  *   @Param CarpetaLimitada : Formada por un carpeta y un tamaño.
+  *   @Param Correo : Formado por un mensaje(nombre y su contenido).
   * @throws OperacionInvalida
   */
   @Test
@@ -67,6 +80,10 @@ public class TestCarpetaLimitada {
   * Descripción : Obtener el icono de una carpeta limitada.  
   * Nivel : Prueba de Unidad.
   * Categoría : Prueba dinámica de caja negra, positiva, funcional.
+  * Mecanismo de selección de datos: Datos introducidos manualmente,
+  * para ello se utilizan particiones equivalentes, esto es, se escoge 
+  * un elemento que representa al grupo.
+  *    @Param CarpetaLimitada : Formada por un carpeta y un tamaño.
   */
   @Test
   public void obtenerIcono() {
@@ -80,6 +97,10 @@ public class TestCarpetaLimitada {
   * Descripción : Obtener la previsualización de una carpeta limitada.  
   * Nivel : Prueba de Unidad.
   * Categoría : Prueba dinámica de caja negra, positiva, funcional.
+  * Mecanismo de selección de datos: Datos introducidos manualmente,
+  * para ello se utilizan particiones equivalentes, esto es, se escoge 
+  * un elemento que representa al grupo.
+  *    @Param CarpetaLimitada : Formada por un carpeta y un tamaño.
   */
   @Test
   public void obtenerPrevisualizacionCarpetaLimitadaTest() {
@@ -93,6 +114,10 @@ public class TestCarpetaLimitada {
   * Descripción : Obtener la visualizacion de una carpeta limitada.  
   * Nivel : Prueba de Unidad.
   * Categoría : Prueba dinámica de caja negra, positiva, funcional.
+  * Mecanismo de selección de datos: Datos introducidos manualmente,
+  * para ello se utilizan particiones equivalentes, esto es, se escoge 
+  * un elemento que representa al grupo.
+  *    @Param CarpetaLimitada : Formada por un carpeta y un tamaño.
   */
   @Test
   public void obtenerVisualizacion() {
@@ -106,6 +131,10 @@ public class TestCarpetaLimitada {
   * Descripción : Obtener la ruta de una carpeta limitada.  
   * Nivel : Prueba de Unidad.
   * Categoría : Prueba dinámica de caja negra, positiva, funcional.
+  * Mecanismo de selección de datos: Datos introducidos manualmente,
+  * para ello se utilizan particiones equivalentes, esto es, se escoge 
+  * un elemento que representa al grupo.
+  *    @Param CarpetaLimitada : Formada por un carpeta y un tamaño.
   */
   @Test
   public void obtenerRuta() {
@@ -119,6 +148,10 @@ public class TestCarpetaLimitada {
   * Descripción : Explorar que una carpeta limitada contenga correos.  
   * Nivel : Prueba de Unidad.
   * Categoría : Prueba dinámica de caja negra, positiva, funcional.
+  * Mecanismo de selección de datos: Datos introducidos manualmente,
+  * para ello se utilizan particiones equivalentes, esto es, se escoge 
+  * un elemento que representa al grupo.
+  *    @Param CarpetaLimitada : Formada por un carpeta y un tamaño.
   * @throws OperacionInvalida
   */
   @Test
@@ -132,7 +165,11 @@ public class TestCarpetaLimitada {
   /**
   * Descripción : Explorar una CarpetaLimitada Inexistente.  
   * Nivel : Prueba de Unidad.
-  * Categoría : Prueba dinámica de caja negra, positiva, funcional.
+  * Categoría : Prueba dinámica de caja negra, negativa, funcional.
+  * Mecanismo de selección de datos: Datos introducidos manualmente,
+  * para ello se utilizan valores frontera, esto es, se escoge 
+  * un elemento vacío para realizar la prueba.
+  *   @Param CarpetaLimitada : Formada por un carpeta y un tamaño.
   * @throws OperacionInvalida
   */
   @Test
@@ -147,6 +184,11 @@ public class TestCarpetaLimitada {
   * Descripción : Añadir un correo a una carpeta limitada.  
   * Nivel : Prueba de Integración.
   * Categoría : Prueba dinámica de caja negra, positiva, funcional.
+  * Mecanismo de selección de datos: Datos introducidos manualmente,
+  * para ello se utilizan particiones equivalentes, esto es, se escoge 
+  * un elemento que representa al grupo.
+  *   @Param CarpetaLimitada : Formada por un carpeta y un tamaño.
+  *   @Param Correo : Formado por un mensaje(nombre y su contenido).
   * @throws OperacionInvalida
   */
   @Test
@@ -164,6 +206,11 @@ public class TestCarpetaLimitada {
   * Descripción : Eliminar un correo de una carpeta limitada.  
   * Nivel : Prueba de Integración.
   * Categoría : Prueba dinámica de caja negra, positiva, funcional.
+  * Mecanismo de selección de datos: Datos introducidos manualmente,
+  * para ello se utilizan particiones equivalentes, esto es, se escoge 
+  * un elemento que representa al grupo.
+  *   @Param CarpetaLimitada : Formada por un carpeta y un tamaño.
+  *   @Param Correo : Formado por un mensaje(nombre y su contenido).
   * @throws OperacionInvalida
   */
   @Test
@@ -182,6 +229,11 @@ public class TestCarpetaLimitada {
   *  de un correo previamente añadido.  
   * Nivel : Prueba de Integración.
   * Categoría : Prueba dinámica de caja negra, positiva, funcional.
+  * Mecanismo de selección de datos: Datos introducidos manualmente,
+  * para ello se utilizan particiones equivalentes, esto es, se escoge 
+  * un elemento que representa al grupo.
+  *   @Param CarpetaLimitada : Formada por un carpeta y un tamaño.
+  *   @Param Correo : Formado por un mensaje(nombre y su contenido).
   * @throws OperacionInvalida
   */
   @Test
@@ -199,7 +251,12 @@ public class TestCarpetaLimitada {
   /**
   * Descripción : Obtener el hijo de una CarpetaLimitada sin hijos.  
   * Nivel : Prueba de Unidad.
-  * Categoría : Prueba dinámica de caja negra, positiva, funcional.
+  * Categoría : Prueba dinámica de caja negra, negativa, funcional.
+  * Mecanismo de selección de datos: Datos introducidos manualmente,
+  * para ello se utilizan valores frontera, esto es, se escoge 
+  * un elemento vacío para realizar la prueba.
+  *   @Param CarpetaLimitada : Formada por un carpeta y un tamaño.
+  *   @Param Correo : Formado por un mensaje(nombre y su contenido).
   * @throws OperacionInvalida
   */
   @Test(expected = ArrayIndexOutOfBoundsException.class)
@@ -216,6 +273,11 @@ public class TestCarpetaLimitada {
   * Descripción : obtener la carpeta limitada padre de un correo previamente añadido.  
   * Nivel : Prueba de Integración.
   * Categoría : Prueba dinámica de caja negra, positiva, funcional.
+  * Mecanismo de selección de datos: Datos introducidos manualmente,
+  * para ello se utilizan particiones equivalentes, esto es, se escoge 
+  * un elemento que representa al grupo.
+  *   @Param CarpetaLimitada : Formada por un carpeta y un tamaño.
+  *   @Param Correo : Formado por un mensaje(nombre y su contenido).
   */
   @Test
   public void establecerYObtenerPadre() {
@@ -232,7 +294,11 @@ public class TestCarpetaLimitada {
   /**
   * Descripción : obtener la carpeta limitada padre sin correo.  
   * Nivel : Prueba de Unidad.
-  * Categoría : Prueba dinámica de caja negra, positiva, funcional.
+  * Categoría : Prueba dinámica de caja negra, negativa, funcional.
+  * Mecanismo de selección de datos: Datos introducidos manualmente,
+  * para ello se utilizan valores frontera, esto es, se escoge 
+  * un elemento vacío para realizar la prueba.
+  *    @Param CarpetaLimitada : Formada por un carpeta y un tamaño.
   */
   @Test
   public void obtenerPadreNull() {
@@ -245,6 +311,11 @@ public class TestCarpetaLimitada {
    * Descripción : buscar un correo a una Carpeta Limitada.  
    * Nivel : Prueba de Integración.
    * Categoría : Prueba dinámica de caja negra, positiva, funcional.
+   * Mecanismo de selección de datos: Datos introducidos manualmente,
+  * para ello se utilizan particiones equivalentes, esto es, se escoge 
+  * un elemento que representa al grupo.
+   *   @Param CarpetaLimitada : Formada por un carpeta y un tamaño.
+   *   @Param Correo : Formado por un mensaje(nombre y su contenido).
    * @throws OperacionInvalida
    * PiTest: No se puede matar un mutante pues no es posible acceder
    * al array y en consecuencia eliminar un elemento.

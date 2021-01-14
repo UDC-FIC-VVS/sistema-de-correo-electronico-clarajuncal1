@@ -16,7 +16,10 @@ public class TestAdjunto {
   *  con el tamaño del adjunto.  
   * Nivel : Prueba de Unidad.
   * Categoría : Prueba dinámica de caja negra, positiva, funcional.
-  * @Param Adjunto : adjunto formado por un mensaje y un archivo.
+  * Mecanismo de selección de datos: Datos introducidos manualmente,
+  * para ello se utilizan particiones equivalentes, esto es, se escoge 
+  * un elemento que representa al grupo.
+  *   @Param Adjunto : adjunto formado por un mensaje y un archivo.
   */
   @Test 
   public void obtenerTamano() {
@@ -34,7 +37,10 @@ public class TestAdjunto {
   *  con la visualizacion del adjunto  
   * Nivel : Prueba de Unidad.
   * Categoría : Prueba dinámica de caja negra, positiva, funcional.
-  * @Param Adjunto : adjunto formado por un mensaje y un archivo.
+  * Mecanismo de selección de datos: Datos introducidos manualmente,
+  * para ello se utilizan particiones equivalentes, esto es, se escoge 
+  * un elemento que representa al grupo..
+  *   @Param Adjunto : adjunto formado por un mensaje y un archivo.
   */
   @Test
   public void obtenerVisualizacion() {
@@ -50,7 +56,10 @@ public class TestAdjunto {
   *  del mensaje coincide con la ruta del adjunto.  
   * Nivel : Prueba de Unidad.
   * Categoría : Prueba dinámica de caja negra, positiva, funcional.
-  * @Param Adjunto : adjunto formado por un mensaje y un archivo.
+  * Mecanismo de selección de datos: Datos introducidos manualmente,
+  * para ello se utilizan particiones equivalentes, esto es, se escoge 
+  * un elemento que representa al grupo.
+  *   @Param Adjunto : adjunto formado por un mensaje y un archivo.
   */
   @Test
   public void obtenerRuta() {
@@ -65,8 +74,11 @@ public class TestAdjunto {
   *  mas la previsualizacion del adjunto coincidan con la ruta del adjunto 
   * Nivel : Prueba de Integración.
   * Categoría : Prueba dinámica de caja negra, positiva, funcional.
-  * @Param Adjunto : adjunto formado por un mensaje y un archivo.
-  * @Param Carpeta : Carpeta a la que se añade el adjunto
+  * Mecanismo de selección de datos: Datos introducidos manualmente,
+  * para ello se utilizan particiones equivalentes, esto es, se escoge 
+  * un elemento que representa al grupo.
+  *   @Param Adjunto : adjunto formado por un mensaje y un archivo.
+  *   @Param Carpeta : Carpeta a la que se añade el adjunto
   */
   @Test
   public void obtenerRutaConPadre() throws OperacionInvalida {
@@ -83,7 +95,10 @@ public class TestAdjunto {
   * Descripción : Establecer y Obtener si un Adjunto ha sido leido.  
   * Nivel : Prueba de Unidad.
   * Categoría : Prueba dinámica de caja negra, positiva, funcional.
-  * @Param Adjunto : adjunto formado por un mensaje y un archivo.
+  * Mecanismo de selección de datos: Datos introducidos manualmente,
+  * para ello se utilizan particiones equivalentes, esto es, se escoge 
+  * un elemento que representa al grupo.
+  *   @Param Adjunto : adjunto formado por un mensaje y un archivo.
   */
   @Test
   public void establecerYObtenerLeido() {
@@ -101,7 +116,10 @@ public class TestAdjunto {
   * Descripción : Obtener el icono de un Adjunto.  
   * Nivel : Prueba de Unidad.
   * Categoría : Prueba dinámica de caja negra, positiva, funcional.
-  * @Param Adjunto : adjunto formado por un mensaje y un archivo.
+  * Mecanismo de selección de datos: Datos introducidos manualmente,
+  * para ello se utilizan particiones equivalentes, esto es, se escoge 
+  * un elemento que representa al grupo.
+  *   @Param Adjunto : adjunto formado por un mensaje y un archivo.
   */
   @Test
   public void obtenerIcono() {
@@ -117,7 +135,10 @@ public class TestAdjunto {
   *  del adjunto
   * Nivel : Prueba de Unidad.
   * Categoría : Prueba dinámica de caja negra, positiva, funcional.
-  * @Param Adjunto : adjunto formado por un mensaje y un archivo.
+  * Mecanismo de selección de datos: Datos introducidos manualmente,
+  * para ello se utilizan particiones equivalentes, esto es, se escoge 
+  * un elemento que representa al grupo.
+  *   @Param Adjunto : adjunto formado por un mensaje y un archivo.
   */
   @Test
   public void obtenerPreVisualizacionAdjuntoTest() {
@@ -130,8 +151,9 @@ public class TestAdjunto {
   /**
   * Descripción : Explorar un Adjunto.  
   * Nivel : Prueba de Unidad.
-  * Categoría : Prueba dinámica de caja negra, positiva, funcional.
-  * @Param Adjunto : adjunto formado por un mensaje y un archivo.
+  * Categoría : Prueba dinámica de caja negra, negativa, funcional.
+  * Mecanismo de selección de datos: Datos introducidos manualmente
+  *   @Param Adjunto : adjunto formado por un mensaje y un archivo.
   * @Exception OperacionInvalida : Devuelve una excepción, pues un
   *  adjunto no puede realizar dicha operación.
   */
@@ -146,8 +168,9 @@ public class TestAdjunto {
   /**
   * Descripción : Añadir un Adjunto.  
   * Nivel : Prueba de Integración.
-  * Categoría : Prueba dinámica de caja negra, positiva, funcional.
-  * @Param Adjunto : adjunto formado por un mensaje y un archivo.
+  * Categoría : Prueba dinámica de caja negra, negativa, funcional.
+  * Mecanismo de selección de datos: Datos introducidos manualmente
+  *   @Param Adjunto : adjunto formado por un mensaje y un archivo.
   * @Exception OperacionInvalida : Devuelve una excepción, pues un
   *  adjunto no puede realizar dicha operación.
   */
@@ -164,8 +187,9 @@ public class TestAdjunto {
   /**
   * Descripción : Eliminar un Adjunto.  
   * Nivel : Prueba de Unidad.
-  * Categoría : Prueba dinámica de caja negra, positiva, funcional.
-  * @Param Adjunto : adjunto formado por un mensaje y un archivo.
+  * Categoría : Prueba dinámica de caja negra, negativa, funcional.
+  * Mecanismo de selección de datos: Datos introducidos manualmente
+  *   @Param Adjunto : adjunto formado por un mensaje y un archivo.
   * @Exception OperacionInvalida : Devuelve una excepción, pues un
   *  adjunto no puede realizar dicha operación.
   */
@@ -181,8 +205,9 @@ public class TestAdjunto {
   /**
   * Descripción : Obtener el hijo de un Adjunto.  
   * Nivel : Prueba de Unidad.
-  * Categoría : Prueba dinámica de caja negra, positiva, funcional.
-  * @Param Adjunto : adjunto formado por un mensaje y un archivo.
+  * Categoría : Prueba dinámica de caja negra, negativa, funcional.
+  * Mecanismo de selección de datos: Datos introducidos manualmente
+  *   @Param Adjunto : adjunto formado por un mensaje y un archivo.
   * @Exception OperacionInvalida : Devuelve una excepción, pues un
   *    adjunto no puede realizar dicha operación.
   */
@@ -198,8 +223,11 @@ public class TestAdjunto {
   * Descripción : Obtener el padre de un Adjunto.  
   * Nivel : Prueba de Integración.
   * Categoría : Prueba dinámica de caja negra, positiva, funcional.
-  * @Param Adjunto : adjunto formado por un mensaje y un archivo.
-  * @Param Carpeta : Se crea una carpeta donde se va a añadir el adjunto.
+  * Mecanismo de selección de datos: Datos introducidos manualmente,
+  * para ello se utilizan particiones equivalentes, esto es, se escoge 
+  * un elemento que representa al grupo.
+  *   @Param Adjunto : adjunto formado por un mensaje y un archivo.
+  *   @Param Carpeta : Se crea una carpeta donde se va a añadir el adjunto.
   */
   @Test
   public void obtenerPadre() throws OperacionInvalida {
@@ -216,7 +244,10 @@ public class TestAdjunto {
   * Descripción : Búsqueda de un Adjunto.  
   * Nivel : Prueba de Integración.
   * Categoría : Prueba dinámica de caja negra, positiva, funcional.
-  * @Param Adjunto : adjunto formado por un mensaje y un archivo.
+  * Mecanismo de selección de datos: Datos introducidos manualmente,
+  * para ello se utilizan particiones equivalentes, esto es, se escoge 
+  * un elemento que representa al grupo.
+  *   @Param Adjunto : adjunto formado por un mensaje y un archivo.
   */
   @Test
   public void buscar() throws OperacionInvalida {

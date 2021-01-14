@@ -19,6 +19,11 @@ public class DelegadoTest {
   * Descripción : Almacenar un correo correctamente en un delegado.
   * Nivel : Prueba de Integración.
   * Categoría : Prueba dinámica de caja negra, positiva, funcional.
+  * Mecanismo de selección de datos: Datos introducidos manualmente,
+   * para ello se utilizan particiones equivalentes, esto es, se escoge un elemento
+   * que representa al grupoado por un nombre y un tamaño.
+  *   @Param Delegado : Formado por un archivador.
+  *   @Param Correo : Formado por un mensaje(con un nombre y su contenido).
   */
   @Test
   public void almacenarCorreo() {
@@ -37,7 +42,12 @@ public class DelegadoTest {
   /**
   * Descripción : Almacenar un correo correctamente en un delegado.
   * Nivel : Prueba de Integración.
-  * Categoría : Prueba dinámica de caja negra, positiva, funcional.
+  * Categoría : Prueba dinámica de caja negra, negativa, funcional.
+  * Mecanismo de selección de datos: Datos introducidos manualmente,
+  * para ello se utilizan valores frontera.
+  *   @Param Archivador : Formado por un nombre y un tamaño.
+  *   @Param Delegado : Formado por un archivador.
+  *   @Param Correo : Formado por un mensaje(con un nombre y su contenido).
   * @Exception: Salta una excepción puesto que el espacio es insuficiente
   * y no se puede almacenar el correo
   */
@@ -60,6 +70,11 @@ public class DelegadoTest {
   * Descripción : Establecer y Obtener el delegado de un archivador.
   * Nivel : Prueba de Unidad.
   * Categoría : Prueba dinámica de caja negra, positiva, funcional.
+  * Mecanismo de selección de datos: Datos introducidos manualmente,
+  * para ello se utilizan particiones equivalentes, esto es, se escoge un elemento
+  * que representa al grupo.
+  *   @Param Archivador : Formado por un nombre y un tamaño.
+  *   @Param Delegado : Formado por un archivador.
   */
   @Test
   public void establecerYObtenerDelegado() {
@@ -78,9 +93,14 @@ public class DelegadoTest {
   * Descripción : Obtener el nombre de un delegado.
   * Nivel : Prueba de Unidad.
   * Categoría : Prueba dinámica de caja negra, positiva, funcional.
+  * Mecanismo de selección de datos: Datos introducidos manualmente,
+  * para ello se utilizan particiones equivalentes, esto es, se escoge un elemento
+  * que representa al grupo.
+  *   @Param Archivador : Formado por un nombre y un tamaño.
+  *   @Param Delegado : Formado por un archivador.
   */
   @Test
-   public void obtenerNombreProperty() {
+   public void obtenerNombre() {
 
     ArchivadorSimple archivador = new ArchivadorSimple(nombreArchivador, espacioArchivador);
     Delegado delegado = new Delegado(archivador);
@@ -92,9 +112,14 @@ public class DelegadoTest {
   * Descripción : Obtener el espacio total de un delegado una vez se crea
   * Nivel  : Prueba de Unidad
   * Categoría : Prueba dinámica de caja negra, positiva, funcional.
+  * Mecanismo de selección de datos: Datos introducidos manualmente,
+  * para ello se utilizan particiones equivalentes, esto es, se escoge un elemento
+  * que representa al grupo.
+  *   @Param Archivador : Formado por un nombre y un tamaño.
+  *   @Param Delegado : Formado por un archivador.
   */
   @Test
-  public void obtenerEspacioTotalProperty() {
+  public void obtenerEspacioTotal() {
 
     ArchivadorSimple archivador = new ArchivadorSimple(nombreArchivador, espacioArchivador);
     Delegado delegado = new Delegado(archivador);
@@ -106,9 +131,15 @@ public class DelegadoTest {
  * Descripción : Obtener el espacio disponible después de haber almacenado un correo.
  * Nivel : Prueba de Integración
  * Categoría : Prueba dinámica de caja negra, positiva, funcional.
+ * Mecanismo de selección de datos: Datos introducidos manualmente,
+ * para ello se utilizan particiones equivalentes, esto es, se escoge un elemento
+ * que representa al grupo.
+ *   @Param Archivador : Formado por un nombre y un tamaño.
+ *   @Param Delegado : Formado por un archivador.
+ *   @Param Correo : Formado por un mensaje(con un nombre y su contenido).
  */
   @Test
-  public void obtenerEspacioDisponibleProperty() {
+  public void obtenerEspacioDisponible() {
 
     ArchivadorSimple archivador = new ArchivadorSimple(nombreArchivador, espacioArchivador);
     Delegado delegado = new Delegado(archivador);

@@ -9,20 +9,25 @@ import etm.core.monitor.EtmMonitor;
 import etm.core.renderer.SimpleTextRenderer;
 
 public abstract class TestJETM {
+	
+   /**
+    * Descripción : Configuración test JETM
+    * Categoría : Pruebas no funcionales, dinamicas de caja negra.
+    */
+	
+   public static EtmMonitor monitor;
 
-	  public static EtmMonitor monitor;
+  @BeforeClass
+  public static void setup() {
+    BasicEtmConfigurator.configure();
+    monitor = EtmManager.getEtmMonitor();
+    monitor.start();
+  }
 
-	  @BeforeClass
-	  public static void setup() {
-	    BasicEtmConfigurator.configure();
-	    monitor = EtmManager.getEtmMonitor();
-	    monitor.start();
-	  }
-
-	  @AfterClass
-	  public static void tearDown() {
-		monitor.render(new SimpleTextRenderer());
-	    monitor.stop();
-	  }
+  @AfterClass
+  public static void tearDown() {
+	monitor.render(new SimpleTextRenderer());
+    monitor.stop();
+  }
 	  
 }

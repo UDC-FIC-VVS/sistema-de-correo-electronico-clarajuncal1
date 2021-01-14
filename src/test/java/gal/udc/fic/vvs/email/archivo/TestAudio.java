@@ -13,6 +13,10 @@ public class TestAudio {
   * Descripción : Obtener el nombre de un Audio  
   * Nivel : Prueba de Unidad.
   * Categoría : Prueba dinámica de caja negra, positiva, funcional.
+  * Mecanismo de selección de datos: Datos introducidos manualmente,
+  * para ello se utilizan particiones equivalentes, esto es, se escoge 
+  * un elemento que representa al grupo.
+  *   @Param Audio : Formado por un nombre y su contenido.
   */
   @Test
   public void obtenerNombre() {
@@ -29,6 +33,10 @@ public class TestAudio {
   * Descripción : Obtener el contenido de un Audio  
   * Nivel : Prueba de Unidad.
   * Categoría : Prueba dinámica de caja negra, positiva, funcional.
+  * Mecanismo de selección de datos: Datos introducidos manualmente,
+  * para ello se utilizan particiones equivalentes, esto es, se escoge 
+  * un elemento que representa al grupo..
+  *   @Param Audio : Formado por un nombre y su contenido.
   */
   @Test
   public void obtenerContenido() {
@@ -44,6 +52,10 @@ public class TestAudio {
   * Descripción : Obtener el tamaño de un Audio  
   * Nivel : Prueba de Unidad.
   * Categoría : Prueba dinámica de caja negra, positiva, funcional.
+  * Mecanismo de selección de datos: Datos introducidos manualmente,
+  * para ello se utilizan particiones equivalentes, esto es, se escoge 
+  * un elemento que representa al grupo..
+  *   @Param Audio : Formado por un nombre y su contenido.
   */
   @Test
   public void obtenerTamano() {
@@ -59,6 +71,10 @@ public class TestAudio {
   * Descripción : Obtener la Visualización de un Audio  
   * Nivel : Prueba de Unidad.
   * Categoría : Prueba dinámica de caja negra, positiva, funcional.
+  * Mecanismo de selección de datos: Datos introducidos manualmente,
+  * para ello se utilizan particiones equivalentes, esto es, se escoge 
+  * un elemento que representa al grupo..
+  *   @Param Audio : Formado por un nombre y su contenido.
   */
   @Test
   public void obtenerPrevisualizacionAudioTest() {

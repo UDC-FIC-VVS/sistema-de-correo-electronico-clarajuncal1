@@ -17,7 +17,10 @@ public class TestReenvio {
   * Descripción : Obtener el tamaño de un Reenvio.  
   * Nivel : Prueba de Unidad.
   * Categoría : Prueba dinámica de caja negra, positiva, funcional.
-  * @Param Reenvio : reenvio formada por un mensaje y un correo.
+  * Mecanismo de selección de datos: Datos introducidos manualmente,
+  * para ello se utilizan particiones equivalentes, esto es, se escoge 
+  * un elemento que representa al grupo.
+  *   @Param Reenvio : reenvio formada por un mensaje y un correo.
   */
   @Test 
   public void obtenerTamano() {
@@ -32,7 +35,10 @@ public class TestReenvio {
   * Descripción : Obtener la visualización de un Reenvio.  
   * Nivel : Prueba de Unidad.
   * Categoría : Prueba dinámica de caja negra, positiva, funcional.
-  * @Param Reenvio : reenvio formada por un mensaje y un correo.
+  * Mecanismo de selección de datos: Datos introducidos manualmente,
+  * para ello se utilizan particiones equivalentes, esto es, se escoge 
+  * un elemento que representa al grupo.
+  *   @Param Reenvio : reenvio formada por un mensaje y un correo.
   */
   @Test
   public void obtenerVisualizacion() {
@@ -48,7 +54,10 @@ public class TestReenvio {
   * Descripción : Obtener la previsualización de un Reenvio.  
   * Nivel : Prueba de Unidad.
   * Categoría : Prueba dinámica de caja negra, positiva, funcional.
-  * @Param Reenvio : reenvio formada por un mensaje y un correo.
+  * Mecanismo de selección de datos: Datos introducidos manualmente,
+  * para ello se utilizan particiones equivalentes, esto es, se escoge 
+  * un elemento que representa al grupo.
+  *   @Param Reenvio : reenvio formada por un mensaje y un correo.
   */
   @Test
   public void obtenerPrevisualizacionReenvioTest() {
@@ -62,7 +71,10 @@ public class TestReenvio {
   * Descripción : Obtener el icono de un Reenvio.  
   * Nivel : Prueba de Unidad.
   * Categoría : Prueba dinámica de caja negra, positiva, funcional.
-  * @Param Reenvio : reenvio formada por un mensaje y un correo.
+  * Mecanismo de selección de datos: Datos introducidos manualmente,
+  * para ello se utilizan particiones equivalentes, esto es, se escoge 
+  * un elemento que representa al grupo.
+  *   @Param Reenvio : reenvio formada por un mensaje y un correo.
   */
   @Test
   public void obtenerIcono() {
@@ -76,7 +88,10 @@ public class TestReenvio {
   * Descripción : Establecer y Obtener los leídos de un Reenvio.  
   * Nivel : Prueba de Unidad.
   * Categoría : Prueba dinámica de caja negra, positiva, funcional.
-  * @Param Reenvio : reenvio formada por un mensaje y un correo.
+  * Mecanismo de selección de datos: Datos introducidos manualmente,
+  * para ello se utilizan particiones equivalentes, esto es, se escoge 
+  * un elemento que representa al grupo.
+  *   @Param Reenvio : reenvio formada por un mensaje y un correo.
   */
   @Test 
   public void establecerYObtenerLeido() throws OperacionInvalida {
@@ -92,7 +107,10 @@ public class TestReenvio {
   * Descripción : Obtener la ruta de un Reenvio.  
   * Nivel : Prueba de Unidad.
   * Categoría : Prueba dinámica de caja negra, positiva, funcional.
-  * @Param Reenvio : reenvio formada por un mensaje y un correo.
+  * Mecanismo de selección de datos: Datos introducidos manualmente,
+  * para ello se utilizan particiones equivalentes, esto es, se escoge 
+  * un elemento que representa al grupo.
+  *   @Param Reenvio : reenvio formada por un mensaje y un correo.
   */
   @Test
   public void obtenerRuta() {
@@ -106,8 +124,9 @@ public class TestReenvio {
   * Descripción : Explicar un reenvio.  
   * Nivel : Prueba de Integración.
   * Categoría : Prueba dinámica de caja negra, negativa, funcional.
-  * @Param Reenvio : reenvio formada por un mensaje y un correo.
-  * @Param Carpeta : carpeta a la que se añade el reenvio.
+  * Mecanismo de selección de datos: Datos introducidos manualmente.
+  *   @Param Reenvio : reenvio formada por un mensaje y un correo.
+  *   @Param Carpeta : carpeta a la que se añade el reenvio.
   * @Exception OperacionInvalida : Devuelve una excepción, pues un
   *    adjunto no puede realizar dicha operación.
   */
@@ -126,9 +145,10 @@ public class TestReenvio {
   /**
   * Descripción : Añadir un reenvio.  
   * Nivel : Prueba de Integración.
-  * Categoría : Prueba dinámica de caja negra, positiva, funcional.
-  * @Param Reenvio : reenvio formada por un mensaje y un correo.
-  * @Param Correo
+  * Categoría : Prueba dinámica de caja negra, negativa, funcional.
+  * Mecanismo de selección de datos: Datos introducidos manualmente.
+  *   @Param Reenvio : reenvio formada por un mensaje y un correo.
+  *   @Param Correo
   * @Exception OperacionInvalida : Devuelve una excepción, pues un
   *    adjunto no puede realizar dicha operación.
   */
@@ -145,8 +165,9 @@ public class TestReenvio {
   * Descripción : Eliminar un reenvio.  
   * Nivel : Prueba de Unidad.
   * Categoría : Prueba dinámica de caja negra, negativa, funcional.
-  * @Param Reenvio : reenvio formada por un mensaje y un correo.
-  * @Param Correo
+  * Mecanismo de selección de datos: Datos introducidos manualmente.
+  *   @Param Reenvio : reenvio formada por un mensaje y un correo.
+  *   @Param Correo
   * @Exception OperacionInvalida : Devuelve una excepción, pues un
   *    adjunto no puede realizar dicha operación.
   */
@@ -163,7 +184,8 @@ public class TestReenvio {
   * Descripción : obtener el hijo de un reenvio.  
   * Nivel : Prueba de Unidad.
   * Categoría : Prueba dinámica de caja negra, negativa, funcional.
-  * @Param Reenvio : reenvio formada por un mensaje y un correo.
+  * Mecanismo de selección de datos: Datos introducidos manualmente.
+  *   @Param Reenvio : reenvio formada por un mensaje y un correo.
   * @Exception OperacionInvalida : Devuelve una excepción, pues un
   *    adjunto no puede realizar dicha operación.
   */
@@ -179,7 +201,10 @@ public class TestReenvio {
   * Descripción : Obtener el padre de un Reenvio.  
   * Nivel : Prueba de Integración.
   * Categoría : Prueba dinámica de caja negra, positiva, funcional.
-  * @Param Reenvio : reenvio formada por un mensaje y un correo.
+  * Mecanismo de selección de datos: Datos introducidos manualmente,
+  * para ello se utilizan particiones equivalentes, esto es, se escoge 
+  * un elemento que representa al grupo.
+  *   @Param Reenvio : reenvio formada por un mensaje y un correo.
   */
   @Test
   public void establecerYObtenerPadre() throws OperacionInvalida {

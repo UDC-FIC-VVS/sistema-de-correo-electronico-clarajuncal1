@@ -15,6 +15,10 @@ public class TestTexto extends TestJETM{
   * Descripción : Obtener el nombre de un Texto  
   * Nivel : Prueba de Unidad.
   * Categoría : Prueba dinámica de caja negra, positiva, funcional.
+  * Mecanismo de selección de datos: Datos introducidos manualmente,
+  * para ello se utilizan particiones equivalentes, esto es, se escoge 
+  * un elemento que representa al grupo.
+  *   @Param Texto : Formado por un nombre y su contenido.
   * PiTest: Queda un mutante vivo(en la clase Archivo) debido al point 
   * del etmMonitor creado para las pruebas con JETM.
   */
@@ -34,6 +38,10 @@ public class TestTexto extends TestJETM{
   * Descripción : Obtener el contenido de un Texto  
   * Nivel : Prueba de Unidad.
   * Categoría : Prueba dinámica de caja negra, positiva, funcional.
+  * Mecanismo de selección de datos: Datos introducidos manualmente,
+  * para ello se utilizan particiones equivalentes, esto es, se escoge 
+  * un elemento que representa al grupo.
+  *   @Param Texto : Formado por un nombre y su contenido.
   */
   @Test
   public void obtenerContenido() {
@@ -49,6 +57,10 @@ public class TestTexto extends TestJETM{
   * Descripción : Obtener el tamaño de un Texto  
   * Nivel : Prueba de Unidad.
   * Categoría : Prueba dinámica de caja negra, positiva, funcional.
+  * Mecanismo de selección de datos: Datos introducidos manualmente,
+  * para ello se utilizan particiones equivalentes, esto es, se escoge 
+  * un elemento que representa al grupo.
+  *   @Param Texto : Formado por un nombre y su contenido.
   */
   @Test
   public void obtenerTamano() {
@@ -64,6 +76,10 @@ public class TestTexto extends TestJETM{
   * Descripción : Obtener la previsualizacion de un Texto  
   * Nivel : Prueba de Unidad.
   * Categoría : Prueba dinámica de caja negra, positiva, funcional.
+  * Mecanismo de selección de datos: Datos introducidos manualmente,
+  * para ello se utilizan particiones equivalentes, esto es, se escoge 
+  * un elemento que representa al grupo.
+  *   @Param Texto : Formado por un nombre y su contenido.
   */
   @Test
   public void obtenerPrevisualizacionTextosTest() {

@@ -12,6 +12,10 @@ public class TestImagen {
   * Descripción : Obtener el nombre de una Imagen  
   * Nivel : Prueba de Unidad.
   * Categoría : Prueba dinámica de caja negra, positiva, funcional.
+  * Mecanismo de selección de datos: Datos introducidos manualmente,
+  * para ello se utilizan particiones equivalentes, esto es, se escoge 
+  * un elemento que representa al grupo.
+  *   @Param Imagen : Formado por un nombre y su contenido.
   */
   @Test
   public void obtenerNombre() {
@@ -28,6 +32,10 @@ public class TestImagen {
   * Descripción : Obtener el contenido de una Imagen  
   * Nivel : Prueba de Unidad.
   * Categoría : Prueba dinámica de caja negra, positiva, funcional.
+  * Mecanismo de selección de datos: Datos introducidos manualmente,
+  * para ello se utilizan particiones equivalentes, esto es, se escoge 
+  * un elemento que representa al grupo.
+  *   @Param Imagen : Formado por un nombre y su contenido.
   */
   @Test
   public void obtenerContenido() {
@@ -43,6 +51,10 @@ public class TestImagen {
   * Descripción : Obtener el tamaño de una Imagen  
   * Nivel : Prueba de Unidad.
   * Categoría : Prueba dinámica de caja negra, positiva, funcional.
+  * Mecanismo de selección de datos: Datos introducidos manualmente,
+  * para ello se utilizan particiones equivalentes, esto es, se escoge 
+  * un elemento que representa al grupo.
+  *   @Param Imagen : Formado por un nombre y su contenido.
   */
   @Test
   public void obtenerTamano() {
@@ -58,6 +70,10 @@ public class TestImagen {
   * Descripción : Obtener la Visualización de una Imagen  
   * Nivel : Prueba de Unidad.
   * Categoría : Prueba dinámica de caja negra, positiva, funcional.
+  * Mecanismo de selección de datos: Datos introducidos manualmente,
+  * para ello se utilizan particiones equivalentes, esto es, se escoge 
+  * un elemento que representa al grupo.
+  *   @Param Imagen : Formado por un nombre y su contenido.
   */
   @Test
   public void obtenerPrevisualizacionImagenTest() {

@@ -23,6 +23,12 @@ public class LogTest {
   * Descripción : Almacenar un correo correctamente en un Log.
   * Nivel : Prueba de Integración
   * Categoría : Prueba dinámica de caja negra, positiva, funcional.
+  * Mecanismo de selección de datos: Datos introducidos manualmente,
+  * para ello se utilizan particiones equivalentes, esto es, se escoge un elemento
+  * que representa al grupo.
+  *   @Param Archivador : Formado por un nombre y un tamaño.
+  *   @Param Log : Formado por un archivador.
+  *   @Param Correo : Formado por un mensaje(con un nombre y su contenido).
   * PiTest: No se puede matar el mutante pues no se obtiene
   * el mensaje de println en el test.
   */
@@ -46,6 +52,11 @@ public class LogTest {
   * Descripción : Almacenar un correo incorrectamente en un Log.
   * Nivel : Prueba de Integración
   * Categoría : Prueba dinámica de caja negra, negativa, funcional.
+  * Mecanismo de selección de datos: Datos introducidos manualmente,
+  * para ello se utilizan valores frontera.
+  *   @Param Archivador : Formado por un nombre y un tamaño.
+  *   @Param Log : Formado por un archivador.
+  *   @Param Correo : Formado por un mensaje(con un nombre y su contenido).
   */
   @Test
   public void almacenarCorreoIncorrectamente() {
@@ -64,9 +75,14 @@ public class LogTest {
   * Descripción : Obtener el nombre de un Log. 
   * Nivel : Prueba de Unidad.
   * Categoría : Prueba dinámica de caja negra, positiva, funcional.
+  * Mecanismo de selección de datos: Datos introducidos manualmente,
+  * para ello se utilizan particiones equivalentes, esto es, se escoge un elemento
+  * que representa al grupo.
+  *   @Param Archivador : Formado por un nombre y un tamaño.
+  *   @Param Delegado : Formado por un archivador.
   */
   @Test
-  public void obtenerNombreProperty() {
+  public void obtenerNombre() {
 
     //Se crea un Log a partir de un Archivador
     ArchivadorSimple archivador = new ArchivadorSimple(nombreArchivador, espacioArchivador);
@@ -79,9 +95,15 @@ public class LogTest {
   * Descripción : Establecer y Obtener el delegado de un archivador.
   * Nivel : Prueba de Unidad.
   * Categoría : Prueba dinámica de caja negra, positiva, funcional.
+  * Mecanismo de selección de datos: Datos introducidos manualmente,
+  * para ello se utilizan particiones equivalentes, esto es, se escoge un elemento
+  * que representa al grupo.
+  *   @Param Archivador : Formado por un nombre y un tamaño.
+  *   @Param Delegado : Formado por un archivador.
+  *   @Param Log : Formado por un delegado.
   */
   @Test
-  public void establecerYObtenerDelegadoProperty() {
+  public void establecerYObtenerDelegado() {
 
     //Se crea un Log a partir de un Archivador
     ArchivadorSimple archivador = new ArchivadorSimple(nombreArchivador, espacioArchivador);
@@ -99,9 +121,14 @@ public class LogTest {
   * Descripción : Obtener el espacio total de un Log.
   * Nivel : Prueba de Unidad.
   * Categoría : Prueba dinámica de caja negra, positiva, funcional.
+  * Mecanismo de selección de datos: Datos introducidos manualmente,
+  * para ello se utilizan particiones equivalentes, esto es, se escoge un elemento
+  * que representa al grupo.
+  *   @Param Archivador : Formado por un nombre y un tamaño.
+  *   @Param Delegado : Formado por un archivador.
   */
   @Test
-  public void obtenerEspacioTotalProperty() {
+  public void obtenerEspacioTotal() {
     
     //Se crea un Log a partir de un Archivador
     ArchivadorSimple archivador = new ArchivadorSimple(nombreArchivador, espacioArchivador);
@@ -114,9 +141,15 @@ public class LogTest {
   * Descripción : Obtener el espacio disponible después de haber almacenado un correo.
   * Nivel : Prueba de Integración
   * Categoría : Prueba dinámica de caja negra, positiva, funcional.
+  * Mecanismo de selección de datos: Datos introducidos manualmente,
+  * para ello se utilizan particiones equivalentes, esto es, se escoge un elemento
+  * que representa al grupo.
+  *   @Param Archivador : Formado por un nombre y un tamaño.
+  *   @Param Delegado : Formado por un archivador.
+  *   @Param Correo : Formado por un mensaje(con un nombre y su contenido).
   */
   @Test
-  public void obtenerEspacioDisponibleProperty() {
+  public void obtenerEspacioDisponible() {
 
     //Se crea un Log a partir de un Archivador
     ArchivadorSimple archivador = new ArchivadorSimple(nombreArchivador, espacioArchivador);

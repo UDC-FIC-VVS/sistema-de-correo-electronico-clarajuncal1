@@ -19,7 +19,10 @@ public class TestCabecera {
   *  la cabecera coincidan con el tamaño de la cabecera.  
   * Nivel : Prueba de Unidad.
   * Categoría : Prueba dinámica de caja negra, positiva, funcional.
-  * @Param Cabecera : cabecera formada por un mensaje, un nombre y su valor.
+  * Mecanismo de selección de datos: Datos introducidos manualmente,
+  * para ello se utilizan particiones equivalentes, esto es, se escoge 
+  * un elemento que representa al grupo.
+  *   @Param Cabecera : cabecera formada por un mensaje, un nombre y su valor.
   */
   @Test
   public void obtenerTamanho() {
@@ -36,7 +39,10 @@ public class TestCabecera {
   *  coincidan con la visualización de la cabecera.  
   * Nivel : Prueba de Unidad.
   * Categoría : Prueba dinámica de caja negra, positiva, funcional.
-  * @Param Cabecera : cabecera formada por un mensaje, un nombre y su valor.
+  * Mecanismo de selección de datos: Datos introducidos manualmente,
+  * para ello se utilizan particiones equivalentes, esto es, se escoge 
+  * un elemento que representa al grupo.
+  *   @Param Cabecera : cabecera formada por un mensaje, un nombre y su valor.
   */
   @Test
   public void obtenerVisualizacion() {
@@ -52,7 +58,10 @@ public class TestCabecera {
   *  el contenido del mensaje coincide con la ruta de la cabecera.  
   * Nivel : Prueba de Unidad.
   * Categoría : Prueba dinámica de caja negra, positiva, funcional.
-  * @Param Cabecera : cabecera formada por un mensaje, un nombre y su valor.
+  * Mecanismo de selección de datos: Datos introducidos manualmente,
+  * para ello se utilizan particiones equivalentes, esto es, se escoge 
+  * un elemento que representa al grupo.
+  *   @Param Cabecera : cabecera formada por un mensaje, un nombre y su valor.
   */
   @Test
   public void obtenerRuta() {
@@ -69,8 +78,11 @@ public class TestCabecera {
   *  ruta de la cabecera.  
   * Nivel : Prueba de Integración.
   * Categoría : Prueba dinámica de caja negra, positiva, funcional.
-  * @Param Cabecera : cabecera formada por un mensaje, un nombre y su valor.
-  * @Param Carpeta : carpeta a la que se añade la cabecera.
+  * Mecanismo de selección de datos: Datos introducidos manualmente,
+  * para ello se utilizan particiones equivalentes, esto es, se escoge 
+  * un elemento que representa al grupo.
+  *   @Param Cabecera : cabecera formada por un mensaje, un nombre y su valor.
+  *   @Param Carpeta : carpeta a la que se añade la cabecera.
   * @throws OperacionInvalida
   */
   @Test
@@ -87,7 +99,10 @@ public class TestCabecera {
   * Descripción : Establecer y obtener los leidos de una Cabecera.  
   * Nivel : Prueba de Unidad.
   * Categoría : Prueba dinámica de caja negra, positiva, funcional.
-  * @Param Cabecera : cabecera formada por un mensaje, un nombre y su valor.
+  * Mecanismo de selección de datos: Datos introducidos manualmente,
+  * para ello se utilizan particiones equivalentes, esto es, se escoge 
+  * un elemento que representa al grupo.
+  *   @Param Cabecera : cabecera formada por un mensaje, un nombre y su valor.
   */
   @Test
   public void establecerYObtenerLeido() {
@@ -106,7 +121,10 @@ public class TestCabecera {
   *  de dicha cabecera corresponde con el icono de un mensaje nuevo.  
   * Nivel : Prueba de Unidad.
   * Categoría : Prueba dinámica de caja negra, positiva, funcional.
-  * @Param Cabecera : cabecera formada por un mensaje, un nombre y su valor.
+  * Mecanismo de selección de datos: Datos introducidos manualmente,
+  * para ello se utilizan particiones equivalentes, esto es, se escoge 
+  * un elemento que representa al grupo.
+  *   @Param Cabecera : cabecera formada por un mensaje, un nombre y su valor.
   */
   @Test
   public void obtenerIcono() {
@@ -122,7 +140,10 @@ public class TestCabecera {
   *  de la cabecera.  
   * Nivel : Prueba de Unidad.
   * Categoría : Prueba dinámica de caja negra, positiva, funcional.
-  * @Param Cabecera : cabecera formada por un mensaje, un nombre y su valor.
+  * Mecanismo de selección de datos: Datos introducidos manualmente,
+  * para ello se utilizan particiones equivalentes, esto es, se escoge 
+  * un elemento que representa al grupo.
+  *   @Param Cabecera : cabecera formada por un mensaje, un nombre y su valor.
   */
   @Test
   public void obtenerPrevisualizacionCabeceraTest() {
@@ -136,7 +157,8 @@ public class TestCabecera {
   * Descripción : Explorar una cabecera.  
   * Nivel : Prueba de Unidad.
   * Categoría : Prueba dinámica de caja negra, negativa, funcional.
-  * @Param Cabecera : cabecera formada por un mensaje, un nombre y su valor.
+  * Mecanismo de selección de datos: Datos introducidos manualmente.
+  *   @Param Cabecera : cabecera formada por un mensaje, un nombre y su valor.
   * @Throws OperacionInvalida : Devuelve una excepción, pues un
   *    adjunto no puede realizar dicha operación.
   *  
@@ -153,7 +175,8 @@ public class TestCabecera {
   * Descripción : Añadir una cabecera.  
   * Nivel : Prueba de Integración.
   * Categoría : Prueba dinámica de caja negra, negativa, funcional.
-  * @Param Cabecera : cabecera formada por un mensaje, un nombre y su valor.
+  * Mecanismo de selección de datos: Datos introducidos manualmente.
+  *   @Param Cabecera : cabecera formada por un mensaje, un nombre y su valor.
   * @Throws OperacionInvalida : Devuelve una excepción, pues un
   *    adjunto no puede realizar dicha operación.
   */
@@ -170,7 +193,8 @@ public class TestCabecera {
   * Descripción : Eliminar una cabecera.  
   * Nivel : Prueba de Integración.
   * Categoría : Prueba dinámica de caja negra, negativa, funcional.
-  * @Param Cabecera : cabecera formada por un mensaje, un nombre y su valor.
+  * Mecanismo de selección de datos: Datos introducidos manualmente.
+  *   @Param Cabecera : cabecera formada por un mensaje, un nombre y su valor.
   * @Throws OperacionInvalida : Devuelve una excepción, pues un
   *    adjunto no puede realizar dicha operación.
   */
@@ -203,8 +227,9 @@ public class TestCabecera {
   * Descripción : Obtener el padre de una cabecera despues de haber sido añadida a una carpeta.  
   * Nivel : Prueba de Integración.
   * Categoría : Prueba dinámica de caja negra, positiva, funcional.
-  * @Param Cabecera : cabecera formada por un mensaje, un nombre y su valor.
-  * @Param Carpeta : carpeta a la que se añade la cabecera.
+  * Mecanismo de selección de datos: Datos introducidos manualmente.
+  *   @Param Cabecera : cabecera formada por un mensaje, un nombre y su valor.
+  *   @Param Carpeta : carpeta a la que se añade la cabecera.
   * @Throws OperacionInvalida
   */
   @Test
@@ -222,8 +247,11 @@ public class TestCabecera {
   * Descripción : Buscar una cabecera despues de haber sido añadida a una carpeta.  
   * Nivel : Prueba de Integración.
   * Categoría : Prueba dinámica de caja negra, positiva, funcional.
-  * @Param Cabecera : cabecera formada por un mensaje, un nombre y su valor.
-  * @Param Carpeta : carpeta a la que se añade la cabecera.
+  * Mecanismo de selección de datos: Datos introducidos manualmente,
+  * para ello se utilizan particiones equivalentes, esto es, se escoge 
+  * un elemento que representa al grupo.
+  *   @Param Cabecera : cabecera formada por un mensaje, un nombre y su valor.
+  *   @Param Carpeta : carpeta a la que se añade la cabecera.
   * @Throws OperacionInvalida
   */
   @Test

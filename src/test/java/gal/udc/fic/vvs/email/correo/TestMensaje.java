@@ -11,7 +11,10 @@ public class TestMensaje {
   * Descripción : Establecer si un Mensaje ha sido leido.  
   * Nivel : Prueba de Unidad.
   * Categoría : Prueba dinámica de caja negra, positiva, funcional.
-  * @Param Mensaje : mensaje formado por un texto
+  * Mecanismo de selección de datos: Datos introducidos manualmente,
+  * para ello se utilizan particiones equivalentes, esto es, se escoge 
+  * un elemento que representa al grupo.
+  *   @Param Mensaje : mensaje formado por un texto
   */
   @Test
   public void establecerLeido() {
@@ -29,7 +32,10 @@ public class TestMensaje {
   * Descripción : Obtener si un Mensaje ha sido leido.  
   * Nivel : Prueba de Unidad.
   * Categoría : Prueba dinámica de caja negra, positiva, funcional.
-  * @Param Mensaje : mensaje formado por un texto
+  * Mecanismo de selección de datos: Datos introducidos manualmente,
+  * para ello se utilizan particiones equivalentes, esto es, se escoge 
+  * un elemento que representa al grupo.
+  *   @Param Mensaje : mensaje formado por un texto
   */
   @Test
   public void obtenerNoLeidos() {
@@ -44,7 +50,10 @@ public class TestMensaje {
   * Descripción : Obtener el tamaño de un Mensaje.  
   * Nivel : Prueba de Unidad.
   * Categoría : Prueba dinámica de caja negra, positiva, funcional.
-  * @Param Mensaje : mensaje formado por un texto
+  * Mecanismo de selección de datos: Datos introducidos manualmente,
+  * para ello se utilizan particiones equivalentes, esto es, se escoge 
+  * un elemento que representa al grupo.
+  *   @Param Mensaje : mensaje formado por un texto
   */
   @Test
   public void obtenerTamano() {
@@ -59,7 +68,10 @@ public class TestMensaje {
   * Descripción : Obtener el icono de un Mensaje.  
   * Nivel : Prueba de Unidad.
   * Categoría : Prueba dinámica de caja negra, positiva, funcional.
-  * @Param Mensaje : mensaje formado por un texto
+  * Mecanismo de selección de datos: Datos introducidos manualmente,
+  * para ello se utilizan particiones equivalentes, esto es, se escoge 
+  * un elemento que representa al grupo.
+  *   @Param Mensaje : mensaje formado por un texto
   */
   @Test
   public void obtenerIcono() {
@@ -78,7 +90,10 @@ public class TestMensaje {
   * Descripción : Obtener la visualización de un Mensaje.  
   * Nivel : Prueba de Unidad.
   * Categoría : Prueba dinámica de caja negra, positiva, funcional.
-  * @Param Mensaje : mensaje formado por un texto
+  * Mecanismo de selección de datos: Datos introducidos manualmente,
+  * para ello se utilizan particiones equivalentes, esto es, se escoge 
+  * un elemento que representa al grupo.
+  *   @Param Mensaje : mensaje formado por un texto
   */
   @Test
   public void obtenerVisualizacion() {
@@ -93,7 +108,10 @@ public class TestMensaje {
   * Descripción : Obtener la previsualización de un Mensaje.  
   * Nivel : Prueba de Unidad.
   * Categoría : Prueba dinámica de caja negra, positiva, funcional.
-  * @Param Mensaje : mensaje formado por un texto
+  * Mecanismo de selección de datos: Datos introducidos manualmente,
+  * para ello se utilizan particiones equivalentes, esto es, se escoge 
+  * un elemento que representa al grupo.
+  *   @Param Mensaje : mensaje formado por un texto
   */
   @Test
   public void obtenerPrevisualizacionMensajeTest() {
@@ -108,7 +126,10 @@ public class TestMensaje {
   * Descripción : Buscar un Mensaje.  
   * Nivel : Prueba de Unidad.
   * Categoría : Prueba dinámica de caja negra, positiva, funcional.
-  * @Param Mensaje : mensaje formado por un texto
+  * Mecanismo de selección de datos: Datos introducidos manualmente,
+  * para ello se utilizan particiones equivalentes, esto es, se escoge 
+  * un elemento que representa al grupo.
+  *   @Param Mensaje : mensaje formado por un texto
   */
   @Test
   public void buscar() {
@@ -127,7 +148,10 @@ public class TestMensaje {
   * Descripción : Buscar un Mensaje no existente.  
   * Nivel : Prueba de Unidad.
   * Categoría : Prueba dinámica de caja negra, positiva, funcional.
-  * @Param Mensaje : mensaje formado por un texto
+  * Mecanismo de selección de datos: Datos introducidos manualmente,
+  * para ello se utilizan valores frontera, esto es, se escoge 
+  * un elemento vacío para realizar la prueba.
+  *   @Param Mensaje : mensaje formado por un texto.
   */
   @Test
   public void buscarNoExistente() {
@@ -144,7 +168,10 @@ public class TestMensaje {
   * Descripción : Obtener el padre de un Reenvio.  
   * Nivel : Prueba de Integración.
   * Categoría : Prueba dinámica de caja negra, positiva, funcional.
-  * @Param Reenvio : reenvio formada por un mensaje y un correo.
+  * Mecanismo de selección de datos: Datos introducidos manualmente,
+  * para ello se utilizan particiones equivalentes, esto es, se escoge 
+  * un elemento que representa al grupo.
+  *    @Param Mensaje : mensaje formado por un texto.
   */
   @Test
   public void establecerYObtenerPadre() throws OperacionInvalida {
@@ -162,7 +189,8 @@ public class TestMensaje {
   * Descripción : obtener el hijo de un mensaje.  
   * Nivel : Prueba de Unidad.
   * Categoría : Prueba dinámica de caja negra, negativa, funcional.
-  * @Param Mensaje : mensaje formada por un texto.
+  * Mecanismo de selección de datos: Datos introducidos manualmente.
+  *   @Param Mensaje : mensaje formada por un texto.
   * @Exception OperacionInvalida : Devuelve una excepción, pues un
   *    adjunto no puede realizar dicha operación.
   */
@@ -178,8 +206,9 @@ public class TestMensaje {
   * Descripción : Explorar un mensaje.  
   * Nivel : Prueba de Integración.
   * Categoría : Prueba dinámica de caja negra, negativa, funcional.
-  * @Param Mensaje : mensaje formado por un texto.
-  * @Param Carpeta : carpeta a la que se añade el mensaje.
+  * Mecanismo de selección de datos: Datos introducidos manualmente.
+  *   @Param Mensaje : mensaje formado por un texto.
+  *   @Param Carpeta : carpeta a la que se añade el mensaje.
   * @Exception OperacionInvalida : Devuelve una excepción, pues un
   *    adjunto no puede realizar dicha operación.
   */

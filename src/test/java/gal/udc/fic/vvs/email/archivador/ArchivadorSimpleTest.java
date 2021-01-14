@@ -26,6 +26,10 @@ public class ArchivadorSimpleTest extends TestJETM{
    * Descripción : Obtener el nombre de un archivador  
    * Nivel : Prueba de Unidad.
    * Categoría : Prueba dinámica de caja negra, positiva, funcional.
+   * Mecanismo de selección de datos: Datos introducidos manualmente,
+   * para ello se utilizan particiones equivalentes, esto es, se escoge un elemento
+   * que representa al grupo.
+   *   @Param ArchivadorSimple : Formado por un nombre y un tamaño.
    * PiTest : Sobrevive un mutante pues no se comprueba el point creado
    * por el monitor de JETM
    */
@@ -45,6 +49,10 @@ public class ArchivadorSimpleTest extends TestJETM{
   * Descripción : Almacenar un correo en un Archivador Simple correctamente  
   * Nivel : Prueba de Integración.
   * Categoría : Prueba dinámica de caja negra, positiva, funcional.
+  * Mecanismo de selección de datos: Datos introducidos manualmente,
+   * para ello se utilizan particiones equivalentes, esto es, se escoge un elemento
+   * que representa al grupo.
+  *   @Param ArchivadorSimple : Formado por un nombre y un tamaño.
   * PiTest : No se puede matar el mutante pues no es posible obtener el 
   * array de elementos.
   */
@@ -65,7 +73,10 @@ public class ArchivadorSimpleTest extends TestJETM{
   /**
   * Descripción : Almacenar un correo en un Archivador Simple incorrectamente  
   * Nivel : Prueba de Integración.
-  * Categoría : Prueba dinámica de caja negra, positiva, funcional.
+  * Categoría : Prueba dinámica de caja negra, negativa, funcional.
+  * Mecanismo de selección de datos: Datos introducidos manualmente,
+  * para ello se selecciona valores frontera, en este caso un tamaño incorrecto.
+  *   @Param ArchivadorSimple : Formado por un nombre y un tamaño.
   */
   @Test
   public void almacenarCorreoIncorrectamente() {
@@ -83,6 +94,10 @@ public class ArchivadorSimpleTest extends TestJETM{
   * Descripción : Obtener el nombre de un archivador  
   * Nivel : Prueba de Unidad.
   * Categoría : Prueba dinámica de caja negra, positiva, funcional.
+  * Mecanismo de selección de datos: Datos introducidos manualmente,
+   * para ello se utilizan particiones equivalentes, esto es, se escoge un elemento
+   * que representa al grupo.
+  *   @Param ArchivadorSimple : Formado por un nombre y un tamaño.
   */
   @Test
   public void obtenerEspacioTotalTest() {
@@ -97,6 +112,11 @@ public class ArchivadorSimpleTest extends TestJETM{
    * Descripción : Obtener el espacio disponible después de almacenar un correo. 
    * Nivel : Prueba de Integración.
    * Categoría : Prueba dinámica de caja negra, positiva, funcional.
+   * Mecanismo de selección de datos: Datos introducidos manualmente,
+   * para ello se utilizan particiones equivalentes, esto es, se escoge un elemento
+   * que representa al grupo.
+   *   @Param ArchivadorSimple : Formado por un nombre y un tamaño.
+   *   @Param MensajePrueba : Formado por un texto(con un nombre y su contenido).
    */ 
   @Test
   public void obtenerEspacioDisponibleTest() {
@@ -116,6 +136,10 @@ public class ArchivadorSimpleTest extends TestJETM{
    *  Descripción : Establecer y obtener el delegado de un archivador.
    *  Nivel : Prueba de Unidad.
    *  Categoría : Prueba dinámica de caja negra, positiva, funcional.
+   *  Mecanismo de selección de datos: Datos introducidos manualmente,
+   * para ello se utilizan particiones equivalentes, esto es, se escoge un elemento
+   * que representa al grupo.
+   *   @Param ArchivadorSimple : Formado por un nombre y un tamaño.
    */
   @Test
   public void establecerYObtenerDelegado() {

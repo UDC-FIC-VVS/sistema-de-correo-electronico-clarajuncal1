@@ -21,6 +21,11 @@ public class TestCarpeta extends TestJETM{
   * Descripción : Obtener el leido de una Carpeta.  
   * Nivel : Prueba de Unidad.
   * Categoría : Prueba dinámica de caja negra, positiva, funcional.
+  * Mecanismo de selección de datos: Datos introducidos manualmente,
+  * para ello se utilizan particiones equivalentes, esto es, se escoge 
+  * un elemento que representa al grupo.
+  *    @Param Carpeta : Formada por un nombre.
+  *    @Param Correo : Formado por un mensaje(nombre y su contenido)
   * @throws OperacionInvalida
   */
   @Test
@@ -37,6 +42,11 @@ public class TestCarpeta extends TestJETM{
   * Descripción : Establecer el leido de una Carpeta.  
   * Nivel : Prueba de Unidad.
   * Categoría : Prueba dinámica de caja negra, positiva, funcional.
+  * Mecanismo de selección de datos: Datos introducidos manualmente,
+  * para ello se utilizan particiones equivalentes, esto es, se escoge 
+  * un elemento que representa al grupo.
+  *   @Param Carpeta : Formada por un nombre.
+  *   @Param Correo : Formado por un mensaje(nombre y su contenido)
   * @throws OperacionInvalida
   */
   @Test
@@ -56,6 +66,11 @@ public class TestCarpeta extends TestJETM{
   * Descripción : Obtener el tamaño de una Carpeta.  
   * Nivel : Prueba de Unidad.
   * Categoría : Prueba dinámica de caja negra, positiva, funciona.
+  * Mecanismo de selección de datos: Datos introducidos manualmente,
+  * para ello se utilizan particiones equivalentes, esto es, se escoge 
+  * un elemento que representa al grupo.
+  *   @Param Carpeta : Formada por un nombre.
+  *   @Param Correo : Formado por un mensaje(nombre y su contenido)
   * @throws OperacionInvalida
   * PiTest: Queda un mutante vivo debido a que no se puede probar el
   * point del etmMonitor creado para las pruebas con JETM.
@@ -77,6 +92,11 @@ public class TestCarpeta extends TestJETM{
   * Descripción : Obtener el icono de una Carpeta.  
   * Nivel : Prueba de Integración.
   * Categoría : Prueba dinámica de caja negra, positiva, funcional.
+  * Mecanismo de selección de datos: Datos introducidos manualmente,
+  * para ello se utilizan particiones equivalentes, esto es, se escoge 
+  * un elemento que representa al grupo.
+  *   @Param Carpeta : Formada por un nombre.
+  *   @Param Correo : Formado por un mensaje(nombre y su contenido)
   * @throws OperacionInvalida
   * PiTest: Queda un mutante vivo debido a que no se puede probar el
   * point del etmMonitor creado para las pruebas con JETM.
@@ -97,6 +117,11 @@ public class TestCarpeta extends TestJETM{
   * Descripción : Obtener la previsualizacion de una Carpeta.  
   * Nivel : Prueba de Integración.
   * Categoría : Prueba dinámica de caja negra, positiva, funcional.
+  * Mecanismo de selección de datos: Datos introducidos manualmente,
+  * para ello se utilizan particiones equivalentes, esto es, se escoge 
+  * un elemento que representa al grupo.
+  *   @Param Carpeta : Formada por un nombre.
+  *   @Param Mensaje : Formado por un texto(nombre y su contenido)
   * @throws OperacionInvalida
   */
   @Test
@@ -114,6 +139,11 @@ public class TestCarpeta extends TestJETM{
   * Descripción : Obtener la visualizacion de una Carpeta.  
   * Nivel : Prueba de Integración.
   * Categoría : Prueba dinámica de caja negra, positiva, funcional.
+  * Mecanismo de selección de datos: Datos introducidos manualmente,
+  * para ello se utilizan particiones equivalentes, esto es, se escoge 
+  * un elemento que representa al grupo.
+  *   @Param Carpeta : Formada por un nombre.
+  *   @Param Correo : Formado por un mensaje(nombre y su contenido)
   * @throws OperacionInvalida
   */
   @Test
@@ -131,6 +161,11 @@ public class TestCarpeta extends TestJETM{
   * Descripción : Obtener la visualizacion de una Carpeta.  
   * Nivel : Prueba de Integración.
   * Categoría : Prueba dinámica de caja negra, positiva, funcional.
+  * Mecanismo de selección de datos: Datos introducidos manualmente,
+  * para ello se utilizan valores frontera, puesto que se prueba un caso
+  * en el que la carpeta no tenga visualizaciones.
+  *   @Param Carpeta : Formada por un nombre.
+  *   @Param Correo : Formado por un mensaje(nombre y su contenido)
   * @throws OperacionInvalida
   */
   @Test
@@ -150,6 +185,11 @@ public class TestCarpeta extends TestJETM{
   * Descripción : Explorar una Carpeta.  
   * Nivel : Prueba de Integración.
   * Categoría : Prueba dinámica de caja negra, positiva, funcional.
+  * Mecanismo de selección de datos: Datos introducidos manualmente,
+  * para ello se utilizan particiones equivalentes, esto es, se escoge 
+  * un elemento que representa al grupo.
+  *   @Param Carpeta : Formada por un nombre.
+  *   @Param Correo : Formado por un mensaje(nombre y su contenido)
   * @throws OperacionInvalida
   */
   @Test
@@ -166,7 +206,12 @@ public class TestCarpeta extends TestJETM{
   /**
   * Descripción : Explorar una Carpeta Inexistente.  
   * Nivel : Prueba de Integración.
-  * Categoría : Prueba dinámica de caja negra, positiva, funcional.
+  * Categoría : Prueba dinámica de caja negra, negativa, funcional.
+  * Mecanismo de selección de datos: Datos introducidos manualmente,
+  * para ello se utilizan valores frontera, ya que se prueba un caso
+  * en el que no existe el elemento que se quiere explorar.
+  *   @Param Carpeta : Formada por un nombre.
+  *   @Param Correo : Formado por un mensaje(nombre y su contenido)
   * @throws OperacionInvalida
   */
   @Test
@@ -183,6 +228,11 @@ public class TestCarpeta extends TestJETM{
   * Descripción : buscar un correo a una Carpeta.  
   * Nivel : Prueba de Integración.
   * Categoría : Prueba dinámica de caja negra, positiva, funcional.
+  * Mecanismo de selección de datos: Datos introducidos manualmente,
+  * para ello se utilizan particiones equivalentes, esto es, se escoge 
+  * un elemento que representa al grupo.
+  *   @Param Carpeta : Formada por un nombre.
+  *   @Param Correo : Formado por un mensaje(nombre y su contenido).
   * @throws OperacionInvalida
   */
   @Test
@@ -201,6 +251,11 @@ public class TestCarpeta extends TestJETM{
   * Descripción : Añadir un correo a una Carpeta.  
   * Nivel : Prueba de Integración.
   * Categoría : Prueba dinámica de caja negra, positiva, funcional.
+  * Mecanismo de selección de datos: Datos introducidos manualmente,
+  * para ello se utilizan particiones equivalentes, esto es, se escoge 
+  * un elemento que representa al grupo.
+  *   @Param Carpeta : Formada por un nombre.
+  *   @Param Correo : Formado por un mensaje(nombre y su contenido).
   * @throws OperacionInvalida
   */
   @Test
@@ -218,6 +273,11 @@ public class TestCarpeta extends TestJETM{
   * Descripción : Añadir un correo a una Carpeta.  
   * Nivel : Prueba de Integración.
   * Categoría : Prueba dinámica de caja negra, positiva, funcional.
+  * Mecanismo de selección de datos: Datos introducidos manualmente,
+  * para ello se utilizan particiones equivalentes, esto es, se escoge 
+  * un elemento que representa al grupo.
+  *   @Param Carpeta : Formada por un nombre.
+  *   @Param Correo : Formado por un mensaje(nombre y su contenido)
   * @throws OperacionInvalida
   */
   @Test
@@ -237,6 +297,11 @@ public class TestCarpeta extends TestJETM{
   * Descripción : Eliminar el correo de una Carpeta.  
   * Nivel : Prueba de Integración.
   * Categoría : Prueba dinámica de caja negra, positiva, funcional.
+  * Mecanismo de selección de datos: Datos introducidos manualmente,
+  * para ello se utilizan particiones equivalentes, esto es, se escoge 
+  * un elemento que representa al grupo.
+  *   @Param Carpeta : Formada por un nombre.
+  *   @Param Correo : Formado por un mensaje(nombre y su contenido)
   * @throws OperacionInvalida
   */
   @Test
@@ -259,6 +324,11 @@ public class TestCarpeta extends TestJETM{
   * Descripción : Obtener el hijo de una Carpeta.  
   * Nivel : Prueba de Integración.
   * Categoría : Prueba dinámica de caja negra, positiva, funcional.
+  * Mecanismo de selección de datos: Datos introducidos manualmente,
+  * para ello se utilizan particiones equivalentes, esto es, se escoge 
+  * un elemento que representa al grupo.
+  *   @Param Carpeta : Formada por un nombre.
+  *   @Param Correo : Formado por un mensaje(nombre y su contenido).
   * @throws OperacionInvalida
   */
   @Test
@@ -275,7 +345,12 @@ public class TestCarpeta extends TestJETM{
   /**
   * Descripción : Obtener el hijo de una Carpeta sin hijos.  
   * Nivel : Prueba de Unidad.
-  * Categoría : Prueba dinámica de caja negra, positiva, funcional.
+  * Categoría : Prueba dinámica de caja negra, negativa, funcional.
+  * Mecanismo de selección de datos: Datos introducidos manualmente,
+  * para ello se utilizan valores frontera, se escoge un elemento 
+  * vacío para realizar la prueba
+  *   @Param Carpeta : Formada por un nombre.
+  *   @Param Correo : Formado por un mensaje(nombre y su contenido)
   * @throws OperacionInvalida
   */
   @Test(expected = ArrayIndexOutOfBoundsException.class)
@@ -292,6 +367,11 @@ public class TestCarpeta extends TestJETM{
   * Descripción : Obtener la ruta de una Carpeta.  
   * Nivel : Prueba de Integración.
   * Categoría : Prueba dinámica de caja negra, positiva, funcional.
+  * Mecanismo de selección de datos: Datos introducidos manualmente,
+  * para ello se utilizan particiones equivalentes, esto es, se escoge 
+  * un elemento que representa al grupo.
+  *   @Param Carpeta : Formada por un nombre.
+  *   @Param Correo : Formado por un mensaje(nombre y su contenido).
   * @throws OperacionInvalida
   */
   @Test
