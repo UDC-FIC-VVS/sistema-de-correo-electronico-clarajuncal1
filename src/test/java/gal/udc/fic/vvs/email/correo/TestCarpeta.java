@@ -206,7 +206,7 @@ public class TestCarpeta extends TestJETM{
   /**
   * Descripción : Explorar una Carpeta Inexistente.  
   * Nivel : Prueba de Integración.
-  * Categoría : Prueba dinámica de caja negra, negativa, funcional.
+  * Categoría : Prueba dinámica de caja negra, positiva, funcional.
   * Mecanismo de selección de datos: Datos introducidos manualmente,
   * para ello se utilizan valores frontera, ya que se prueba un caso
   * en el que no existe el elemento que se quiere explorar.

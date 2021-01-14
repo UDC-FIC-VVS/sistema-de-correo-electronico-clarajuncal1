@@ -165,7 +165,7 @@ public class TestCarpetaLimitada {
   /**
   * Descripción : Explorar una CarpetaLimitada Inexistente.  
   * Nivel : Prueba de Unidad.
-  * Categoría : Prueba dinámica de caja negra, negativa, funcional.
+  * Categoría : Prueba dinámica de caja negra, positiva, funcional.
   * Mecanismo de selección de datos: Datos introducidos manualmente,
   * para ello se utilizan valores frontera, esto es, se escoge 
   * un elemento vacío para realizar la prueba.
@@ -294,7 +294,7 @@ public class TestCarpetaLimitada {
   /**
   * Descripción : obtener la carpeta limitada padre sin correo.  
   * Nivel : Prueba de Unidad.
-  * Categoría : Prueba dinámica de caja negra, negativa, funcional.
+  * Categoría : Prueba dinámica de caja negra, positiva, funcional.
   * Mecanismo de selección de datos: Datos introducidos manualmente,
   * para ello se utilizan valores frontera, esto es, se escoge 
   * un elemento vacío para realizar la prueba.

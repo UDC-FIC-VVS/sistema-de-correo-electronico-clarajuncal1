@@ -73,7 +73,7 @@ public class ArchivadorSimpleTest extends TestJETM{
   /**
   * Descripción : Almacenar un correo en un Archivador Simple incorrectamente  
   * Nivel : Prueba de Integración.
-  * Categoría : Prueba dinámica de caja negra, negativa, funcional.
+  * Categoría : Prueba dinámica de caja negra, positiva, funcional.
   * Mecanismo de selección de datos: Datos introducidos manualmente,
   * para ello se selecciona valores frontera, en este caso un tamaño incorrecto.
   *   @Param ArchivadorSimple : Formado por un nombre y un tamaño.

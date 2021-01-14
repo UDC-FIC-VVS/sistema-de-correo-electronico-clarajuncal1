@@ -51,7 +51,7 @@ public class LogTest {
   /**
   * Descripción : Almacenar un correo incorrectamente en un Log.
   * Nivel : Prueba de Integración
-  * Categoría : Prueba dinámica de caja negra, negativa, funcional.
+  * Categoría : Prueba dinámica de caja negra, positiva, funcional.
   * Mecanismo de selección de datos: Datos introducidos manualmente,
   * para ello se utilizan valores frontera.
   *   @Param Archivador : Formado por un nombre y un tamaño.

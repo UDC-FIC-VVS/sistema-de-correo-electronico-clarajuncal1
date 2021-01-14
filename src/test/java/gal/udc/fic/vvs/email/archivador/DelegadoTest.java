@@ -42,7 +42,7 @@ public class DelegadoTest {
   /**
   * Descripción : Almacenar un correo correctamente en un delegado.
   * Nivel : Prueba de Integración.
-  * Categoría : Prueba dinámica de caja negra, negativa, funcional.
+  * Categoría : Prueba dinámica de caja negra, positiva, funcional.
   * Mecanismo de selección de datos: Datos introducidos manualmente,
   * para ello se utilizan valores frontera.
   *   @Param Archivador : Formado por un nombre y un tamaño.
